@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  justify-content: center;
+}
+nav{
+  width: 50%;
+  background-color: lightblue;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  list-style-type:none;
+}
+.navbar li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+@media(max-width:768px){
+  .navbar{
+      flex-direction: column;
+      align-items: center;
+  }
+}
+/*TODO:Para cambiar la que tengo esta es la que hizo Maxi
+
+ESTO VA EN EL HTML
+<header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="">inicio</a></li>
+                <li><a href="">inicio</a></li>
+                <li><a href="">inicio</a></li>
+            </ul>
+        </nav>
+    </header> *
