@@ -19,7 +19,7 @@ body {
   display: grid;
   grid-template-rows: 160px 1fr 100px;
 }
-.index, .nosotros{
+.index, .nosotros, .productos{
   background-image: url('../assets/img/background_index_low.png');
   background-size: cover;
   background-position: center;
@@ -35,7 +35,13 @@ body {
   grid-template-rows: 160px 1fr 100px;
   background-image: url('../assets/img/background-nos2.jpg');
 }
-
+.productos{
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 160px 1fr 100px;
+  background-image: url('../assets/img/coffee-hand2.jpg');
+}
 
 
 /*-----------------------------------------------------Header - Incluye Navbar y Logo-----------------------------------------------------*/
@@ -150,7 +156,6 @@ header {
   justify-self: center;
   padding: 20px;
   font-size: 1.4rem;
-
 }
 /*Imagen Cup-----------------------------------------------------*/
 .hero{
@@ -183,7 +188,6 @@ header {
   position: relative;
   display: inline-flex;
   justify-self: center;
-  
 }
 /*Estilo sobre Botones Productos y Contactos*/
 .main__botones a{
@@ -442,22 +446,17 @@ header {
   justify-self: center;
 }
 
-/*--------------------------NOSOTROS-------------------------------------*/
+/*==================================NOSOTROS==========================================*/
 .main__nos {
   display: grid;
   grid-template-columns: repeat(11,1fr);
   grid-template-rows: repeat(3,auto);
 }
-.main__titulo__nos {
+.main__titulo {
   grid-column:  2 / 8;
   grid-row: 1 / 2;
   align-self: auto;
   justify-self: center;
-}
-.main__titulo__nos h3 {
-  font-weight: 700;
-  font-size: 3.4rem;
-
 }
 .main__texto{
   grid-column:  2 / 8;
@@ -474,6 +473,7 @@ header {
   padding: 30px 30px 15px;
   border-radius: 10px;
   backdrop-filter: blur(3px);
+  
 }
 .team{
   grid-column:  8 / 11;
@@ -572,6 +572,78 @@ header {
   align-self: flex-end;
   font-size: 0.8rem;
   padding-left: 10px;
+}
+
+/*==================================PRODUCTOS==========================================*/
+.main__productos {
+  display: grid;
+  grid-template-columns: repeat(11,1fr);
+  grid-template-rows: repeat(3,auto);
+}
+.main__titulo--nos{
+  grid-column:  3 / 11;
+  grid-row: 1 / 2;
+  align-self: auto;
+  justify-self: center;
+}
+.main__titulo--nos h3 {
+  font-weight: 700;
+  font-size: 3.4rem;
+  height: 273px;
+}
+.grupo-prod{
+  grid-column:  3 / 10;
+  grid-row: 2 / 4;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.card-cafe {
+  display: 273px;
+  grid-template-rows: repeat(3,1fr);
+  height: 634px;
+  width: 421px;
+  margin-bottom: 90px;
+  text-align: center;
+  background-color: #232323b0;
+  border: 1px solid #232323;
+  border-radius: 10px;
+  backdrop-filter: blur(25px);
+}
+.grupo-prod img{
+  grid-row: 1 / 2;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  align-self: center;
+  justify-content: center;
+  margin: auto;
+}
+.cafe{
+  grid-row: 2 / 3;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+.cafe strong{
+  font-size: 24px;
+}
+.descripcion {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.precio{/*TODO:GENERAR BOX ACA*/
+  font-size: 24px;
+  font-weight: 800;
+  color: #000000;
+  width: 100%;
+  background-color: #dd2a7b;
+  padding: 10px 0 10px;
+
+  border-radius: 0 0 10px 10px;
+  backdrop-filter: blur(25px);
+  background-image: linear-gradient(to right, #F7971E 0%, #FFD200 51%, #F7971E 100%);
 }
 /*-----------------------------------------------------Grid y Mediaqueries-----------------------------------------------------*/
 

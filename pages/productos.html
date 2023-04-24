@@ -17,68 +17,91 @@
   
   <title>QINQELA - Productos</title>
 </head>
-<body class="resto">
-  <header class="header-index">
-    <nav class="navbar">
-      <a href="../index.html" class="logo"><img src="../assets/logos/qinquela_blanco.png" alt="logo"></a>
-      <ul>
-        <li><a href="../index.html">INICIO</a></li>
-        <li><a href="./nosotros.html">NOSOTROS</a></li>
-        <li><a href="#" class="active">PRODUCTOS</a></li>
-        <li><a href="./galeria.html">GALERIA</a></li>
-        <li><a href="./contacto.html">CONTACTO</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main-prod">
-    <section class="galeria">
-      <div class="heading">
-        <h3>QINQELA<strong class="main-h3"> CoffeeShop</strong>, te ofrece la mejor calidad en  productos. Disfrutalos!</h3>
+<body>
+  <div class="productos">
+    <!-- ------------------Comienzo Header--------------------- -->
+    <header class="header">
+      <!-----Logo Marca----->
+      <div class="logo">
+        <a href="#">
+          <img src="../assets/logos/qinquela_blanco.png" alt="logo">
+        </a>
       </div>
-
-      <div class="seccion-gal">
-        <div class="grupo-img">
-          <a href="../assets/img/prod1.png" target="_blank"><img src="../assets/img/prod1.png" alt=""></a>
+      <!------Comienzo Navbar------>
+      <nav class="nav">
+        <ul class="nav__lista">
+          <!--Links a Páginas Internas-->
+          <li><a href="../index.html" class="">INICIO</a></li>
+          <li><a href="./nosotros.html" class="">NOSOTROS</a></li>
+          <li><a href="#" class="nav__lista--active">PRODUCTOS</a></li><!--Página Activa-->
+                    <!--Links a Páginas Internas-->
+          <li><a href="./galeria.html" class="">GALERIA</a></li>
+          <li><a href="./contacto.html" class="">CONTACTO</a></li>
+        </ul>
+      </nav>
+      <!------Fin Navbar------>
+    </header>
+    <main class="main__productos">
+      <div class="main__titulo--nos">
+        <h3>QINQELA<strong class="yellow"> CoffeeShop</strong>, <br> te ofrece la mejor calidad en  productos. Disfrutalos!</h3>
+      </div>
+      <div class="grupo-prod">
+        <div class="card-cafe">
+          <a href="../assets/img/prod1.png" target="_blank"><img src="../assets/img/prod1.png" alt="Coffee Blend. Producto de Qinqela CoffeeShop. €15,99"></a>
           <div class="cafe">
-            <strong>Coffee <strong class="main-h3">BLEND.</strong></strong>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse tempora maxime harum molestiae sequi consequuntur non enim vitae hic earum culpa, aspernatur expedita molestias officiis deleniti fugiat pariatur a mollitia.
-            </p>
-          </div>
-          <a href="../assets/img/prod2.png" target="_blank"><img src="../assets/img/prod2.png" alt=""></a>
-          <div class="cafe">
-            <strong>Coffee <strong class="main-h3">SOFT.</strong></strong>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse tempora maxime harum molestiae sequi consequuntur non enim vitae hic earum culpa, aspernatur expedita molestias officiis deleniti fugiat pariatur a mollitia.
-            </p>
-          </div>
-          <a href="../assets/img/prod3.png" target="_blank"><img src="../assets/img/prod3.png" alt=""></a>
-          <div class="cafe">
-            <strong>Coffee <strong class="main-h3">STRONG.</strong></strong>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse tempora maxime harum molestiae sequi consequuntur non enim vitae hic earum culpa, aspernatur expedita molestias officiis deleniti fugiat pariatur a mollitia.
-            </p>
-          </div>
-          <a href="../assets/img/prod4.png" target="_blank"><img src="../assets/img/prod4.png" alt=""></a>
-          <div class="cafe">
-            <strong>Coffee <strong class="main-h3">DARK.</strong></strong>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse tempora maxime harum molestiae sequi consequuntur non enim vitae hic earum culpa, aspernatur expedita molestias officiis deleniti fugiat pariatur a mollitia.
+            <strong>Coffee <strong class="yellow">BLEND.</strong></strong>
+            <p class="descripcion">Sabor suave y equilibrado, con notas de chocolate y nueces, y un toque de acidez para darle un final fresco y limpio.
+            </p><br>
+            <p class="precio">VALOR € 15,99
             </p>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <section class="social-gal">
-      <div class="footer-ico-gal">
-        <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
-        <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-      </div>
-      <div class="copy-gal">
-        <p><a href="https://goo.gl/maps/Yk6Y1aR38ZW92o3M8" target="_blank"><b class="iconmax-nos"><i class='bx bx-map'></i></a></b>Pg. de Gràcia, 92, 08008 Barcelona, España&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-        <p><a href="https://wa.me/3455555555" target="_blank"><b class="iconmax"><i class='bx bx-phone'></i></a></b> (+34) 555 55 55 55</p>
-      </div>
-    </section>
-  </footer>
+        <div class="card-cafe">
+          <a href="../assets/img/prod2.png" target="_blank"><img src="../assets/img/prod2.png" alt=""></a>
+          <div class="cafe">
+            <strong>Coffee <strong class="yellow">SOFT.</strong></strong>
+            <p class="descripcion">Suavidad y ligereza, con notas de frutas y flores que lo hacen una experiencia verdaderamente deliciosa para los amantes del café.
+            </p><br>
+            <p class="precio">VALOR € 14,99
+            </p>
+          </div>
+        </div>
+        <div class="card-cafe">
+          <a href="../assets/img/prod3.png" target="_blank"><img src="../assets/img/prod3.png" alt=""></a>
+          <div class="cafe">
+            <strong>Coffee <strong class="yellow">STRONG.</strong></strong>
+            <p class="descripcion">Sabor intenso y profundo, con notas de chocolate negro y una sensación de cuerpo completo en el paladar.
+            </p><br>
+            <p class="precio">VALOR € 16,99
+            </p>
+          </div>
+        </div>
+        <div class="card-cafe">
+          <a href="../assets/img/prod4.png" target="_blank"><img src="../assets/img/prod4.png" alt=""></a>
+          <div class="cafe">
+            <strong>Coffee <strong class="yellow">DARK.</strong></strong>
+            <p class="descripcion">Con notas de cacao y frutos secos, con un toque de amargor que equilibra perfectamente su dulzura natural.
+            </p><br>
+            <p class="precio">VALOR € 18,99
+            </p>
+          </div>
+        </div>
+     </div>
+    </main>
+    <footer>
+      <section class="social-gal">
+        <div class="footer-ico-gal">
+          <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+        <div class="copy-gal">
+          <p><a href="https://goo.gl/maps/Yk6Y1aR38ZW92o3M8" target="_blank"><b class="iconmax-nos"><i class='bx bx-map'></i></a></b>Pg. de Gràcia, 92, 08008 Barcelona, España&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+          <p><a href="https://wa.me/3455555555" target="_blank"><b class="iconmax"><i class='bx bx-phone'></i></a></b> (+34) 555 55 55 55</p>
+        </div>
+      </section>
+    </footer>
+  </div>
 </body>
 </html>
 
