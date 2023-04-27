@@ -452,11 +452,16 @@ header {
   grid-template-columns: repeat(11,1fr);
   grid-template-rows: repeat(3,auto);
 }
-.main__titulo {
+.main__titulo--nos {
   grid-column:  2 / 8;
   grid-row: 1 / 2;
   align-self: auto;
   justify-self: center;
+}
+
+.main__titulo--nos h3 {
+    font-weight: 700;
+    font-size: 3.4rem;
 }
 .main__texto{
   grid-column:  2 / 8;
@@ -580,13 +585,13 @@ header {
   grid-template-columns: repeat(11,1fr);
   grid-template-rows: repeat(3,auto);
 }
-.main__titulo--nos{
+.main__titulo--prod{
   grid-column:  3 / 11;
   grid-row: 1 / 2;
   align-self: auto;
   justify-self: center;
 }
-.main__titulo--nos h3 {
+.main__titulo--prod h3 {
   font-weight: 700;
   font-size: 3.4rem;
   height: 273px;
@@ -594,57 +599,68 @@ header {
 .grupo-prod{
   grid-column:  3 / 10;
   grid-row: 2 / 4;
-  display:flex;
   justify-content:space-around;
   align-items:center;
   flex-wrap:wrap;
 }
-.card-cafe {
-  display: 273px;
-  grid-template-rows: repeat(3,1fr);
-  height: 634px;
-  width: 421px;
-  margin-bottom: 90px;
-  text-align: center;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  padding-inline: 24px;
+  gap: 24px;
+  color: #ededed;
+}
+.cards-style {
+  position: relative;
+  box-shadow: none;
+  border-radius: 5px;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  border: 2px solid #232323ae;
+}
+.cards-cafe{
   background-color: #232323b0;
-  border: 1px solid #232323;
-  border-radius: 10px;
+  border: 1px solid #232323ae;
+  text-align: center;
   backdrop-filter: blur(25px);
 }
-.grupo-prod img{
-  grid-row: 1 / 2;
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-  align-self: center;
-  justify-content: center;
-  margin: auto;
+.cards-cafe img {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  max-width: 100%;
+  border-bottom: 1px solid #232323ae;
+  border-radius: 5px;
 }
-.cafe{
-  grid-row: 2 / 3;
-  width: 100%;
+.cards-body {
+  padding: 24px;
+}
+.cards-body h2 {
+  margin: 0 0 18px 0;
+  font-size: 1.9rem;
+  transition: color 0.3s ease-out;
+  border-bottom: 1px solid #908e8eae;
+  border-top: 1px solid #908e8eae;
+}
+.cards-body p{
+  font-size: 18px;
+  padding-bottom: 25px;
+}
+.cards-body span {
+  display: inline-flex;
   align-items: center;
-  justify-items: center;
-}
-.cafe strong{
-  font-size: 24px;
-}
-.descripcion {
-  font-size: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.precio{/*TODO:GENERAR BOX ACA*/
   font-size: 24px;
   font-weight: 800;
   color: #000000;
-  width: 100%;
-  background-color: #dd2a7b;
-  padding: 10px 0 10px;
-
-  border-radius: 0 0 10px 10px;
+  padding: 10px 40px 10px 40px;
+  border-radius:3px;
   backdrop-filter: blur(25px);
   background-image: linear-gradient(to right, #F7971E 0%, #FFD200 51%, #F7971E 100%);
+  border: 1px solid #FFC500ae;
 }
+
+
 /*-----------------------------------------------------Grid y Mediaqueries-----------------------------------------------------*/
 
 
