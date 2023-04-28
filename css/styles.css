@@ -139,6 +139,7 @@ header {
 .main__titulo h1{
   font-size: 1.88rem;
   font-weight: 700;
+    -webkit-text-stroke: 1px #0000002e;
 }
 /*Estilo sobre Nombre de la Marca*/
 .yellow-strong{
@@ -149,6 +150,7 @@ header {
 .main__titulo h3 {
   font-weight: 700;
   font-size: 3.4rem;
+  -webkit-text-stroke: 1px #00000032;
 }
 /*Estilo sobre Palabra Clave*/
 .yellow{
@@ -166,6 +168,7 @@ header {
   justify-self: center;
   padding: 20px;
   font-size: 1.4rem;
+  -webkit-text-stroke: 1px #0000001c;
 }
 /*Imagen Cup-----------------------------------------------------*/
 .hero{
@@ -521,13 +524,14 @@ header {
   width: 500px;
   height: 235px;
   border-radius:  10px;
-  transition: 0.5s;
-  transition: .5s ease all; 
+  transition: 0.8s;
+  transition: 0.8s ease all; 
   width: 100%; 
   object-fit:cover;
 } 
 .card img:hover {
-  transform: scale(105%);
+  transform: scale(1.05);
+  transition: 0.8s;
 }
 
 /*Footer Nosotros------------------------------*/
@@ -570,7 +574,7 @@ header {
 .location-nos p{
   font-size: 0.938rem;
   transition: 0.5s;
-  -webkit-text-stroke: 1px #00000028;
+
 } 
 /*Efecto Texto Mapa y Whatsapp on Hover*/
 .location-nos p:hover{
@@ -591,7 +595,7 @@ header {
   font-size: 0.785rem;
   font-weight: 400;
   left: 10px;
-  -webkit-text-stroke: 1px #0000003c;  
+
   
 }
 .me-nos{
@@ -600,7 +604,7 @@ header {
   align-self: flex-end;
   font-size: 0.8rem;
   padding-left: 10px;
-  -webkit-text-stroke: 1px #00000085;
+
 }
 
 /*==================================PRODUCTOS==========================================*/
@@ -619,7 +623,7 @@ header {
   font-weight: 700;
   font-size: 3.4rem;
   height: 273px;
-  -webkit-text-stroke: 1px #00000085;
+  -webkit-text-stroke: 1px #0000004b;
 }
 .grupo-prod{
   grid-column:  3 / 10;
@@ -693,15 +697,16 @@ header {
   padding-bottom: 20px;
 }
 .main__titulo--gal {
-  grid-column:  3 / 11;
+  grid-column:  2 / 11;
   grid-row: 1 / 2;
-  align-self: auto;
+  align-self: center;
+  justify-self: center;
 }
 .main__titulo--gal h3 {
   font-weight: 700;
-  font-size: 3.4rem;
+  font-size: 4.4rem;
   height: 217px;
-  padding-top: 25px;
+  padding-top: 80px;
   -webkit-text-stroke: 1px #00000049;
 }
 
