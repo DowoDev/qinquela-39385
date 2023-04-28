@@ -88,3 +88,27 @@ CSS:
   backdrop-filter: blur(25px);
   background-image: linear-gradient(to right, #F7971E 0%, #FFD200 51%, #F7971E 100%);
 } */
+
+
+productos.html
+Galeria
+        <div class="seccion-gal">
+          <div class="grupo-img">
+            <img src="../assets/img/qinqela1.jpg" alt="">
+            <img src="../assets/img/qinqela2.jpg" alt="">
+            <img src="../assets/img/qinqela3.jpg" alt="">
+            <img src="../assets/img/qinqela4.jpg" alt="">
+          </div>
+          <div class="grupo-img">
+            <img src="../assets/img/qinqela5.jpg" alt="">
+            <img src="../assets/img/qinqela6.jpg" alt="">
+            <img src="../assets/img/qinqela7.jpg" alt="">
+            <img src="../assets/img/qinqela8.jpg" alt="">
+          </div>
+          <div class="grupo-img">
+            <img src="../assets/img/qinqela9.jpg" alt="">
+            <img src="../assets/img/qinqela10.jpg" alt="">
+            <img src="../assets/img/qinqela11.jpg" alt="">
+            <img src="../assets/img/qinqela12.jpg" alt="">
+          </div>
+        </div>
