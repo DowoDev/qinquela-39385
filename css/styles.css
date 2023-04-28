@@ -51,7 +51,7 @@ body {
 header {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
-  background: #0D0F13;
+  background: #242932;
   align-items: center;
   height: 160px;
 
