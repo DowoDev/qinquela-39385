@@ -12,15 +12,11 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #ededed;
 }
-.index{
-  height: 100vh;
+.index, .nosotros, .productos, .galeria, .contacto{
   width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-rows: 160px 1fr 100px;
-}
-.index, .nosotros, .productos, .galeria{
-  background-image: url('../assets/img/background_index_low.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,26 +24,21 @@ body {
   text-decoration: none;
   list-style: none;
 }
+.index{
+  height: 100vh;
+  background-image: url('../assets/img/background_index_low.png');
+}
 .nosotros {
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 160px 1fr 100px;
   background-image: url('../assets/img/background-nos2.jpg');
 }
 .productos{
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 160px 1fr 100px;
   background-image: url('../assets/img/coffee-hand2.jpg');
 }
 .galeria{
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 160px 1fr 100px;
   background-image: url('../assets/img/cafe3.jpg');
+}
+.contacto{
+  background-image: url('../assets/img/passion.jpg');
 }
 
 /*-----------------------------------------------------Header - Incluye Navbar y Logo-----------------------------------------------------*/
