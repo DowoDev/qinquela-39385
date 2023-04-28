@@ -112,3 +112,6 @@ Galeria
             <img src="../assets/img/qinqela12.jpg" alt="">
           </div>
         </div>
+
+
+
