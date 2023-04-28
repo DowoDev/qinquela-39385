@@ -461,6 +461,11 @@ header {
   padding-left: 10px;
   align-self: center;
   justify-self: center;
+
+}
+.me a {
+  text-decoration: none;
+  color: #ededed;
 }
 
 /*==================================NOSOTROS==========================================*/
@@ -604,7 +609,10 @@ header {
   align-self: flex-end;
   font-size: 0.8rem;
   padding-left: 10px;
-
+}
+.me-nos a {
+  text-decoration: none;
+  color: #ededed;
 }
 
 /*==================================PRODUCTOS==========================================*/
