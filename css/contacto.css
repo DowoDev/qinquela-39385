@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*PREFERÍ MOMENTANEAMENTE ELEGIR APARTE DEL STYLES.CSS USAR OTRO EXCLUSIVO PARA CONTACTO.HTML. EVENTUALMENTE USARÉ UNO SOLO*/
-section{
+.container__form{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@ section{
   padding-top: 10px;
 }
 
-.formulario{
+.form__contacto{
   position: relative;
   width: 420px;
   height: 555px;
@@ -30,14 +30,14 @@ section{
   align-items: center;
 }
 
-.inputbox{
+.form__contacto--input{
   position: relative;
   margin: 30px 0;
   width: 355px;
   border-bottom: 2px solid #ffffff;
 }
 
-.inputbox label {
+.form__contacto--input label {
   position: absolute;
   top: -20%;
   left: 5px;
@@ -46,7 +46,7 @@ section{
   transition: .5s;
 }
 
-.inputbox input {
+.form__contacto--input input {
   width: 100%;
   height: 50px;
   background: transparent;
@@ -57,14 +57,14 @@ section{
   color: #ffffff;
 }
 
-.inputbox i{
+.form__contacto--input i{
   position: absolute;
   right: 8px;
   color: #ffffff;
   top: 20px;
 }
 
-button{
+.form__contacto--button{
   width: 100%;
   height: 40px;
   border-radius: 8px;
@@ -75,7 +75,7 @@ button{
   font-weight: 600;
 }
 
-main button:active{
+.form__contacto--button:active{
   transform: scale(0.985);
   box-shadow: inset 2px 2px 3px #FFC50099, inset 2px 2px 3px #31303099;
 }
@@ -91,50 +91,6 @@ color: #ffffff;
 font-weight: 600;
 }
 
-textarea{
+.form__contacto--input textarea{
   font-weight: 500;
-}
-
-.social-form{
-  position: relative;
-  bottom: 0px;
-}
-
-.footer-ico-form{
-  position: relative;
-  bottom: -20px;
-  left: -10px;
-  width: 170px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-ico-form a{
-  position: relative;
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: 2px solid #FFC500;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #FFC500  ;
-  text-decoration: none;
-  z-index: 1;
-  overflow: hidden;
-  transition: .5s;
-}
-
-.copy-form{
-  font-size: 10px;
-  position: relative;
-  bottom: -20px;
-  left: 70px;
-}
-
-.iconmax-form {
-  color: #FFC500;
-  font-size: x-large;
 }

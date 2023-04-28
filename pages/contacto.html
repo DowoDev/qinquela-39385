@@ -45,7 +45,8 @@
           <!--Links a Páginas Internas-->
           <li><a href="../index.html" class="">INICIO</a></li>
           <li><a href="./nosotros.html" class="">NOSOTROS</a></li>
-          <li><a href="./productos.html" class="">PRODUCTOS</></li>
+          <li><a href="./productos.html" class="">PRODUCTOS</>
+          </li>
           <li><a href="./galeria.html" class="">GALERIA</a></li>
           <li><a href="#" class="nav__lista--active">CONTACTO</a></li><!--Página Activa-->
         </ul>
@@ -55,48 +56,79 @@
     <!-- ------------------Fin Header--------------------- -->
     <!-- ------------------Comienzo Main--------------------- -->
     <main class="main__contacto">
-
-      <section>
-        <div class="formulario">
-          <div>
-            <form action="">
-              <h3>Contactanos. Te invitamos un <strong class="yellow">Café.</strong></h3>
-              <div class="inputbox">
-                <input type="text" required>
-                <label for="">Nombre</label>
-                <i class='bx bx-user'></i>
-              </div>
-              <div class="inputbox">
-                <i class='bx bx-envelope'></i>
-                <input type="email" required>
-                <label for="">Email</label>
-              </div>
-              <div class="inputbox">
-                <label for="">Dejanos tu Mensaje</label>
-                <textarea name="" id="mensaje-usuario" cols="51" rows="7"></textarea>
-              </div>
-              <button>Café Gratis</button>
+      <div class="main__titulo--contacto">
+        <h3>Contactanos. <br> Te invitamos un <strong class="yellow">Café.</strong></h3>
+      </div>
+      <section class="container__form">
+        <div class="form_contacto">
+          <form action="">
+            <div class="form_input">
+              <input type="text" placeholder="Dejanos tu nombre completo" required>
+              <label for=""><strong class="yellow">NOMBRE</strong></label>
+              <i class='bx bx-user'></i>
+            </div>
+            <div class="form_input">
+              <input type="email" placeholder="Dejanos tu email" required>
+              <label for=""><strong class="yellow">EMAIL</strong></label>
+              <i class='bx bx-envelope'></i>
+            </div>
+            <div class="form_input">
+              <label class="mensajero" for="">Dejanos tu Mensaje</label>
+              <textarea name="" id="mensaje-usuario" rows="7"></textarea>
+            </div>
+            <button class="gratarola">CAFE GRATIS</button>
+            <div class="register">
               <p>Gracias por visitar QINQELA <strong class="yellow">CoffeeShop</strong>.</p>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </section>
     </main>
-    <footer>
-      <section class="social-form">
-        <div class="footer-ico-form">
+    <footer class="footer__nos">
+
+      <div class="social-nos">
+        <!------Redes Sociales ------>
+        <div class="footer-ico">
+          <!--Facebook -->
           <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+          <!--Twitter -->
           <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+          <!--Instagram -->
           <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
         </div>
-        <div class="copy-form">
-          <p><a href="https://goo.gl/maps/Yk6Y1aR38ZW92o3M8" target="_blank"><b class="iconmax-nos"><i
-                  class='bx bx-map'></i></a></b>Pg. de Gràcia, 92, 08008 Barcelona, España&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-          <p><a href="https://wa.me/3455555555" target="_blank"><b class="iconmax"><i class='bx bx-phone'></i></a></b>
-            (+34) 555 55 55 55</p>
+      </div>
+      <!------Ubicación y Contacto x Whatsapp ------>
+      <div class="location-nos">
+        <!--Ubiación -->
+        <a href="https://goo.gl/maps/Yk6Y1aR38ZW92o3M8" target="_blank">
+          <p class="iconmax-nos"><i class='bx bxs-map'></i>Pg. de Gràcia, 92, 08008 Barcelona,
+            España&nbsp&nbsp&nbsp&nbsp
+          </p>
+        </a>
+        <!--Whatsapp -->
+        <a href="https://wa.me/3455555555" target="_blank">
+          <p class="iconmax-nos"><i class='bx bxl-whatsapp'></i> (+34) 555 55 55 55</p>
+        </a>
+      </div>
+      <!--Newsletter -->
+      <form action="" class="newsletter-nos">
+        <div class="input-container">
+          <label for="email"></label>
+          <input type="email" placeholder="quiero@cafe.com" required="">
+          <button class="invite-btn" type="button">
+            Café!
+          </button>
         </div>
-      </section>
+        <h4 class="">Suscribite a nuestro&nbsp<b class="yellow"> Newsletter</b></h4>
+      </form>
+      <!------Copyright ------>
+      <div class="me-nos">
+        <a href="https://github.com/DowoDev" target="_blank" class="iconmin">Design by © <b class="yellow">DowoDev</b> ·
+          <b>2023</b></a>
+      </div>
     </footer>
+    <!-- ------------------Fin Footer--------------------- -->
+  </div>
 </body>
 
 </html>
