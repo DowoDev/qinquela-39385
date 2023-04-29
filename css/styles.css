@@ -873,6 +873,36 @@ header {
   border: 1px solid #232323ae;
   backdrop-filter: blur(5px); 
 }
+.line1{
+  display: block;
+  margin-bottom: 0.6em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border-color:#ededed8c;
+  backdrop-filter: blur(5px); 
+}
+.titulo_formulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFC500;
+  font-weight: 600;
+  font-size: 24px;
+
+}
+.line2{
+  display: block;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border-color:#ededed8c;
+  backdrop-filter: blur(5px);
+}
 
 .form_input {
   position: relative;
@@ -940,12 +970,16 @@ header {
 .gratarola:active {
   transform: scale(0.985);
   box-shadow: inset 2px 2px 3px #FFC50099, inset 2px 2px 3px #31303099;
+  
 }
 
 .register {
   color: #ffffff;
   text-align: center;
   margin: 25px 0 10px;
+  padding: 9px;
+  border-bottom: 1px solid #908e8eae;
+  border-top: 1px solid #908e8eae;
 }
 
 .register p {
