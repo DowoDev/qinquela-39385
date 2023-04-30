@@ -112,7 +112,9 @@ header {
   font-weight: 700;
   transition: 0.5s;
 }
-
+.nav__toggle {
+  display: none;
+}
 /*Links Navbar-----------------------------------------------------*/
 ul {
   margin-bottom: 0;
@@ -130,7 +132,30 @@ ul {
 .nav__lista li:hover {
   transform: translateY(5px);
 }
+nav .navbar-brand {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+nav .nav-list {
+  display: flex;
+}
+nav .nav-list .nav-item {
+  cursor: pointer;
+  height: 100%;
+  padding: 0 30px;
+  transition: .4s;
+}
+nav .nav-list .nav-item:hover {
+  background: #b69955;
+}
 
+nav .nav-list .nav-link {
+  color: #f1f1f1;
+  font-size: 18px;
+  font-weight: 500;
+}
 /*-----------------------------------------------------Main - Index-----------------------------------------------------*/
 .main {
   display: grid;
@@ -646,10 +671,6 @@ ul {
   transition: 0.5s;
   margin: 0;
 }
-.replace-text{
-  position: relative;
-  visibility: hidden;
-}
 
 /*Efecto Texto Mapa y Whatsapp on Hover*/
 .location-nos p:hover {
@@ -784,6 +805,11 @@ ul {
 }
 
 /*==================================GALERIA==========================================*/
+.galeria .nav__lista{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .main__gal {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
@@ -1047,7 +1073,8 @@ ul {
 /*-----------------------------------------------------Mediaqueries-----------------------------------------------------*/
 
 /* TODO: MEDIAQUERIES */
-@media (max-width: 1440px) {
+/*-------- 1440px---------*/
+@media screen and (max-width: 1440px) {
   .header {
     grid-template-columns: repeat(12, 1fr);
   }
@@ -1075,7 +1102,8 @@ ul {
   }
 }
 
-@media (max-width: 1024px) {
+/*-------- 1024px---------*/
+@media screen and (max-width: 1024px) {
   header {
     height: 120px;
   }
@@ -1202,17 +1230,88 @@ ul {
   }
 }
 
-@media (max-width: 768px) {
+/*-------- 768px---------*/
+@media screen and (max-width: 768px) {
   header {
     height: 90px;
   }
-
-  .nav {
-    grid-column: 4 / 13;
+  /*TODO:SEGUIR DESDE ACA; TEMA MENU HAMBURGUESA*/
+  .galeria .nav {
+     grid-column: 12 / 13;
   }
-  .nav__lista li {
-    padding-left: 9px;
-    font-size: 16.8px;
+  }
+  .nav__toggle-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .nav__toggle-label i {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  .nav__toggle:checked + .nav__lista {
+    display: block;
+  }
+  
+  .galeria .nav__lista {
+    display: none;
+    position: relative;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #333;
+    z-index: 1;
+  }
+  
+  .galeria .nav__lista li {
+    display: block;
+    border-top: 1px solid #444;
+  }
+  
+  .galeria .nav__lista li:first-child {
+    border-top: none;
+  }
+  
+  .galeria .nav__lista a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav__dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #333;
+    z-index: 1;
+  }
+  
+  .nav__dropdown li {
+    display: block;
+    border-top: 1px solid #444;
+  }
+  
+  .nav__dropdown li:first-child {
+    border-top: none;
+  }
+  
+  .nav__dropdown a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
   }
 
   .galeria {
@@ -1222,7 +1321,7 @@ ul {
   .logo {
     grid-column: 1 / 2;
     height: 4.93rem;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
   .logo img {
@@ -1246,35 +1345,17 @@ ul {
   }
 
   .footer__nos {
-    height: 60px;
+    height: 66px;
   }
 
   .location-nos {
-    grid-column: 2 / 9;
-  }
-  .reemplazo1{
-    position: relative;
-    visibility: hidden;
+    grid-column: 3 / 9;
+    align-content: center;
+    justify-content: center;
   }
 
-  .reemplazo1:after {
-    position: absolute;
-    content: "Ubicación";
-    visibility: visible;
-    left: 35px;
-    top: 10px;
-  }
-  .reemplazo2{
-    position: relative;
-    visibility: hidden;
-  }
-
-  .reemplazo2:after {
-    position: absolute;
-    content: "Whatsapp";
-    visibility: visible;
-    left: 35px;
-    top: 10px;
+  .location-nos p {
+    font-size: 13px;
   }
 
   .location-nos p:hover {
@@ -1282,73 +1363,40 @@ ul {
   }
 
   .iconmax-nos i {
-    font-size: 2.032rem;
-    visibility: visible;
-  }
-
-  .social-nos {
-    grid-column: 1 / 3;
+    font-size: 1.532rem;
+    
   }
 
   .footer-ico a {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.532rem;
+    height: 1.532rem;
     margin-right: 1rem;
-    font-size: 1.08rem;
-  }
-
-  .footer-ico a:nth-child(1) {
-    border: 1px solid #2754a7;
-    border-radius: 18px 18px 18px 5px;
-  }
-
-  .footer-ico a:nth-child(2) {
-    border: 1px solid #06a79f;
-    border-radius: 18px 18px 18px 5px;
-  }
-
-  .footer-ico a:nth-child(3) {
-    border: 1px solid #dd2a7b;
-    border-radius: 18px 18px 18px 5px;
-  }
-
-  .footer-ico a:nth-child(1):hover {
-    transform: translateY(-10px)
-  }
-
-  .footer-ico a:nth-child(2):hover {
-    transform: translateY(-10px)
-  }
-
-  .footer-ico a:nth-child(3):hover {
-    transform: translateY(-10px)
+    font-size: 1.35rem;
   }
 
   .newsletter-nos {
-    grid-column: 8 / 12;
+    grid-column: 7 / 12;
+    padding-left: 45px;
   }
 
   .input-container {
-    height: 2.1rem;
-    width: 82%;
+    width: 94%;
   }
 
+
   .newsletter-nos h4 {
-    left: 2px;
+    font-size: 0.685rem;
+    font-weight: 200;
   }
 
   .me-nos {
-    grid-column: 5 / 7;
-    font-size: 0.6rem;
+    grid-column: 1 / 3;
     font-weight: 100;
   }
-
+  
+  
 }
+
+
 
 /* FIXME: MEDIAQUERIES */
-
-/*
-.main__gal {
-  padding-bottom: 42px;
-}
-    */
