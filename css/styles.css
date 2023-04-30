@@ -1235,83 +1235,14 @@ nav .nav-list .nav-link {
   header {
     height: 90px;
   }
-  /*TODO:SEGUIR DESDE ACA; TEMA MENU HAMBURGUESA*/
-  .galeria .nav {
-     grid-column: 12 / 13;
+
+  .nav {
+    grid-column: 3 / 13;
   }
-  }
-  .nav__toggle-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .nav__toggle-label i {
-    font-size: 2.5rem;
-    color: #fff;
-  }
-  
-  .nav__toggle:checked + .nav__lista {
-    display: block;
-  }
-  
-  .galeria .nav__lista {
-    display: none;
-    position: relative;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    background-color: #333;
-    z-index: 1;
-  }
-  
-  .galeria .nav__lista li {
-    display: block;
-    border-top: 1px solid #444;
-  }
-  
-  .galeria .nav__lista li:first-child {
-    border-top: none;
-  }
-  
-  .galeria .nav__lista a {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .nav__dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    background-color: #333;
-    z-index: 1;
-  }
-  
-  .nav__dropdown li {
-    display: block;
-    border-top: 1px solid #444;
-  }
-  
-  .nav__dropdown li:first-child {
-    border-top: none;
-  }
-  
-  .nav__dropdown a {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
+
+  .nav__lista li {
+    padding-left: 9px;
+    font-size: 20px;
   }
 
   .galeria {
