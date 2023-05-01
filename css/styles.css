@@ -51,53 +51,85 @@ body {
   background-image: url('../assets/img/passion2.jpg');
 }
 
+
 /*-----------------------------------------------------Header - Incluye Navbar y Logo-----------------------------------------------------*/
 header {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  background: #242932;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+ 
   align-items: center;
+  justify-content: flex-end;
+  background: #242932;
   height: 160px;
+  width: 100%;
 
 }
 
-/*Logo Marca-----------------------------------------------------*/
-.logo {
-  grid-column: 2 / 3;
-  height: 8.75rem;
-  justify-self: center;
-  align-self: center;
+/* <== == == == == == == == == == == == == == == == ==>*/
+/*Para que no rompa el menu hamburguesa*/
+.toggle-menu img{
+  max-width: 100%;
 }
-
-.logo img {
-  height: 8.75rem;
-  transition: 0.5s;
+.toggle-menu{
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  width: 40px;
+  filter: invert(1);
+  z-index: 1;
 }
-
-/*Efecto sobre Logo Marca on Hover*/
-.logo img:hover {
-  transform: scale(1.02);
-  filter: drop-shadow(1px 2px 2px #ededed3b);
-  transition: 0.5s;
-}
+/*<== == == == == == == == == == == == == == == == ==>*/
 
 /*Navbar Completa-----------------------------------------------------*/
-.nav {
-  grid-column: 6 / 11;
+.main-menu {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background: #dd2a7b;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+.main-menu--show{
+  transform: translateY(0);
+}
+.toggle-menu__checkbox{
+  display: none;
+}
+.toggle-menu__checkbox:checked + .main-menu{
+  transform: translateY(0);
+}
+.main-menu__item {
+  padding: 0.5rem;
 }
 
+.main-menu__link {
+  color: #ededed;
+  text-decoration: none;
+}
+
+
 /*Estilo sobre Links de la Navbar*/
-.nav a {
+.main-nav a {
   background: -webkit-linear-gradient(#e3ffe7 0%, #d9e7ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
+  font-size: 30px;
   text-decoration: none;
   list-style: none;
 }
 
 /*Efecto sobre Links de la Navbar on Hover*/
-.nav a:hover {
+.main-nav a:hover {
   background-color: #fe59a8;
   background-image: linear-gradient(90deg, #dc3c86 51%, #fe59a8 100%);
   font-weight: 700;
@@ -105,14 +137,14 @@ header {
 }
 
 /*Estilo Página Activa*/
-.nav a.nav__lista--active {
+.main-nav a.active {
   background: -webkit-linear-gradient(#F7971E 0%, #FFD200 51%, #F7971E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
   transition: 0.5s;
 }
-.nav__toggle {
+.toggle-menu-checkbox {
   display: none;
 }
 /*Links Navbar-----------------------------------------------------*/
@@ -121,15 +153,14 @@ ul {
   padding-left: 0;
 }
 
-.nav__lista li {
+.main-menu li {
   display: inline-block;
   padding-left: 12px;
-  font-size: 30px;
   transition: 0.5s;
 }
 
 /*Efecto sobre Links Navbar on Hover*/
-.nav__lista li:hover {
+.main-menu li:hover {
   transform: translateY(5px);
 }
 nav .navbar-brand {
@@ -156,6 +187,27 @@ nav .nav-list .nav-link {
   font-size: 18px;
   font-weight: 500;
 }
+/*Logo Marca-----------------------------------------------------*/
+.logo {
+  position: absolute;
+  padding: 10px 0 10px 180px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.logo img {
+  height: 8.75rem;
+  transition: all 0.5s;
+}
+
+/*Efecto sobre Logo Marca on Hover*/
+.logo img:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(1px 2px 2px #ededed3b);
+  transition: all 0.5s;
+}
+
+
 /*-----------------------------------------------------Main - Index-----------------------------------------------------*/
 .main {
   display: grid;
@@ -805,7 +857,7 @@ nav .nav-list .nav-link {
 }
 
 /*==================================GALERIA==========================================*/
-.galeria .nav__lista{
+.galeria .nav-menu{
   display: flex;
   justify-content: flex-end;
 }
@@ -868,16 +920,12 @@ nav .nav-list .nav-link {
     grid-template-columns: repeat(12, 1fr);
   }
 
-  .nav {
-    grid-column: 5 / 12;
-
-  }
 
   ul {
     margin-bottom: 0;
   }
 
-  .nav__lista li {
+  .nav-menu li {
     font-size: 28px;
 
   }
@@ -1070,35 +1118,38 @@ nav .nav-list .nav-link {
 }
 
 
-/*-----------------------------------------------------Mediaqueries-----------------------------------------------------*/
+/*<== == == == == == == == == == == == == == == == Mediaqueries == == == == == == == == == == == == == == == ==>*/
 
-/* TODO: MEDIAQUERIES */
+
 /*-------- 1440px---------*/
 @media screen and (max-width: 1440px) {
   .header {
     grid-template-columns: repeat(12, 1fr);
   }
-
-  .nav {
-    grid-column: 5 / 12;
-
+  .main-menu {
+    padding-right: 180px;
+    transition: all 0.5s;
   }
-
-  ul {
-    margin-bottom: 0;
+  .logo{
+    padding: 10px 0 10px 130px;
+    transition: all 0.5s;
   }
-
-  .nav__lista li {
-    font-size: 28px;
-
-  }
-
+  
   .location-nos {
     grid-column: 4 / 8;
+    transition: all 0.5s;
   }
 
   .social-nos {
     grid-column: 1 / 4;
+    transition: all 0.5s;
+  }
+}
+/*-------- 1366px---------*/
+@media screen and (max-width: 1366px) {
+  .main-menu a {
+    font-size: 28px;
+    transition: all 0.5s;
   }
 }
 
@@ -1106,74 +1157,83 @@ nav .nav-list .nav-link {
 @media screen and (max-width: 1024px) {
   header {
     height: 120px;
-  }
-
-  .nav {
-    grid-column: 5 / 13;
+    transition: all 0.5s;
   }
 
   .galeria {
     grid-template-rows: 120px 1fr 75px;
+    transition: all 0.5s;
   }
 
   .logo {
-    grid-column: 1 / 2;
-    height: 6.563rem;
     padding-left: 5px;
+    transition: all 0.5s;
   }
 
   .logo img {
     height: 6.563rem;
+    transition: all 0.5s;
   }
 
-  .nav__lista li {
+  .nav-menu li {
     padding-left: 9px;
     font-size: 21px;
+    transition: all 0.5s;
   }
 
   .main__gal {
     padding-bottom: 0px;
+    transition: all 0.5s;
   }
 
   .main__titulo--gal h3 {
     font-size: 2.75rem;
     height: 84.25px;
     padding-top: 25px;
+    transition: all 0.5s;
   }
 
   .gal {
     grid-template-columns: repeat(3, minmax(240px, 1fr));
     gap: 18px;
+    transition: all 0.5s;
   }
 
   .grupo-gal {
     grid-column: 1 / 12;
     padding: 18.75px 18.75px 15px 18.75px;
     margin: 20px;
+    transition: all 0.5s;
   }
 
   .footer__nos {
     height: 75px;
+    transition: all 0.5s;
   }
 
   .location-nos {
     grid-column: 3 / 8;
+    transition: all 0.5s;
   }
 
   .location-nos p {
     font-size: 0.75rem;
+    transition: all 0.5s;
   }
 
   .location-nos p:hover {
     transform: translateY(-5px);
+    transition: all 0.5s;
   }
 
   .iconmax-nos i {
     font-size: 2.063rem;
+    transition: all 0.5s;
   }
 
   .social-nos {
     grid-column: 1 / 3;
+    transition: all 0.5s;
   }
 
   .footer-ico a {
@@ -1181,21 +1241,25 @@ nav .nav-list .nav-link {
     height: 1.875rem;
     margin-right: 1.25rem;
     font-size: 1.35rem;
+    transition: all 0.5s;
   }
 
   .footer-ico a:nth-child(1) {
     border: 1px solid #2754a7;
     border-radius: 18px 18px 18px 5px;
+    transition: all 0.5s;
   }
 
   .footer-ico a:nth-child(2) {
     border: 1px solid #06a79f;
     border-radius: 18px 18px 18px 5px;
+    transition: all 0.5s;
   }
 
   .footer-ico a:nth-child(3) {
     border: 1px solid #dd2a7b;
     border-radius: 18px 18px 18px 5px;
+    transition: all 0.5s;
   }
 
   .footer-ico a:nth-child(1):hover {
@@ -1212,21 +1276,25 @@ nav .nav-list .nav-link {
 
   .newsletter-nos {
     grid-column: 8 / 12;
+    transition: all 0.5s;
   }
 
   .input-container {
     height: 2.1rem;
     width: 82%;
+    transition: all 0.5s;
   }
 
   .newsletter-nos h4 {
     left: 2px;
+    transition: all 0.5s;
   }
 
   .me-nos {
     grid-column: 5 / 7;
     font-size: 0.6rem;
     font-weight: 100;
+    transition: all 0.5s;
   }
 }
 
@@ -1234,59 +1302,64 @@ nav .nav-list .nav-link {
 @media screen and (max-width: 768px) {
   header {
     height: 90px;
+    transition: all 0.5s;
   }
 
-  .nav {
-    grid-column: 3 / 13;
-  }
-
-  .nav__lista li {
+  .nav-menu li {
     padding-left: 9px;
     font-size: 20px;
+    transition: all 0.5s;
   }
 
   .galeria {
     grid-template-rows: 90px 1fr 60px;
+    transition: all 0.5s;
   }
 
   .logo {
-    grid-column: 1 / 2;
-    height: 4.93rem;
     padding-left: 20px;
+    transition: all 0.5s;
   }
 
   .logo img {
     height: 4.93rem;
+    transition: all 0.5s;
   }
 
   .main__titulo--gal h3 {
     font-size: 2.06rem;
     height: 63px;
+    transition: all 0.5s;
   }
 
   .gal {
     grid-template-columns: repeat(2, minmax(220px, 1fr));
     gap: 14.4px;
+    transition: all 0.5s;
   }
 
   .grupo-gal {
     padding: 15px 15px 12px 15px;
     border-radius: 8px;
     margin: 16px;
+    transition: all 0.5s;
   }
 
   .footer__nos {
     height: 66px;
+    transition: all 0.5s;
   }
 
   .location-nos {
     grid-column: 3 / 9;
     align-content: center;
     justify-content: center;
+    transition: all 0.5s;
   }
 
   .location-nos p {
     font-size: 13px;
+    transition: all 0.5s;
   }
 
   .location-nos p:hover {
@@ -1295,6 +1368,7 @@ nav .nav-list .nav-link {
 
   .iconmax-nos i {
     font-size: 1.532rem;
+    transition: all 0.5s;
     
   }
 
@@ -1303,31 +1377,55 @@ nav .nav-list .nav-link {
     height: 1.532rem;
     margin-right: 1rem;
     font-size: 1.35rem;
+    transition: all 0.5s;
   }
 
   .newsletter-nos {
     grid-column: 7 / 12;
     padding-left: 45px;
+    transition: all 0.5s;
   }
 
   .input-container {
     width: 94%;
+    transition: all 0.5s;
   }
 
 
   .newsletter-nos h4 {
     font-size: 0.685rem;
     font-weight: 200;
+    transition: all 0.5s;
   }
 
   .me-nos {
     grid-column: 1 / 3;
     font-weight: 100;
+    transition: all 0.5s;
   }
   
   
 }
 
 
+/*-------------NAVBAR ONLY-------------*/
 
-/* FIXME: MEDIAQUERIES */
+
+@media screen and (min-width: 426px) {
+  .main-menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    transform: translateY(0);
+    background: transparent;
+    height: 160px;
+    padding-right: 160px;
+    transition: all 0.5s;
+  }
+  .toggle-menu{
+    display: none;
+  }
+}
+
+
+
+

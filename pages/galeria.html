@@ -38,13 +38,19 @@
           <img src="../assets/logos/qinquela_blanco.png" alt="logo">
         </a>
       </div>
-      <nav class="nav">
-        <ul class="nav__lista">
-          <li><a href="../index.html" class="">INICIO</a></li>
-          <li><a href="./nosotros.html" class="">NOSOTROS</a></li>
-          <li><a href="./productos.html" class="">PRODUCTOS</></li>
-          <li><a href="#" class="nav__lista--active active">GALERIA</a></li>
-          <li><a href="./contacto.html" class="">CONTACTO</a></li>
+      <nav class="main-nav">
+        <div id="toggle-menu" class="toggle-menu">
+          <label for="toggle-menu-checkbox">
+           <img src="../assets/logos/menu-regular-24.png" alt="">
+          </label>
+        </div>
+        <input type="checkbox" class="toggle-menu__checkbox" name="" id="toggle-menu-checkbox">
+        <ul id="main-menu" class="main-menu">
+          <li class="main-menu__item"><a href="#" class="main-menu__link">INICIO</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">NOSOTROS</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">PRODUCTOS</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link active">GALERIA</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">CONTACTO</a></li>
         </ul>
       </nav>
     </header>
