@@ -87,12 +87,7 @@ header {
    filter: drop-shadow(1px 2px 2px #ededed3b);
    transition: all 0.5s;
  }
-/*Efecto sobre Logo Marca on Hover*/
-.logo img:hover {
-  transform: scale(1.02);
-  filter: drop-shadow(1px 2px 2px #ededed3b);
-  transition: all 0.5s;
-}
+
 
 /*Barra de Navegación-----------------------------------------------------*/
 .navigation {
@@ -1125,6 +1120,437 @@ ul {
   border: 1px solid #ffc4005e;
 }
 
+.nosotros-bt{
+  background-color: #12151B;
+  width: 100%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-decoration: none;
+  list-style: none;
+
+  background-image: url('../assets/img/background-nos2.jpg');
+}
+.header-bt{
+  background:#242932;
+  height: 174px;
+}
+.navbar-collapse {
+  background:#242932;
+}
+
+.logo-bt a img {
+  
+  height: 8.75rem;
+  transition: all 0.5s;
+  
+}
+
+/*Efecto sobre Logo Marca on Hover*/
+.logo-bt img:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(1px 2px 2px #ededed3b);
+  transition: all 0.5s;
+}
+ #navbarNav li {
+  display: inline-block;
+  list-style: none;
+  transition: 0.5s;
+  
+}
+.nav-link a.active{
+  color: #fcc500;
+  transition: all 0.5s;
+}
+#navbarNav li a {
+  text-decoration: none;
+  color: #ededed;
+  display: block;
+  padding: 60px 40px 60px 25px;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  transition: all 0.2s;
+}
+/*Estilo sobre Links de la Navbar*/
+.navbar-nav{
+  
+}
+.navbar a {
+  background: -webkit-linear-gradient(#e3ffe7 0%, #d9e7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.5s;
+}
+
+/*Efecto sobre Links de la Navbar on Hover*/
+.navbar a:hover {
+  background-color: #fe59a8;
+  background-image: linear-gradient(90deg, #dc3c86 51%, #fe59a8 100%);
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+/*Estilo Página Activa*/
+.navbar a.active {
+  background: -webkit-linear-gradient(#F7971E 0%, #FFD200 51%, #F7971E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  transition: 0.5s;
+}
+/*Efecto sobre Links Navbar on Hover*/
+.navbar-nav li:hover {
+  transform: translateY(5px);
+} 
+.main__titulo--nos-bt {
+  padding: 10px 0 0 349px;
+}
+.main__titulo--nos-bt h3 {
+  font-weight: 700;
+  font-size: 3.4rem;
+  -webkit-text-stroke: 1px #00000032;
+  transition: all 0.5s;
+}
+.yellow {
+  color: #FFC500;
+  font-weight: 800;
+  transition: all 0.5s;
+}
+.main__texto-bt {
+  padding: 20px 0 10px 190px;
+  font-size: 1.4rem;
+}
+/*Imagenes Grandes Nosotros------------------------------*/
+
+.tarjeta-box-bt {
+  background-color: #ededed0c;
+  padding: 15px 15px 15px 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+  margin-bottom: 20px;
+}
+
+.team-bt {
+  justify-self: center;
+  padding-top: 18px;
+}
+
+.tarjeta-bt {
+  width: 500px;
+  height: 250px;
+  width: 100%;
+  border: 1.25rem solid rgb(255, 255, 255 / 15%);
+  z-index: 1;
+}
+
+.tarjeta-bt::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #e5e5e5;
+  opacity: 0;
+  transition: .5s ease all;
+}
+
+.tarjeta-bt img {
+  width: 500px;
+  height: 235px;
+  border-radius: 10px;
+  transition: 0.8s;
+  transition: 0.8s ease all;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tarjeta-bt img:hover {
+  transform: scale(1.05);
+  transition: 0.8s;
+}
+
+/*----------------------Footer-----------------------------*/
+.footer__nos-bt{
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #232323b0;
+  border: 1px solid #232323ae;
+  backdrop-filter: blur(5px);
+}
+.footer-ico-bt a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 3rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.footer-ico-bt a:nth-child(1) {
+  background: -webkit-linear-gradient(#0083b0 0%, #2754a7 51%, #08769b 100%);
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: #ededed;
+  border: 2px solid #2754a7;
+  border-radius: 18px 18px 18px 5px;
+  filter: drop-shadow(1px 1px 1px #2754a7);
+
+}
+
+/*Efecto Icono Social 1 on Hover*/
+.footer-ico-bt a:nth-child(1):hover {
+  transform: translateY(-10px)
+}
+
+/*Icono Social 2------------------------------*/
+.footer-ico-bt a:nth-child(2) {
+  background: -webkit-linear-gradient(#55acee 0%, #06beb6 51%, #48b1bf 100%);
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: #ededed;
+  border: 2px solid #06a79f;
+  border-radius: 18px 18px 18px 5px;
+  filter: drop-shadow(1px 1px 1px #2754a7);
+}
+
+/*Efecto Icono Social 2 on Hover*/
+.footer-ico-bt a:nth-child(2):hover {
+  transform: translateY(-10px)
+}
+
+/*Icono Social 3------------------------------*/
+.footer-ico-bt a:nth-child(3) {
+  background: -webkit-linear-gradient(#dd2a7b 0%, #f953c6 51%, #b91d73 100%);
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: #ededed;
+  border: 2px solid #dd2a7b;
+  border-radius: 18px 18px 18px 5px;
+  filter: drop-shadow(1px 2px 2px #980245);
+}
+
+/*Efecto Icono Social 3 on Hover*/
+.footer-ico-bt a:nth-child(3):hover {
+  transform: translateY(-10px)
+}
+.social-nos-bt {
+  margin: 20px;
+  align-self: center;
+  justify-self: center;
+}
+.location-nos-bt {
+  margin: 20px;
+  align-self: center;
+  justify-self: center;
+  transition: 0.5s;
+}
+
+.iconmax-nos-bt {
+
+  display: inline-block;
+  transition: 0.5s;
+  color: #ededed;
+}
+
+.iconmax-nos-bt i {
+  font-size: 2.5rem;
+}
+/*Icono Mapa (Google Maps)------------------------------*/
+.bxs-map {
+  background: -webkit-linear-gradient(#F7971E 0%, #FFD200 51%, #F7971E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(1px 2px 2px #F7971E);
+}
+
+/*Icono Whatsapp------------------------------*/
+.bxl-whatsapp {
+  background: -webkit-linear-gradient(#25d366 0%, #086b51 51%, #096232 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(1px 2px 2px #096232);
+}
+.location-nos-bt p {
+  font-size: 0.938rem;
+  transition: 0.5s;
+  margin: 0;
+}
+
+/*Efecto Texto Mapa y Whatsapp on Hover*/
+.location-nos-bt p:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+/*---------------Newsletter--------------*/
+.newsletter-nos-bt {
+  padding-top: 13px;
+  margin: 20px;
+  align-self: center;
+  justify-self: center;
+
+}
+
+.newsletter-nos-bt h4 {
+  position: relative;
+  display: flex;
+  font-size: 0.785rem;
+  font-weight: 300;
+  left: 10px;
+}
+
+.input-container-bt {
+  position: relative;
+  display: flex;
+  height: 2.8rem;
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+  background-color: #ffffff1a;
+  border-radius: 8px;
+  box-shadow: 20px 20px 30px #0000000d;
+  background: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.input-container-bt input {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #b0bec5;
+  background-color: transparent;
+  padding: 0.625rem 70px 0.625rem 0.75rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #455a64;
+  outline: none;
+  transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container-bt input:focus {
+  border: 1px solid #ec4899;
+  color: #ffffff;
+}
+
+.invite-btn-bt {
+  position: absolute;
+  width: 75px;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  z-index: 10;
+  border-radius: 4px;
+  background-color: #fe59a8;
+  color: #081b29;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  transition: .6s ease;
+}
+
+.input-container-bt input:placeholder-shown~.invite-btn-bt {
+  pointer-events: none;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.invite-btn-bt:active {
+  transform: scale(0.985);
+  transition: 0.15s;
+  box-shadow: inset 2px 2px 5px 1px #31303099;
+}
+/* ----------------COPYRIGHT------------------- */
+.me-nos-bt {
+  align-self: flex-end;
+  font-size: 0.8rem;
+  
+}
+
+.me-nos-bt a {
+  text-decoration: none;
+  color: #ededed;
+}
+/* ------------------MEDIAQUERIES BOOTSTRAP------------------- */
+@media screen and (max-width: 1300px){
+  #navbarNav li a {
+    font-size: 1.563rem;
+    padding-left: 2px;
+  }
+
+} 
+@media screen and (max-width: 1100px){
+  #navbarNav li a {
+    font-size: 1.35rem;
+    padding-left: 1px;
+  }
+
+} 
+@media screen and (max-width:375px){
+  .main__titulo--nos-bt h3 {
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: all 0.5s;
+  }
+  
+}
+@media screen and (max-width: 320px) {
+  .header-bt{
+    height: 7.0rem;
+  }
+  .logo-bt a img {
+    height: 5.75rem;
+    transition: all 0.5s;
+    
+  }
+  .main__titulo--nos-bt {
+    padding: 28px 0 0 50px;
+    transition: all 0.5s;
+  }
+  .main__titulo--nos-bt h3 {
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: all 0.5s;
+  }
+  .main__texto-bt {
+    margin: 5px 10px 5px 10px;
+    text-align: justify;
+    padding: 0 21px 0 0;
+    font-size: 0.59rem;
+    transition: all 0.5s;
+  }
+  .tarjeta-box-bt {
+    padding: 15px 15px 10px 15px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+  }
+  .tarjeta-bt {
+    height: 110px;
+    width: 100%;
+    transition: all 0.5s;
+ }
+  .tarjeta-bt img {
+    height: 100px;
+    width: 100%;
+    transition: all 0.5s;
+  }
+}
+  
+
 
 /*<== == == == == == == == == == == == == == == == Mediaqueries == == == == == == == == == == == == == == == ==>*/
 /* <== 1440px ==>*/
@@ -1456,6 +1882,21 @@ ul {
     font-size: 2.6rem;
     padding-top: 30px;
     height: 137px;
+    transition: all 0.5s;
+  }
+}
+/* <== 747 px ==>*/
+@media screen and (max-width: 747px){
+  .main__titulo--gal h3 {
+    font-size: 2rem;
+    transition: all 0.5s;
+  }
+}
+/* <== 575 px ==>*/
+@media screen and (max-width: 575px){
+  .main__titulo--gal h3 {
+    font-size: 1.5rem;
+    height: 90px;
     transition: all 0.5s;
   }
 }
