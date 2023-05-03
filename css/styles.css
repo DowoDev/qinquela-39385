@@ -1485,17 +1485,63 @@ ul {
   color: #ededed;
 }
 /* ------------------MEDIAQUERIES BOOTSTRAP------------------- */
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1400px){
   #navbarNav li a {
     font-size: 1.563rem;
     padding-left: 2px;
   }
+  .main__titulo--nos-bt {
+    padding: 10px 0 0 299px;
+  }
+
+  
 
 } 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1024px){
   #navbarNav li a {
     font-size: 1.35rem;
     padding-left: 1px;
+  }
+  .col-lg-8 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .main__titulo--nos-bt {
+    padding: 10px 0 0 200px;
+  }
+  .main__titulo--nos-bt h3 {
+    font-size: 3rem;
+    transition: all 0.5s;
+  }
+  .main__texto-bt {
+    margin: 5px 10px 0 5px;
+    text-align: justify;
+    padding: 0 40px 0 40px;
+    font-size: 1.125rem;
+    transition: all 0.5s;
+  }
+  .footer__nos-bt{
+    bottom: 0;
+    width: 100%;
+    height: 184px;
+  }
+  .input-container-bt {
+    position: relative;
+    display: flex;
+    height: 2.8rem;
+    min-width: 284px;
+    max-width: 284px;
+    }
+  
+  .input-container-bt input {
+    font-size: 0.875rem;
+    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+ 
+  .invite-btn-bt:active {
+    transform: scale(0.985);
+    transition: 0.15s;
+    box-shadow: inset 2px 2px 5px 1px #31303099;
   }
 
 } 
@@ -1524,7 +1570,7 @@ ul {
   .footer__nos-bt{
     bottom: 0;
     width: 100%;
-    height: 276px;
+    height: 230px;
   }
   .footer-ico-bt a {
     justify-content: center;
@@ -1536,6 +1582,40 @@ ul {
   }
   .iconmax-nos-bt i {
     font-size: 1.5rem;
+  }
+  
+  .newsletter-nos-bt {
+    margin: 0 0 0 5px;
+    align-self: center;
+    justify-self: center;
+  
+  }
+  
+  .newsletter-nos-bt h4 {
+    position: relative;
+    display: flex;
+    font-size: 0.785rem;
+    font-weight: 100;
+    left: 10px;
+  }
+  
+  .input-container-bt {
+    position: relative;
+    display: flex;
+    height: 2.8rem;
+    min-width: 284px;
+    max-width: 284px;
+    }
+  
+  .input-container-bt input {
+    font-size: 0.875rem;
+    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+ 
+  .invite-btn-bt:active {
+    transform: scale(0.985);
+    transition: 0.15s;
+    box-shadow: inset 2px 2px 5px 1px #31303099;
   }
 }
 @media screen and (max-width:425px){
