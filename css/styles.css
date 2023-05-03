@@ -1119,7 +1119,7 @@ ul {
   background-color: #a3a3a349;
   border: 1px solid #ffc4005e;
 }
-
+/* --------------------------NOSOTROS BOOTSTRAP-------------------------------- */
 .nosotros-bt{
   background-color: #12151B;
   width: 100%;
@@ -1142,7 +1142,6 @@ ul {
 }
 
 .logo-bt a img {
-  
   height: 8.75rem;
   transition: all 0.5s;
   
@@ -1353,8 +1352,8 @@ ul {
   transition: 0.5s;
 }
 
-.iconmax-nos-bt {
 
+.iconmax-nos-bt {
   display: inline-block;
   transition: 0.5s;
   color: #ededed;
@@ -1500,37 +1499,118 @@ ul {
   }
 
 } 
-@media screen and (max-width:375px){
+@media screen and (max-width: 768px) {
+  .header-bt{
+    width: 100%;
+    height: 9.0rem;
+    justify-content: ;
+    padding: 0 0 0 0;
+  }
+  .main__titulo--nos-bt {
+    padding: 10px 0 0 50px;
+  }
+
   .main__titulo--nos-bt h3 {
-    font-weight: 700;
+    font-size: 3rem;
+    transition: all 0.5s;
+  }
+  .main__texto-bt {
+    margin: 5px 10px 0 5px;
+    text-align: justify;
+    padding: 0 40px 0 40px;
     font-size: 1.125rem;
+    transition: all 0.5s;
+  }
+  .footer__nos-bt{
+    bottom: 0;
+    width: 100%;
+    height: 276px;
+  }
+  .footer-ico-bt a {
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2.2rem;
+    transition: 0.5s;
+  }
+  .iconmax-nos-bt i {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width:425px){
+  .header-bt{
+    width: auto;
+    height: 9.0rem;
+    justify-content: ;
+    padding: 0 0 0 0;
+  }
+  .logo-bt a img {
+    height: 7.95rem;
     transition: all 0.5s;
   }
   
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width:425px){
   .header-bt{
-    height: 7.0rem;
+    width: auto;
+    height: 9.0rem;
+    justify-content: ;
+    padding: 0 0 0 0;
   }
   .logo-bt a img {
-    height: 5.75rem;
+    height: 7.95rem;
     transition: all 0.5s;
-    
   }
   .main__titulo--nos-bt {
-    padding: 28px 0 0 50px;
+    padding: 28px 0 0 39px;
     transition: all 0.5s;
   }
   .main__titulo--nos-bt h3 {
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 1.90rem;
     transition: all 0.5s;
   }
   .main__texto-bt {
-    margin: 5px 10px 5px 10px;
+    margin: 5px 10px 0 10px;
     text-align: justify;
     padding: 0 21px 0 0;
-    font-size: 0.59rem;
+    font-size: 0.925rem;
+    transition: all 0.5s;
+  }
+  .footer__nos-bt{
+    bottom: 0;
+    width: 100%;
+    height: 353px;
+  }
+  
+
+}
+@media screen and (max-width:375px){
+  .header-bt{
+    width: auto;
+    height: 8rem;
+    justify-content: ;
+    padding: 0 0 0 0;
+  }
+  .logo-bt a img {
+    height: 5.95rem;
+    transition: all 0.5s;
+    
+  }
+  .main__titulo--nos-bt {
+    padding: 28px 0 0 76px;
+    transition: all 0.5s;
+  }
+  .main__titulo--nos-bt h3 {
+    font-size: 1.25rem;
+    transition: all 0.5s;
+  }
+  .main__texto-bt {
+    margin: 5px 10px 0 10px;
+    text-align: justify;
+    padding: 0 21px 0 0;
+    font-size: 0.625rem;
     transition: all 0.5s;
   }
   .tarjeta-box-bt {
@@ -1548,8 +1628,99 @@ ul {
     width: 100%;
     transition: all 0.5s;
   }
-}
+  .footer__nos-bt{
+    bottom: 0;
+    width: 100%;
+    height: 276px;
+  }
+  .footer-ico-bt a {
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2.2rem;
+    transition: 0.5s;
+  }
+  .iconmax-nos-bt i {
+    font-size: 1.5rem;
+  }
+  .location-nos-bt {
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+    
+  }
+  .location-nos-bt p {
+    font-size: 0.638rem;
+    transition: 0.5s;
+  }
+
+  .newsletter-nos-bt {
+    margin: 0 0 0 5px;
+    align-self: center;
+    justify-self: center;
   
+  }
+  
+  .newsletter-nos-bt h4 {
+    position: relative;
+    display: flex;
+    font-size: 0.785rem;
+    font-weight: 100;
+    left: 10px;
+  }
+  
+  .input-container-bt {
+    position: relative;
+    display: flex;
+    height: 2.8rem;
+    min-width: 200px;
+    max-width: 250px;
+    }
+  
+  .input-container-bt input {
+    font-size: 0.875rem;
+    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+ 
+  .invite-btn-bt:active {
+    transform: scale(0.985);
+    transition: 0.15s;
+    box-shadow: inset 2px 2px 5px 1px #31303099;
+  }
+  .me-nos-bt {
+    align-self: center;
+    font-size: 0.6rem;
+    
+  }
+}
+@media screen and (max-width: 320px) {
+  .header-bt{
+    width: auto;
+    height: 6.95rem;
+    justify-content: ;
+    padding: 0 0 0 0;
+  }
+  .logo-bt a img {
+    height: 5.95rem;
+    transition: all 0.5s;
+    
+  }
+  .main__titulo--nos-bt {
+    padding: 28px 0 0 50px;
+    transition: all 0.5s;
+  }
+ 
+
+  .footer__nos-bt{
+    bottom: 0;
+    width: 100%;
+    height: 276px;
+  }
+
+}
+
 
 
 /*<== == == == == == == == == == == == == == == == Mediaqueries == == == == == == == == == == == == == == == ==>*/
