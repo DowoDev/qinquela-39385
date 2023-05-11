@@ -1,0 +1,8 @@
+.vscode/
+backup/
+/css/styles_original.css
+node_modules/
+package.json
+package-lock.json
+
+

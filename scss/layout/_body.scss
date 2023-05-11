@@ -1,0 +1,37 @@
+body {
+  background: $background-body;
+  color: $font-color-main;
+  font-family: 'Poppins', sans-serif;
+}
+.index,.nosotros,.productos,.galeria,.contacto {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 85px 1fr 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-decoration: none;
+  list-style: none;
+}
+.index{
+  background-image: $background-index-productos;
+}
+
+.nosotros {
+  background-image: $background-nosotros;
+}
+
+.productos {
+  background-image: $background-index-productos;
+}
+
+.galeria {
+  background-image: $background-galeria;
+}
+
+.contacto {
+  background-image: $background-contacto;
+}

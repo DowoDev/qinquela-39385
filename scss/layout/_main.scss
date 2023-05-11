@@ -1,0 +1,168 @@
+.main-index{
+ 
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, 249px);
+  
+    .main__titulo {
+      grid-column: 2 / 8;
+      grid-row: 1 / 2;
+      align-self: center;
+      justify-self: center;
+      transition: all 0.5s;
+  
+      .yellow-strong {
+        color: $yellow;
+        font-weight: 800;
+        transition: all 0.5s;
+      }
+  
+      h3 {
+        font-weight: 700;
+        font-size: 3.25rem;
+        -webkit-text-stroke: 1px #00000032;
+        transition: all 0.5s;
+      }
+    }
+  
+    .main__presentacion {
+      grid-column: 2 / 8;
+      grid-row: 2 / 3;
+      align-self: center;
+      justify-self: center;
+      padding: 20px;
+      font-size: 1.4rem;
+      -webkit-text-stroke: 1px #0000001c;
+      
+      p {
+        background-image: linear-gradient(140deg, $font-color-main 35%, #d3d3d3 37%,#000000 55%,  #d3d3d3 65%,#ededed 100%);
+        color: #00000000;
+        -webkit-background-clip: text;
+        background-clip: text;
+        position: static;
+      }
+      .yellow {
+        color: $yellow;
+        -webkit-text-stroke: 0px #0000001c;
+      }
+      
+    }
+  
+    .hero {
+      grid-column: 8 / 12;
+      grid-row: 1/4;
+  
+      .cup {
+        display: grid;
+        grid-template-columns: repeat(3, 174px);
+        grid-template-rows: repeat(3, 249px);
+        align-items: center;
+        justify-content: center;
+        position: static;
+  
+        img {
+          grid-column: 1 / 3;
+          grid-row: 1/4;
+          align-self: center;
+          justify-self: center;
+          width: 400px;
+          transition: 0.5s;
+          position: static;
+        }
+  
+        :hover {
+          transform: scale(1.05);
+          transition: 0.5s;
+        }
+      }
+    }
+  
+    .main__botones {
+      grid-column: 2 / 5;
+      grid-row: 3 / 4;
+      position: relative;
+      display: inline-flex;
+      height: 150px;
+      width: 100%;
+      padding: 45px;
+  
+      a {
+        display: inline-flex;
+        width: 13.125rem;
+        height: 3.75rem;
+        
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        
+        transition: 0.5s;
+  
+        &:active {
+          transform: scale(0.985);
+          transition: 0.15s;
+          box-shadow: inset 2px 2px 5px 1px #31303099;
+        }
+      }
+    }
+  
+    .boton1 {
+      background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB 51%, #403B4A 100%);
+      margin: 10px;
+      padding: 15px 45px;
+      text-align: center;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: $font-color-main-variant;
+      // border: 1px solid #ededed31;
+      border-radius: 0.4rem;
+      display: block;
+      backdrop-filter: blur(5px);
+  
+      &:hover {
+        background-position: right center;
+        color: #ededed2d;
+        text-decoration: none;
+      }
+    }
+  
+    .boton2 {
+      background-image: linear-gradient(to right, #403b4a3f 0%, #E7E9BB3f 51%, #403B4A3f 100%);
+      margin: 10px;
+      padding: 15px 45px;
+      text-align: center;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: $font-color-main-variant;
+      // border: 1px solid #ededed31;
+      border-radius: 0.4rem;
+      display: block;
+      backdrop-filter: blur(5px);
+  
+      &:hover {
+        background-position: right center;
+        color: #ededed2d;
+        text-decoration: none;
+      }
+    }
+  
+    .gradient-text1 {
+      background: -webkit-linear-gradient(#000000, #434343);
+      background-clip: text;
+      font-size: 1.6rem;
+      font-weight: 700;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    .gradient-text2 {
+      background: -webkit-linear-gradient(#ececec, #b9b9b9);
+      // -webkit-text-stroke: 1px #00000000;
+      background-clip: text;
+      font-size: 1.6rem;
+      font-weight: 700;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+}

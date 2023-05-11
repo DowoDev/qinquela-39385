@@ -26,168 +26,99 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <!-- CSS Styles -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
-
 <body>
-
-  <div class="nosotros-bt row">
-    <div class="container-fluid ">
-      <!-- ------------------Comienzo Header--------------------- -->
-      <header class="header-bt row">
-        <div class="col-5 col-sm-3 col-md-3 col-lg-3 ">
-          <div class="logo-bt ">
-            <a href="#">
-              <img src="../assets/logos/qinquela_blanco.png" class="img-fluid" alt="logo">
-            </a>
+  <div class="nosotros">
+    <header class="header">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="../assets/logos/cup_logo.png" alt="logo">
+        </a>
+        <p class="marca">Q I N Q E L A &nbsp<b>|&nbspCoffeeShop</b></p>
+      </div>
+      <nav class="navigation">
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="checkbtn">
+          <i class='bx bx-menu'></i>
+        </label>
+        <ul class="menu">
+          <li class="main-menu__item"><a href="../index.html" class="main-menu__link">INICIO</a></li>
+          <li class="main-menu__item"><a href="#" class="active main-menu__link">NOSOTROS</a></li>
+          <li class="main-menu__item"><a href="./productos.html" class="main-menu__link">PRODUCTOS</a></li>
+          <li class="main-menu__item"><a href="./galeria.html" class="main-menu__link">GALERIA</a></li>
+          <li class="main-menu__item"><a href="./contacto.html" class="main-menu__link">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main__nos">
+      <div class="main__titulo--nos">
+        <h3>Este es nuestro <strong class="yellow">Equipo.</strong></h3>
+      </div>
+      <div class="main__texto">
+        <p><b class="yellow">QINQELA CoffeeShop</b> tiene un equipo de expertos, con una pasión compartida por crear el
+          café perfecto, habiendo perfeccionado nuestro arte para ofrecerte el mejor producto posible.<br><br>
+          Nuestra inquietud por la excelencia y la atención a los detalles son valores fundamentales que impulsan
+          nuestro trabajo diario. Cada producto que elaboramos es una muestra de nuestro compromiso con la calidad, el
+          sabor y la satisfacción del cliente.
+          <br><br>
+          Pero lo que realmente nos hace únicos es nuestra dedicación para crear una experiencia acogedora e inolvidable
+          para cada uno de nuestros clientes. Creemos que el ambiente y el servicio son tan importantes como el producto
+          que servimos.
+          <br><br>
+          En <b class="yellow">QINQELA CoffeeShop</b>, también creemos en la importancia de la innovación y la
+          creatividad. Por eso, siempre estamos buscando formas nuevas y emocionantes de mejorar nuestra oferta de café
+          y sorprender a nuestros clientes. Desde nuevas mezclas de café hasta métodos de preparación innovadores,
+          estamos comprometidos a ofrecer una experiencia de café única y emocionante. Ven a visitarnos y déjanos
+          impresionarte con nuestra pasión y creatividad en cada taza de café que preparamos.
+        </p>
+      </div>
+      <section class="team">
+        <div class="card-box">
+          <div class="card card1">
+            <img src="../assets/img/team3.png" class="main__img__large" alt="">
+          </div>
+          <div class="card card2">
+            <img src="../assets/img/team2.png" class="main__img__large" alt="">
+          </div>
+          <div class="card card3">
+            <img src="../assets/img/team1.jpg" class="main__img__large" alt="">
           </div>
         </div>
-        <div class="col-7 col-sm-9 col-md-9 col-lg-9 ">
-          <nav class=" navbar navbar-expand-lg bs-dark-border-subtle">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">INICIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./productos.html">PRODUCTOS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./galeria.html">GALERIA</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html">CONTACTO</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          </nav>
+      </section>
+    </main>
+    <footer class="footer__nos">
+      <div class="social-nos">
+        <div class="footer-ico">
+          <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
         </div>
-        <!------Fin Navbar------>
-      </header>
-    </div>
-    <!-- ------------------Fin Header--------------------- -->
-    <!-- ------------------Comienzo Main--------------------- -->
-    <div class="container">
-      <main class="main__nos-bt row">
-        <div class="main__titulo--nos-bt col-sm-12 col-md-12 col-lg-8 ">
-          <h3>Este es nuestro <strong class="yellow">Equipo.</strong></h3>
-        </div>
-        <div class="main__texto-bt col-sm-12 col-md-12 col-lg-7 ">
-          <p><b class="yellow">QINQELA CoffeeShop</b> tiene un equipo de expertos, con una pasión
-            compartida por crear
-            el
-            café perfecto, habiendo perfeccionado nuestro arte para ofrecerte el mejor producto posible.<br><br>
-            Nuestra inquietud por la excelencia y la atención a los detalles son valores fundamentales que impulsan
-            nuestro trabajo diario. Cada producto que elaboramos es una muestra de nuestro compromiso con la calidad, el
-            sabor y la satisfacción del cliente.
-            <br><br>
-            Pero lo que realmente nos hace únicos es nuestra dedicación para crear una experiencia acogedora e
-            inolvidable
-            para cada uno de nuestros clientes. Creemos que el ambiente y el servicio son tan importantes como el
-            producto
-            que servimos.
-            <br><br>
-            En <b class="yellow">QINQELA CoffeeShop</b>, también creemos en la importancia de la innovación y la
-            creatividad. Por eso, siempre estamos buscando formas nuevas y emocionantes de mejorar nuestra oferta de
-            café
-            y sorprender a nuestros clientes. Desde nuevas mezclas de café hasta métodos de preparación innovadores,
-            estamos comprometidos a ofrecer una experiencia de café única y emocionante. Ven a visitarnos y déjanos
-            impresionarte con nuestra pasión y creatividad en cada taza de café que preparamos.
+      </div>
+      <div class="location-nos">
+        <a href="https://goo.gl/maps/Yk6Y1aR38ZW92o3M8" target="_blank">
+          <p class="iconmax-nos"><i class='bx bxs-map'></i>Pg. de Gràcia, 92, 08008 Barcelona,
+            España&nbsp&nbsp&nbsp&nbsp
           </p>
+        </a>
+        <a href="https://wa.me/3455555555" target="_blank">
+          <p class="iconmax-nos"><i class='bx bxl-whatsapp'></i> (+34) 555 55 55 55</p>
+        </a>
+      </div>
+      <form action="" class="newsletter-nos">
+        <div class="input-container">
+          <label for="email"></label>
+          <input type="email" placeholder="quiero@cafe.com" required="">
+          <button class="invite-btn" type="button">
+            Café!
+          </button>
         </div>
-        <section class="team-bt col">
-          <div class="tarjeta-box-bt">
-            <div class="tarjeta-bt">
-              <img src="../assets/img/team3.png" class="main__img__large img-fluid" alt="">
-            </div>
-
-            <div class="tarjeta-bt">
-              <img src="../assets/img/team2.png" class="main__img__large" alt="">
-            </div>
-
-            <div class="tarjeta-bt">
-              <img src="../assets/img/team1.jpg" class="main__img__large" alt="">
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
-    <!-- ------------------Fin Main--------------------- -->
-    <!-- ------------------Comienzo Footer--------------------- -->
-    <div class="container-fluid">
-      <footer class="footer__nos-bt">
-        <div class="row">
-          <div class="social-nos-bt col col-12 col-md-6 col-lg-2 text-center">
-            <!------Redes Sociales ------->
-            <div class="footer-ico-bt text-center">
-              <!--Facebook -->
-              <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
-              <!--Twitter -->
-              <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
-              <!--Instagram -->
-              <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-            </div>
-
-          </div>
-          <!------Ubicación y Contacto x Whatsapp ------>
-          <div class="location-nos-bt col-12 col-md-6 col-lg-5 ">
-            <!--Ubiación -->
-            <a href="https://goo.gl/maps/Yk6Y1aR38ZW92o3M8" target="_blank">
-              <p class="iconmax-nos-bt"><i class='bx bxs-map'></i>Pg. de Gràcia, 92, 08008 Barcelona,
-                España&nbsp&nbsp&nbsp&nbsp
-              </p>
-            </a>
-            <!--Whatsapp -->
-            <a href="https://wa.me/3455555555" target="_blank">
-              <p class="iconmax-nos-bt"><i class='bx bxl-whatsapp'></i> (+34) 555 55 55 55</p>
-            </a>
-          </div>
-          <!--Newsletter -->
-          <form action="" class="newsletter-nos-bt col-12 col-md-3 col-lg-4">
-            <div class="input-container-bt">
-              <label for="email"></label>
-              <input type="email" placeholder="quiero@cafe.com" required="">
-              <button class="invite-btn-bt" type="button">
-                Café!
-              </button>
-            </div>
-            <h4 class="">Suscribite a nuestro&nbsp<b class="yellow"> Newsletter</b></h4>
-          </form>
-        </div>
-        <!------Copyright ------>
-        <div >
-          <div class="row">
-            <div class="me-nos-bt col-12 align-content-center">
-              <a href="https://github.com/DowoDev" target="_blank" class="iconmin">Design by © <b
-                  class="yellow">DowoDev</b>
-                · <b>2023</b></a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <!-- ------------------Fin Footer--------------------- -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-      crossorigin="anonymous"></script>
+        <h4 class="">Suscribite a nuestro&nbsp<b class="yellow"> Newsletter</b></h4>
+      </form>
+      <div class="me-nos">
+        <a href="https://github.com/DowoDev" target="_blank" class="iconmin">Design by © <b class="yellow">DowoDev</b> · <b>2023</b></a>
+      </div>
+    </footer>
   </div>
-
-
 </body>
-
 </html>

@@ -20,47 +20,38 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/logos/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/logos/favicon-16x16.png">
   <link rel="manifest" href="./assets/logos/site.webmanifest">
-  <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  
   <!-- CSS Styles -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
   <div class="index">
-    <!-- ------------------Comienzo Header--------------------- -->
     <header class="header">
       <div class="logo">
-        <a href="#">
-          <img src="./assets/logos/qinquela_blanco.png" alt="logo">
+        <a href="./index.html">
+          <img src="./assets/logos/cup_logo.png" alt="logo">
         </a>
+        <p class="marca">Q I N Q E L A &nbsp<b>|&nbspCoffeeShop</b></p>
       </div>
       <nav class="navigation">
-        <input type="checkbox" class="toggle-menu">
-        <div class="hamburguer"></div>
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="checkbtn">
+          <i class='bx bx-menu'></i>
+        </label>
         <ul class="menu">
-          <li class="main-menu__item"><a href="#" class="main-menu__link active">INICIO</a></li>
+          <li class="main-menu__item"><a href="#" class="active main-menu__link">INICIO</a></li>
           <li class="main-menu__item"><a href="./pages/nosotros.html" class="main-menu__link">NOSOTROS</a></li>
           <li class="main-menu__item"><a href="./pages/productos.html" class="main-menu__link">PRODUCTOS</a></li>
           <li class="main-menu__item"><a href="./pages/galeria.html" class="main-menu__link">GALERIA</a></li>
           <li class="main-menu__item"><a href="./pages/contacto.html" class="main-menu__link">CONTACTO</a></li>
         </ul>
       </nav>
-      <!------Fin Navbar------>
     </header>
-    <!-- ------------------Fin Header--------------------- -->
-    <!-- ------------------Comienzo Main--------------------- -->
-    <main class="main">
+    <main class="main-index">
       <div class="main__titulo">
-        <!------Titulo Principal------>
         <h1>Bienvenidos a <strong class="yellow-strong">QINQELA CoffeeShop</strong></h1>
-        <!------Subtitulo------>
-        <h3>La Vida Empieza con un <b><strong class="yellow">Café</strong></b>.</h3>
+        <h3>La Vida Empieza con un <strong class="yellow-strong">Café!</strong></h3>
       </div>
-      <!------Texto Presentación ------>
       <div class="main__presentacion">
         <article>
           <p><b class="yellow">QINQELA CoffeeShop</b> está presente en momentos llenos de emoción. Y esto es algo muy
@@ -70,51 +61,39 @@
           </p>
         </article>
       </div>
-      <!------Imagen Cup------>
       <div class="hero">
         <div class="cup">
-          <img src="./assets/logos/cup.png" alt="">
+          <img src="./assets/logos/cup2.png" alt="">
         </div>
       </div>
-      <!------Botones a Productos y Contacto ------>
       <div class="main__botones">
-        <!------Link a Productos------>
         <a href="./pages/productos.html" class="boton1">
           <p class="gradient-text1">Productos</p>
         </a>
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <!------Link a Contacto------>
         <a href="./pages/contacto.html" class="boton2">
           <p class="gradient-text2">Contacto</p>
         </a>
       </div>
     </main>
-    <!-- ------------------Fin Main--------------------- -->
-    <!-- ------------------Comienzo Footer--------------------- -->
     <footer class="footer">
       <div class="social">
-        <!------Redes Sociales ------>
         <div class="footer-ico">
-          <!--Facebook -->
-          <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
-          <!--Twitter -->
-          <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
-          <!--Instagram -->
-          <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+          <a href="https://www.facebook.com" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="bx bxl-instagram"></i></a>
         </div>
       </div>
-      <!------Ubicación y Contacto x Whatsapp ------>
       <div class="location">
-        <!--Ubiación -->
-        <a href="https://goo.gl/maps/Yk6Y1aR38ZW92o3M8" target="_blank">
-          <p class="iconmax"><i class='bx bxs-map'></i>Pg. de Gràcia, 92, 08008 Barcelona, España.</p>
-        </a>
-        <!--Whatsapp -->
-        <a href="https://wa.me/3455555555" target="_blank">
-          <p class="iconmax"><i class='bx bxl-whatsapp'></i>(+34) 555 55 55 55</p>
-        </a>
+        <div class="iconmax">
+          <a href="https://goo.gl/maps/Yk6Y1aR38ZW92o3M8" target="_blank"><i class="bx bxs-map"></i>Visitanos</a>
+          <img src="./assets/logos/cup_logo.png" alt="logo" class="logo2">
+          <a href="https://wa.me/3495558523" target="_blank"><i class="bx bxl-whatsapp"></i>Hablemos</a>
+        </div>
       </div>
-      <!--Newsletter -->
+      <div class="etiquetas">
+        <p>Miró 459 | <b class="wow">Barcelona · España</b> | 34 9 555 8523</p>
+      </div>
       <form action="" class="newsletter">
         <div class="input-container">
           <label for="email"></label>
@@ -123,15 +102,15 @@
             Café!
           </button>
         </div>
-        <h4 class="">Suscribite a nuestro&nbsp<b class="yellow"> Newsletter</b></h4>
+        <div>
+          <h4 class="subs">Suscribite a nuestro&nbsp<b class="wow"> Newsletter</b></h4>
+        </div>
       </form>
-      <!------Copyright ------>
       <div class="me">
-        <a href="https://github.com/DowoDev" target="_blank" class="iconmin">Design by © <b class="yellow">DowoDev</b> · <b>2023</b></a>
+        <a href="https://github.com/DowoDev" target="_blank" class="iconmin">Design by <img src="./assets/logos/dowodev.jpg" alt=""><!--<i class="bx bxl-github"></i>--> <b class="wow"> DowoDev</b> ·
+          <b>2023</b></a>
       </div>
     </footer>
-    <!-- ------------------Fin Footer--------------------- -->
   </div>
 </body>
-
 </html>
