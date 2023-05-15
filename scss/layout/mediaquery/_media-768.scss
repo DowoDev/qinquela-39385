@@ -4,7 +4,7 @@
 
       .menu{
         flex-direction: column;
-        background-color: #080d24;
+        background-color: $pink;
         -webkit-backdrop-filter: blur(25px);
         backdrop-filter: blur(25px);
         list-style: none;
@@ -19,7 +19,7 @@
         width: 100%;
         height: 210px;
         top: 84px;
-        left: -100%;
+        left: -105%;
         text-align: center;
         transition: all 0.5s;
         li {
@@ -28,6 +28,7 @@
           line-height: 20px;
           a{
             font-size: 20px;
+            color: #000;
           }
         }
       }

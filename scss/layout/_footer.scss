@@ -112,7 +112,9 @@ footer {
       align-items: center;
       width: 144px;
       height: 3.125rem;
-      font-size: 1.0rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      font-family: $rubik;
       text-decoration: none;
       background-clip: text;
       -webkit-background-clip: border-box;
@@ -125,6 +127,7 @@ footer {
       &:hover {
         background-color: $font-color-main;
         color: #020202;
+        font-weight: 600;
         transform: scale(110%);
         animation: movingBorders 3s infinite;
       }
@@ -240,6 +243,7 @@ footer {
       }
 
       button {
+        cursor:pointer;
         position: absolute;
         width: 75px;
         right: 4px;

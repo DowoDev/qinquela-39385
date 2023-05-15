@@ -1,7 +1,7 @@
 body {
   background: $background-body;
   color: $font-color-main;
-  font-family: 'Poppins', sans-serif;
+  font-family: $poppins;
 }
 .index,.nosotros,.productos,.galeria,.contacto {
   width: 100%;
@@ -17,7 +17,7 @@ body {
   list-style: none;
 }
 .index{
-  background-image: $background-index-productos;
+  background-image: $background-index;
 }
 
 .nosotros {
