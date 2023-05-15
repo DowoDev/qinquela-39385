@@ -37,19 +37,19 @@ body {
   list-style: none; }
 
 .index {
-  background-image: url("../../assets/img/cafe8.jpg"); }
+  background-image: url("../assets/img/cafe8.jpg"); }
 
 .nosotros {
-  background-image: url("../../assets/img/background-nos2.jpg"); }
+  background-image: url("../assets/img/background-nos2.jpg"); }
 
 .productos {
-  background-image: url("../../assets/img/coffee-hand2.jpg"); }
+  background-image: url("../assets/img/coffee-hand2.jpg"); }
 
 .galeria {
-  background-image: url("../../assets/img/cafe3.jpg"); }
+  background-image: url("../assets/img/cafe3.jpg"); }
 
 .contacto {
-  background-image: url("../../assets/img/background-contacto.jpg"); }
+  background-image: url("../assets/img/background-contacto.jpg"); }
 
 header {
   margin-top: 0;
