@@ -1,9 +1,7 @@
 footer {
   bottom: 0;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 2fr;
+  @include grid (repeat(10, 1fr),2fr,none,none,none);
   background-color: #ffffff13;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
@@ -149,7 +147,7 @@ footer {
       transition: 0.3s;
     }
 
-    .logo2 {  
+    .logo2 {
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -189,8 +187,8 @@ footer {
     justify-self: flex-end;
 
     h4 {
-      position: relative;
       display: flex;
+      position: relative;
       font-size: 0.785rem;
       font-weight: 400;
       left: 10px;
@@ -203,8 +201,8 @@ footer {
     }
 
     .input-container {
-      position: relative;
       display: flex;
+      position: relative;
       height: 3.125rem;
       width: 100%;
       min-width: 200px;
@@ -243,7 +241,7 @@ footer {
       }
 
       button {
-        cursor:pointer;
+        cursor: pointer;
         position: absolute;
         width: 75px;
         right: 4px;

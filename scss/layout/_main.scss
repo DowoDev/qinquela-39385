@@ -1,8 +1,5 @@
 .main-index {
-
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: re peat(3, 249px);
+  @include grid (repeat(11, 1fr),repeat(3, 249px),none,none,none);
 
   .main__titulo {
     grid-column: 2 / 8;
@@ -39,10 +36,12 @@
     justify-self: center;
     padding: 20px;
     font-size: 1.8rem;
+
     p {
       -webkit-background-clip: text;
       background-clip: text;
       position: static;
+
       .marca {
         font-weight: 700;
         font-size: 29px;
@@ -68,11 +67,7 @@
     grid-row: 1/4;
 
     .cup {
-      display: grid;
-      grid-template-columns: repeat(3, 174px);
-      grid-template-rows: repeat(3, 249px);
-      align-items: center;
-      justify-content: center;
+      @include grid (repeat(3, 174px),repeat(3, 249px),center,center,none);
       position: static;
 
       img {
@@ -183,9 +178,7 @@
 }
 
 .main__nos {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(3, auto);
+  @include grid (repeat(11, 1fr),repeat(3, auto),none,none,none);
 
   .main__titulo--nos {
     grid-column: 2 / 8;
@@ -289,9 +282,7 @@
 }
 
 .main__productos {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(3, auto);
+  @include grid (repeat(11, 1fr),repeat(3, auto),none,none,none);
 
   .main__titulo--prod {
     grid-column: 3 / 11;
@@ -305,11 +296,13 @@
       font-size: 3.4rem;
       height: 200px;
       -webkit-text-stroke: 1px #0000004b;
+
       strong {
         color: $yellow;
       }
     }
   }
+
   .grupo-prod {
     grid-column: 3 / 10;
     grid-row: 2 / 4;
@@ -317,13 +310,14 @@
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 25px;
+
     .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      @include grid (repeat(auto-fill, minmax(320px, 1fr)),none,none,none,none);
       padding-inline: 24px;
       gap: 24px;
       color: #ededed;
     }
+
     .cards-style {
       position: relative;
       box-shadow: none;
@@ -336,6 +330,7 @@
       box-shadow: 20px 20px 30px #0000000d;
       background: transparent;
       backdrop-filter: blur(5px);
+
       .cards-cafe {
         background-color: #232323b0;
         border: 1px solid #232323ae;
@@ -347,51 +342,65 @@
           overflow: hidden;
           max-width: 100%;
           border-bottom: 1px solid #232323ae;
-          border-radius: 5px;
+          border-radius: 5px 5px 10px 10px;
+          box-shadow: 2px 2px 50px 1px #000000;
         }
+
         .cards-body {
           padding: 24px;
+
           h2 {
             margin: 0 0 18px 0;
             font-size: 1.9rem;
             transition: color 0.3s ease-out;
             border-bottom: 1px solid #908e8eae;
             border-top: 1px solid #908e8eae;
+
             .soft {
-              color:$soft;
+              color: $soft;
             }
+
             .natural {
               color: $natural;
             }
+
             .strong {
               color: $strong;
             }
+
             .black {
               color: $black;
             }
+
             .tete {
               color: $pink-soft;
             }
+
             .cool {
               color: $cool;
             }
+
             .breeze {
               color: $breeze;
             }
+
             .sunny {
               color: $sunny;
             }
+
             .chocco {
               color: $chocco;
             }
           }
+
           p {
             font-size: 18px;
             margin: 0 0 10px 0;
 
           }
+
           button {
-            cursor:pointer;
+            cursor: pointer;
             display: inline-flex;
             align-items: center;
             font-size: 24px;
@@ -403,6 +412,7 @@
             backdrop-filter: blur(25px);
             background-image: linear-gradient(to right, #b91d73 0%, #dd2a7b 50%, #f953c6 100%);
             border: 1px solid $pink-variant;
+
             &:active {
               transform: scale(0.985);
               box-shadow: inset 2px 2px 3px #dd2a7b99, inset 2px 2px 3px #31303099;
@@ -414,16 +424,18 @@
   }
 }
 
-.main__gal{
+.main__gal {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(3, auto);
   padding-bottom: 20px;
+
   .main__titulo--gal {
     grid-column: 2 / 11;
     grid-row: 1 / 2;
     align-self: center;
     justify-self: center;
+
     h3 {
       font-weight: 700;
       font-size: 4.4rem;
@@ -431,11 +443,13 @@
       padding-top: 80px;
       -webkit-text-stroke: 1px #00000049;
       transition: all 0.5s;
-      strong{
+
+      strong {
         color: $yellow;
       }
     }
   }
+
   .grupo-gal {
     grid-column: 2 / 11;
     grid-row: 2 / 4;
@@ -444,11 +458,12 @@
     border-radius: 10px;
     backdrop-filter: blur(3px);
     transition: all 0.5s;
+
     .gal {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(320px, 1fr));
+      @include grid (repeat(3, minmax(320px, 1fr)),none,none,none,none);
       gap: 24px;
       transition: all 0.5s;
+
       .gal-photo img {
         margin: 0;
         padding: 0;
@@ -457,6 +472,7 @@
         border: 1px solid #232323ae;
         border-radius: 5px;
         transition: 0.8s;
+
         &:hover {
           transform: scale(1.02);
           transition: 0.8s;
@@ -467,56 +483,60 @@
 }
 
 .main__contacto {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(3, 250px);
+  @include grid (repeat(11, 1fr),repeat(3, 250px),none,none,none);
 
   .main__titulo--contacto {
     grid-column: 2 / 11;
     grid-row: 1 / 2;
     justify-self: center;
+
     h3 {
       font-weight: 700;
       font-size: 4.4rem;
       height: 217px;
       color: $font-color-main;
       -webkit-text-stroke: 2px #00000049;
-      strong{
+
+      strong {
         color: $yellow;
-      };
+      }
+
+      ;
     }
   }
+
   .container__form {
     grid-column: 6 / 7;
     grid-row: 1 / 4;
     justify-self: center;
     align-self: center;
+
     h3 {
-      
       justify-self: center;
       align-self: center;
       font-weight: 700;
       font-size: 2.5rem;
       color: $font-color-main;
       -webkit-text-stroke: 2px #00000049;
-      strong{
+      strong {
         color: $yellow;
-      };
+      }
     }
+
     .form_contacto {
       width: 420px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(none, none, center, center, none);
       border-radius: 15px;
       background-color: #232323b0;
       border: 1px solid #232323ae;
       backdrop-filter: blur(5px);
       margin: 23px;
+
       .form_input {
         position: relative;
         margin: 30px 0;
         width: 355px;
+
         label {
           position: absolute;
           top: -50%;
@@ -525,6 +545,7 @@
           font-weight: 600;
           transition: .5s;
         }
+
         input {
           width: 100%;
           height: 50px;
@@ -542,8 +563,9 @@
           background-color: #a3a3a349;
           border: 1px solid #dd2a7b;
           backdrop-filter: blur(15px);
-        
+
         }
+
         i {
           position: absolute;
           right: 8px;
@@ -551,14 +573,16 @@
           font-weight: 500;
           top: 16px;
         }
+
         .mensajero {
           top: -20%;
         }
       }
+
       .gratarola {
-        cursor:pointer;
+        cursor: pointer;
         width: 100%;
-        height: 40px;
+        height: 60px;
         border-radius: 8px;
         background: $pink;
         border: none;
@@ -573,12 +597,14 @@
         backdrop-filter: blur(25px);
         background-image: linear-gradient(to right, #b91d73 0%, #dd2a7b 50%, #f953c6 100%);
         border: 1px solid $pink-variant;
+
         &:active {
           transform: scale(0.985);
           box-shadow: inset 2px 2px 3px #dd2a7b99, inset 2px 2px 3px #31303099;
-        
+
         }
       }
+
       .register {
         color: #ffffff;
         text-align: center;
@@ -586,6 +612,7 @@
         padding: 9px;
         border-bottom: 1px solid #908e8eae;
         border-top: 1px solid #908e8eae;
+
         p {
           text-decoration: none;
           color: #ffffff;
@@ -593,6 +620,7 @@
           font-size: 1.0em;
         }
       }
+
       textarea {
         font-family: "Poppins", sans-serif;
         font-size: 12px;

@@ -51,11 +51,7 @@ header {
   }
 
   .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-
+    @include flex(row-reverse, none, space-between, center, none);
     .checkbtn {
       font-size: 48px;
       float: right;
@@ -69,10 +65,7 @@ header {
     }
 
     ul {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      align-items: center;
+      @include flex(row, none, center, center, none);
       z-index: 1;
       transition: all 0.5s;
       float: right;
@@ -92,7 +85,8 @@ header {
           transition: all 0.2s;
           list-style: none;
           text-decoration: none;
-          &:hover{
+
+          &:hover {
             color: $font-color-main;
           }
         }
@@ -120,7 +114,7 @@ header {
       .active {
         font-size: 20px;
         color: $font-color-main;
-        
+
       }
 
       .main-menu__link:hover::after,

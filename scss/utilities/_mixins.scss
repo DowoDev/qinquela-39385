@@ -1,4 +1,4 @@
-@mixin flex ($direction,$wrap,$justify,$align,$gap){
+@mixin flex ($direction, $wrap, $justify, $align, $gap) {
     display: flex;
     flex-direction: $direction;
     flex-wrap: $wrap;
@@ -7,7 +7,7 @@
     gap: $gap;
 }
 
-@mixin grid ($col, $row, $justify, $align, $area){
+@mixin grid ($col, $row, $justify, $align, $area) {
     display: grid;
     grid-template-columns: $col;
     grid-template-rows: $row;
@@ -16,3 +16,5 @@
     grid-template-areas: $area;
 }
 
+/*
+  @include grid (repeat(11, 1fr),repeat(3, 250px),none,none,none);*/
