@@ -241,10 +241,11 @@
     padding-top: 18px;
 
     .card-box {
-      background-color: #ededed0c;
       padding: 30px 30px 15px;
       border-radius: 10px;
-      backdrop-filter: blur(3px);
+      background-color: $background-header;
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
       margin-bottom: 20px;
 
       .card {
@@ -325,14 +326,14 @@
       transform-origin: center;
       transition: all 0.4s ease-in-out;
       overflow: hidden;
-      background-color: $background-header;
       border-radius: 8px;
       box-shadow: 20px 20px 30px #0000000d;
-      background: transparent;
+      background-color: #232323b0;
+      -webkit-backdrop-filter: blur(5px);
       backdrop-filter: blur(5px);
 
       .cards-cafe {
-        background-color: #232323b0;
+      
         border: 1px solid #232323ae;
         text-align: center;
 

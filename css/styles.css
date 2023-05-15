@@ -346,10 +346,11 @@ header {
     justify-self: center;
     padding-top: 18px; }
     .main__nos .team .card-box {
-      background-color: #ededed0c;
       padding: 30px 30px 15px;
       border-radius: 10px;
-      backdrop-filter: blur(3px);
+      background-color: #ffffff13;
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
       margin-bottom: 20px; }
       .main__nos .team .card-box .card {
         width: 500px;
@@ -418,13 +419,12 @@ header {
       transform-origin: center;
       transition: all 0.4s ease-in-out;
       overflow: hidden;
-      background-color: #ffffff13;
       border-radius: 8px;
       box-shadow: 20px 20px 30px #0000000d;
-      background: transparent;
+      background-color: #232323b0;
+      -webkit-backdrop-filter: blur(5px);
       backdrop-filter: blur(5px); }
       .main__productos .grupo-prod .cards-style .cards-cafe {
-        background-color: #232323b0;
         border: 1px solid #232323ae;
         text-align: center; }
         .main__productos .grupo-prod .cards-style .cards-cafe img {
@@ -662,7 +662,7 @@ footer {
   justify-content: none;
   align-items: none;
   grid-template-areas: none;
-  background-color: #ffffff13;
+  background-color: #ffffff02;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   list-style: none;
@@ -687,7 +687,7 @@ footer {
     background-clip: border-box;
     -webkit-background-clip: border-box;
     color: #ededed;
-    background: transparent;
+    background: #ffffff13;
     backdrop-filter: blur(5px);
     animation: movingBorders 3s infinite;
     transition: 0.5s; }
@@ -696,6 +696,7 @@ footer {
       animation: movingBorders 3s infinite; }
     footer .footer-ico a:nth-child(1) {
       -webkit-background-clip: border-box;
+      background-clip: border-box;
       -webkit-text-fill-color: #ededed;
       border: 1px solid #006eff;
       border-radius: 18px 18px 18px 5px;
@@ -705,6 +706,7 @@ footer {
       transition: 0.3s; }
     footer .footer-ico a:nth-child(2) {
       -webkit-background-clip: border-box;
+      background-clip: border-box;
       -webkit-text-fill-color: #ededed;
       border: 1px solid #55acee;
       border-radius: 18px 18px 18px 5px;
@@ -714,6 +716,7 @@ footer {
       transition: 0.3s; }
     footer .footer-ico a:nth-child(3) {
       -webkit-background-clip: border-box;
+      background-clip: border-box;
       -webkit-text-fill-color: #ededed;
       border: 1px solid #f953c6;
       border-radius: 18px 18px 18px 5px;
@@ -740,7 +743,8 @@ footer {
       -webkit-background-clip: border-box;
       border-radius: 10px;
       color: #ededed50;
-      background: transparent;
+      background: #ffffff13;
+      -webkit-backdrop-filter: blur(5px);
       backdrop-filter: blur(5px);
       transition: 0.5s; }
       footer .location a:hover {
@@ -810,7 +814,7 @@ footer {
       background-color: #ffffff13;
       border-radius: 8px;
       box-shadow: 20px 20px 30px #0000000d;
-      background: transparent;
+      background: #ffffff13;
       backdrop-filter: blur(5px); }
       footer .newsletter .input-container input {
         height: 100%;
