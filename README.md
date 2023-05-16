@@ -22,7 +22,7 @@ La idea del **Proyecto** fue realizar el sitio Web de una Cafetería llamada **Q
 - 	Tablet
 - 	Mobile
 
-***Link a FIGMA:** [PROTOTIPADO QINQELA CoffeShop | Figma](htthttps://www.figma.com/file/oHLiiuOepyq2O9s0aKEJfQ/Juan-Sebastian-Rubio---preEntrega1?type=design&node-id=0%3A1&t=akLDCzlNqJtIDlqN-1p:// "PROTOTIPADO QINQELA CoffeShop | Figma")
+***Link a FIGMA:** [PROTOTIPADO QINQELA CoffeShop | Figma](https://www.figma.com/file/oHLiiuOepyq2O9s0aKEJfQ/Juan-Sebastian-Rubio---preEntrega1?type=design&node-id=0%3A1&t=akLDCzlNqJtIDlqN-1p:// "PROTOTIPADO QINQELA CoffeShop | Figma")
 
 2) En **HTML** se volcó el protopidado, con cambios obvios del proceso para poder acomodadar según el diseño. 
 - Se utilizó el uso correcto de **etiquetas semánticas** como así también la estructura del contenido. 
