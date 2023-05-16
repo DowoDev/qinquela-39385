@@ -1,7 +1,9 @@
 # Proyecto Sitio Web, Curso Desarrollo Web - CoderHouse. 
 ## Comisión 39385 - Profesor Maximiliano Cárdenas.
 
-Trabajo realizado en el **Curso de Desarrollo Web** dictado en **CoderHouse** por el Profesor [![](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico)](http://https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico) [Maximiliano Cardenas](https://www.linkedin.com/in/cardenas-maximiliano/ "Linkedin - Maximiliano Cardenas").
+Trabajo realizado en el **Curso de Desarrollo Web** dictado en **CoderHouse** por el Profesor [![](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico)](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico) [Maximiliano Cardenas](https://www.linkedin.com/in/cardenas-maximiliano/ "Linkedin - Maximiliano Cardenas").
+
+Tutora: [![](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico)](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico) [Camila Yacante](https://ar.linkedin.com/in/camila-yacante-a255a216b "Linkedin - Camila Yacante")
 
 ### IDEA PRINCIPAL
 La idea del **Proyecto** fue realizar el sitio Web de una Cafetería llamada **QINQELA CoffeeShop** como forma de entrenamiento para futuros trabajos. La misma es ficticia y se la ubica en la Ciudad de Barcelona.
@@ -22,7 +24,7 @@ La idea del **Proyecto** fue realizar el sitio Web de una Cafetería llamada **Q
 - 	Tablet
 - 	Mobile
 
-***Link a FIGMA:** [PROTOTIPADO QINQELA CoffeShop | Figma](https://www.figma.com/file/oHLiiuOepyq2O9s0aKEJfQ/Juan-Sebastian-Rubio---preEntrega1?type=design&node-id=0%3A1&t=akLDCzlNqJtIDlqN-1p:// "PROTOTIPADO QINQELA CoffeShop | Figma")
+***Link a FIGMA:** [PROTOTIPADO QINQELA CoffeShop | Figma](htthttps://www.figma.com/file/oHLiiuOepyq2O9s0aKEJfQ/Juan-Sebastian-Rubio---preEntrega1?type=design&node-id=0%3A1&t=akLDCzlNqJtIDlqN-1p:// "PROTOTIPADO QINQELA CoffeShop | Figma")
 
 2) En **HTML** se volcó el protopidado, con cambios obvios del proceso para poder acomodadar según el diseño. 
 - Se utilizó el uso correcto de **etiquetas semánticas** como así también la estructura del contenido. 
@@ -33,7 +35,7 @@ La idea del **Proyecto** fue realizar el sitio Web de una Cafetería llamada **Q
 - Utilicé imágenes optimizadas para la rapidez de carga del Sitio Web en su totalidad con contenido es pertinente al rubro.
 - Tanto el diseño del **LOGO**, **ICONOS** como asi tambien de la utilizacion de edición de imagenes en **Photoshop** fueron de autoría propia. Trabajo original. Con respecto a algunos iconos se utilizó la librería de [Boxicons](http://https://boxicons.com "Boxicons"). La misma fue linkeada dentro del **Head** de cada Página del Sitio Web.
 
-3) En **CSS** se utilizaron todos los estilos aprendidos en el curso. Se prefirió el formato **Desktop First** como primera experiencia. En un futuro se utilizará **Mobile First**.
+3) En **CSS** se utilizaron todos los estilos aprendidos en el curso. Se prefirió el formato ** Desktop First** como primera experiencia. En un futuro se utilizará **Mobile First**.
 - Se hizo desde cambios de fuentes importadas tanto externamente (**Google Fonts**) como así también locales.
 - Se utilizaron diseños modernos a nivel gráfico, respetando la **Teoría del Color**.
 - Diseño de los elementos para reflejar el diseño web prototipado originalmente.
@@ -72,7 +74,6 @@ Todo proceso realizado aquí, es de uso personal, educativo. Se utilizaron:
 Gracias y si se quieren comunicar directamente, lo pueden hacer a devdowo@gmail.com
 
 # END
-
 
 
 
