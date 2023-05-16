@@ -24,13 +24,13 @@ La idea del **Proyecto** fue realizar el sitio Web de una Cafetería llamada **Q
 
 ***Link a FIGMA:** [PROTOTIPADO QINQELA CoffeShop | Figma](https://www.figma.com/file/oHLiiuOepyq2O9s0aKEJfQ/Juan-Sebastian-Rubio---preEntrega1?type=design&node-id=0%3A1&t=akLDCzlNqJtIDlqN-1p:// "PROTOTIPADO QINQELA CoffeShop | Figma")
 
-2) En **HTML** se volcó el protopidado, con cambios obvios del proceso para poder acomodadar según el diseño. 
+2) En **HTML** se volcó el prototipado, con cambios obvios del proceso para poder acomodar según el diseño. 
 - Se utilizó el uso correcto de **etiquetas semánticas** como así también la estructura del contenido. 
 - Se realizó el linkeado css y la tipografía de Google Fonts elegida sobre el mismo. 
-- Utilicé en la primer etapa del Proyecto el uso de comentarios para poder ir explicando a los Tutores como había sido el diseño del mismo.
+- Utilicé en la primer etapa del Proyecto el uso de comentarios para poder ir explicando a mi Tutora como había sido el diseño del mismo.
 - El uso de clases consistentes siguió la denominación kebab-case como así las tabulaciones. 
 - Se interconectaron las páginas para que la navegación dentro del sitio sea correcta como así también a **Redes Sociales, Google Maps y Nº de Whatsapp**.
-- Utilicé imágenes optimizadas para la rapidez de carga del Sitio Web en su totalidad con contenido es pertinente al rubro.
+- Utilicé imágenes optimizadas para la rapidez de carga del Sitio Web en su totalidad con contenido pertinente a la temática elegida, en este caso una Cafetería.
 - Tanto el diseño del **LOGO**, **ICONOS** como asi tambien de la utilizacion de edición de imagenes en **Photoshop** fueron de autoría propia. Trabajo original. Con respecto a algunos iconos se utilizó la librería de [Boxicons](http://https://boxicons.com "Boxicons"). La misma fue linkeada dentro del **Head** de cada Página del Sitio Web.
 
 3) En **CSS** se utilizaron todos los estilos aprendidos en el curso. Se prefirió el formato ** Desktop First** como primera experiencia. En un futuro se utilizará **Mobile First**.
@@ -62,6 +62,9 @@ Todo aplicado por medio de **@import** sobre el archivo styles.scss el cual deri
 - **Favicon**: diseño del mismo para visualización sobre pestaña de Navegador.
 - **Description**: Descripción del sitio, el fin, que ofrecemos, etc..
 - **Opengraph**: Uso del mismo para generar una imágen de nuestro sitio para poder ser utilizada en redes sociales, whatsapp, etc cuando la compartimos. (trabajo en proceso)
+
+6) Github
+
 
 Todo proceso realizado aquí, es de uso personal, educativo. Se utilizaron:
 - Imagenes: [Unsplash](https://unsplash.com/ "Unsplash")
