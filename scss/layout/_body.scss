@@ -2,8 +2,11 @@ body {
   background: $background-body;
   color: $font-color-main;
   font-family: $poppins;
+  position: relative;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .index,
 .nosotros,
 .productos,
@@ -40,3 +43,32 @@ body {
 .contacto {
   background-image: $bg_contacto;
 }
+
+.arrow{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  z-index: 9;
+  
+  a{
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    background: $background-header;
+    backdrop-filter: blur(1px);
+    font-family: $poppins;
+    font-size: 15px;
+    font-weight: 700;
+    -webkit-text-fill-color: $font-color-main;
+    color: $font-color-main;
+    border: 1px solid $yellow;
+    border-radius: 18px 18px 18px 5px;
+    filter: drop-shadow(0px 1px 1px $yellow'83');
+    transition: 0.3s;
+  }
+}
+
