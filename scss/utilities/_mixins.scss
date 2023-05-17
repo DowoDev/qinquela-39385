@@ -15,6 +15,3 @@
     align-items: $align;
     grid-template-areas: $area;
 }
-
-/*
-  @include grid (repeat(11, 1fr),repeat(3, 250px),none,none,none);*/

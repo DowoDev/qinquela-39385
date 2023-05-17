@@ -1,6 +1,4 @@
 /**variables**/
-/*
-  @include grid (repeat(11, 1fr),repeat(3, 250px),none,none,none);*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -37,19 +35,19 @@ body {
   list-style: none; }
 
 .index {
-  background-image: url("../assets/img/cafe8.jpg"); }
+  background-image: url("../assets/img/bg_index.jpg"); }
 
 .nosotros {
-  background-image: url("../assets/img/background-nos2.jpg"); }
+  background-image: url("../assets/img/bg_us.jpg"); }
 
 .productos {
-  background-image: url("../assets/img/coffee-hand2.jpg"); }
+  background-image: url("../assets/img/bg_coffees.jpg"); }
 
 .galeria {
-  background-image: url("../assets/img/cafe3.jpg"); }
+  background-image: url("../assets/img/bg_gallery.jpg"); }
 
 .contacto {
-  background-image: url("../assets/img/background-contacto.jpg"); }
+  background-image: url("../assets/img/bg_contact.jpg"); }
 
 header {
   margin-top: 0;
