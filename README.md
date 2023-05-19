@@ -33,7 +33,7 @@ La idea del **Proyecto** fue realizar el sitio Web de una Cafetería llamada **Q
 - Utilicé imágenes optimizadas para la rapidez de carga del Sitio Web en su totalidad con contenido pertinente a la temática elegida, en este caso una Cafetería.
 - Tanto el diseño del **LOGO**, **ICONOS** como asi tambien de la utilizacion de edición de imagenes en **Photoshop** fueron de autoría propia. Trabajo original. Con respecto a algunos iconos se utilizó la librería de [Boxicons](http://https://boxicons.com "Boxicons"). La misma fue linkeada dentro del **Head** de cada Página del Sitio Web.
 
-3) En **CSS** se utilizaron todos los estilos aprendidos en el curso. Se prefirió el formato ** Desktop First** como primera experiencia. En un futuro se utilizará **Mobile First**.
+3) En **CSS** se utilizaron todos los estilos aprendidos en el curso. Se prefirió el formato **Desktop First** como primera experiencia. En un futuro se utilizará **Mobile First**.
 - Se hizo desde cambios de fuentes importadas tanto externamente (**Google Fonts**) como así también locales.
 - Se utilizaron diseños modernos a nivel gráfico, respetando la **Teoría del Color**.
 - Diseño de los elementos para reflejar el diseño web prototipado originalmente.
