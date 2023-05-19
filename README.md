@@ -1,5 +1,5 @@
-# Proyecto Sitio Web, Curso Desarrollo Web - CoderHouse. 
-## Comisión 39385 - Profesor Maximiliano Cárdenas.
+# Proyecto Sitio Web, Curso Desarrollo Web - CoderHouse 
+## Comisión 39385 - Profesor Maximiliano Cárdenas
 #### Trabajo realizado en el **Curso de Desarrollo Web** dictado en **CoderHouse** por el Profesor [![](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico)](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico) [Maximiliano Cardenas](https://www.linkedin.com/in/cardenas-maximiliano/ "Linkedin - Maximiliano Cardenas"). 
 Tutora: [![](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico)](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico) [Camila Yacante](https://ar.linkedin.com/in/camila-yacante-a255a216b "Linkedin - Camila Yacante")
 
