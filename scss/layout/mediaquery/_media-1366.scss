@@ -1,0 +1,50 @@
+@media screen and (max-width: 1366px) {
+  .main-index .main__botones a {
+    width: 12.125rem;
+    height: 3.0rem;
+    transition: all 0.5s;
+    .gradient-text1 {
+      font-size: 1.6rem;
+      transition: all 0.5s;
+    }
+    .gradient-text2 {
+      font-size: 1.6rem;
+      transition: all 0.5s;
+    }
+  }
+  footer {
+    .social {
+      width: 270px;
+      transition: 0.5s;
+      .footer-ico a {
+        width: 2.725rem;
+        height: 2.725rem;
+        margin-right: 2rem;
+        transition: all 0.5s;
+      }
+    }
+    .location {
+      width: 340px;
+      transition: 0.5s;
+      a {
+        height: 2.725rem;
+        transition: all 0.5s;
+      }
+      .iconmax i {
+        font-weight: 700;
+        font-size: 1.5rem;
+        transition: all 0.5s;
+      }
+    }
+    .etiquetas{
+      width: 343px;
+      transition: all 0.5s;
+    }
+    .newsletter{
+      .input-container {
+        height: 2.725rem;
+        transition: all 0.5s;
+      }
+    }
+  }
+}

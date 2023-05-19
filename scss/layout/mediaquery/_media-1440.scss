@@ -1,0 +1,16 @@
+@media screen and (max-width: 1440px) {
+  .index{
+    .main__titulo h3 {
+      font-size: 3.0rem;
+      transition: all 0.5s;
+    }
+    .main__presentacion {
+      font-size: 1.5rem;
+      transition: all 0.5s;
+    }
+    .main-index .cup img {
+      width: 350px;
+      transition: 0.5s;
+    }
+  }
+}

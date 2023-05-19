@@ -1,0 +1,138 @@
+@media screen and (max-width: 968px) {
+  .arrow{
+    right: 5px;
+  }
+  header {
+    .logo a{
+      img {
+        height: 2.8rem;
+        transition: all 0.5s;
+      }
+    }
+    .marca {
+      font-size: 18px;
+      transition: all 0.5s;
+      b {
+        font-size: 16px;
+        transition: all 0.5s;
+      }
+    }
+    .navigation ul {
+      li {
+        a{
+          font-size: 15px;
+          transition: all 0.5s;
+        }
+      }
+      .active {
+        font-size: 15px;
+        transition: all 0.5s;
+      }
+    }
+  }
+  .main-index {
+    .main__titulo {
+      grid-column: 2 / 11;
+      h3 {
+        font-size: 2.5rem;
+        transition: all 0.5s;
+      }
+    }
+    .main__presentacion {
+      grid-column: 2 / 9;
+      font-size: 1.30rem;
+      transition: all 0.5s;
+    }
+    .hero {
+      // grid-column: 8 / 12;
+      // grid-row: 1/4;
+      .cup {
+        grid-template-columns: repeat(3, 0px);
+        img {
+          width: 225px;
+          transition: 0.5s;
+        }
+      }
+    }
+    .main__botones a {
+      width: 11.125rem;
+      height: 3.5rem;
+      transition: all 0.5s;
+      .gradient-text1 {
+        font-size: 1.7rem;
+        transition: all 0.5s;
+      }
+      .gradient-text2 {
+        font-size: 1.7rem;
+        transition: all 0.5s;
+      }
+    }
+  }
+  footer {
+    .social {
+      text-align-last: left;
+      transition: 0.5s;
+      .footer-ico {
+        i {
+          font-weight: 500;
+          font-size: 1.2rem;
+          transition: all 0.5s;
+        }
+        a {
+          width: 1.8rem;
+          height: 1.8rem;
+          margin: 0.5rem;
+          transition: all 0.5s;
+        }
+      }
+    }
+    .location {
+      width: 237px;
+      transition: 0.5s;
+      a {
+        height: 2.2rem;
+        width: 104px;
+        font-size: 0.8rem;
+        transition: all 0.5s;
+      }
+      .logo2 {
+        height: 25px;
+        transition: all 0.5s;
+      }
+    }
+    .etiquetas{
+      width: 236px;
+      transition: all 0.5s;
+      p {
+        font-size: 0.6rem;
+        transition: all 0.5s;
+      }
+    }
+    .newsletter{
+      height: 2.2rem;
+      transition: all 0.5s;
+      h4 {
+        font-size: 0.505rem;
+        left: 5px;
+        transition: all 0.5s;
+      }
+      .input-container {
+        height: 3.2rem;
+        min-width: 137px;
+        transition: all 0.5s;
+        input {
+          padding: 0 0 22px 19px;
+          transition: all 0.5s;
+        }
+        button {
+          width: 94.0%;
+          top: 24px;
+          transition: .6s ease;
+        }
+      }
+    }
+    .me {
+      font-size: 0.6rem;
+    }
+  }
+}
