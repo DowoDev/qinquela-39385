@@ -3,28 +3,27 @@ header {
   margin-bottom: 0;
   width: 100%;
   height: 85px;
-  padding: 0 25px;
   @include flex(none, none, space-between, center, none);
   position: relative;
   background-color: $background-header;
-  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   transition: all 0.5s;
+  z-index: 1;
 
   .logo {
     display: flex;
-    padding: 5px 10px 5px 10px;
-    border-radius: 10px;
+    transition: all 0.5s;
 
     a {
       display: block;
-      padding: 0 0 10px 0;
+      width: 2.8rem;
+      padding: 0 0 0 10px;
       transition: all 0.5s;
 
       img {
         display: block;
-        height: 3rem;
-        width: 100%;
+        width: 1.8rem;
         filter: invert(0);
         transition: all 0.5s;
       }
@@ -35,29 +34,56 @@ header {
     position: relative;
     align-self: center;
     font-weight: 700;
-    font-size: $marca-size;
+    font-size: 16px;
     filter: invert(0);
-    transition: all 0.5s;
     padding: 0 0 0px 10px;
+    flex-direction: column;
+    list-style: none;
     text-decoration: none;
+    transition: all 0.5s;
 
     b {
-      font-weight: 300;
-      font-family: 'Poppins', sans-serif;
-      font-size: $marca-sizeMin;
+      font-weight: 400;
       color: $pink;
       filter: invert(0);
+      transition: all 0.5s;
     }
   }
 
   .navigation {
-    @include flex(row-reverse, none, space-between, center, none);
+    // @include flex(row-reverse, none, space-between, center, none);
+    .menu{
+      background-color: $pink;
+      border: 1px solid #333;
+      -webkit-backdrop-filter: blur(25px);
+      backdrop-filter: blur(25px);
+      list-style: none;
+      transition: all 0.5s; 
+    }
     .checkbtn {
-      font-size: 48px;
+      display: block;
+      position: sticky;
+      flex-direction: row;
+      width: 50px;
       float: right;
-      height: 65px;
+      height: 50px;
       cursor: pointer;
-      display: none;
+      &:active,&::after {
+        transform: scale(1.20);
+        background: linear-gradient(#b91d73c9 0%, #dd2a7bc9 50%, #f953c6c9 100%);
+        border-radius: 25px;
+        transition: 0.01s;
+      }
+
+
+      // display: none;
+      // img {
+      //   height: 30px;
+      // }
+      i {
+        font-size: 50px;
+      }
+      
     }
 
     #check {
@@ -65,23 +91,33 @@ header {
     }
 
     ul {
-      @include flex(row, none, center, center, none);
-      z-index: 1;
-      transition: all 0.5s;
+      @include flex(column, none, center, center, none);
+      position: absolute;
+      width: 100%;
+      height: 250px;
+      top: 85px;
+      left: -105%;
+      text-align: center;
       float: right;
       margin-right: 20px;
+      z-index: 1;
+      transition: all 0.5s;
 
       li {
         display: flex;
-        padding-left: 12px;
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+        // padding-left: 12px;
         transition: 0.5s;
 
         a {
-          color: $font-color-main-variant;
+          // color: $font-color-main-variant;
           display: block;
+          color: #181818;
           padding: 0 0 0 0;
-          font-size: 20px;
-          font-weight: 500;
+          font-size: 18px;
+          font-weight: 700;
           transition: all 0.2s;
           list-style: none;
           text-decoration: none;
@@ -90,6 +126,10 @@ header {
             color: $font-color-main;
           }
         }
+      }
+      .active {
+        color: $font-color-main;
+
       }
 
       .main-menu__link {
@@ -111,16 +151,13 @@ header {
         pointer-events: none;
       }
 
-      .active {
-        font-size: 20px;
-        color: $font-color-main;
-
-      }
-
-      .main-menu__link:hover::after,
-      .main-menu__link:focus::after {
+      .main-menu__link:hover::before,
+      .main-menu__link:focus::before {
         opacity: 1;
       }
+    }
+    #check:checked ~ ul {
+      left: 0;
     }
   }
 }

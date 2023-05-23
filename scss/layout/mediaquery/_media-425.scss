@@ -1,0 +1,237 @@
+@media screen and (min-width: 425px) {
+  header{
+    .marca {
+      font-size: 20px;
+      transition: all 0.5s;
+    }
+  }
+  .main-index{
+    grid-template-rows: repeat(6, 100px);
+    .main__titulo {
+ 
+      h1 {
+        font-size: 18px;
+        transition: all 0.5s;
+      }
+  
+      h3 {
+        font-size: 25px;
+        transition: all 0.5s;
+      }
+    }
+    .main__presentacion {
+      p {
+        font-size: 16px;
+        transition: all 0.5s;
+        .marca {
+
+          font-size: 16px;
+          transition: all 0.5s;
+        }
+
+      }
+    }
+    .main__botones {
+      grid-row: 6 / 6;
+      transition: all 0.5s;
+      a {
+        width: 150px;
+        height: 2.50rem;
+        transition: all 0.5s;
+      }
+      .gradient-text1, .gradient-text2{
+        font-size:18px;
+        transition: all 0.5s;
+      }
+    }
+  }
+  .main__nos{
+    @include grid (repeat(3, 1fr),repeat(10, 150px),none,none,none);
+    .main__titulo--nos {
+      h3 {
+        font-size: 32px;
+        transition: all 0.5s;
+      }
+    }
+    .main__texto {
+      grid-row: 2 / 8;
+      transition: all 0.5s;
+      p {
+        font-size: 16px;
+        transition: all 0.5s;
+  
+        .marca {
+          font-size: 16px;
+          transition: all 0.5s;
+        }
+      }
+    }
+    .team{
+      .card-box{
+        .card{
+          height: 160px;
+          img {
+            height: 150px;
+            transition: 0.8s ease all;
+          }
+        }
+      }
+    }
+  }
+  .main__productos{
+    @include grid (repeat(3, 1fr),repeat(5, 170px),none,none,none);
+    .main__titulo--prod {
+      h3 {
+        font-size: 27px;
+        padding: 20px;
+        transition: all 0.5s;
+      }
+    }
+    .grupo-prod{
+      .cards-style{
+        .cards-cafe{
+          .cards-body{
+            button {
+              font-size: 25px;
+              padding: 10px 80px;
+              transition: all 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main__gal {
+    .main__titulo--gal {
+      h3 {
+        font-size: 27px;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+
+  .main__contacto {
+    .main__titulo--contacto {
+  
+      h3 {
+        font-size: 32px;
+        transition: all 0.5s;
+      }
+    }
+    .main__titulo--contacto2{
+      h3 {
+        font-size: 32px;
+        transition: all 0.5s;
+      }
+    }
+    .container__form{
+      .form_contacto {
+        width: 380px;
+        transition: all 0.5s;
+        strong {
+          font-size: 16px;
+          transition: all 0.5s;
+        }
+  
+        .form_input {
+          width: 360px;
+          transition: all 0.5s;
+          .mensajero {
+            font-size: 16px;
+            transition: all 0.5s;
+          }
+        }
+       .register {
+          margin: 25px 0 25px;
+          transition: all 0.5s;
+          p {
+            font-size: 20px;
+            transition: all 0.5s;
+            .yellow {
+              font-size: 20px;
+              transition: all 0.5s;
+            }
+          }
+        }
+  
+        textarea {
+          width: 360px;
+          transition: all 0.5s;
+        }
+      }
+    }
+   
+  }
+  footer {
+    @include grid (repeat(3, 1fr), repeat(6, 58px), none, none, none);
+    transition: all 0.5s;
+    .menu-x {
+      li {
+        a {
+          font-size: 14px;
+          transition: all 0.5s;
+        }
+      }
+    }
+
+  
+    .social {
+      .footer-ico {
+        i {
+          font-weight: 500;
+          font-size: 20px;
+          transition: all 0.5s;
+        }
+    
+        a {
+          width: 32px;
+          height: 32px;
+          transition: 0.5s;
+        }
+      }
+    }
+  
+    .location {
+      a {
+        width: 120px;
+        font-size: 15px;
+        transition: 0.5s;
+      }
+   
+      .iconmax i {
+        font-size: 25px;
+        transition: 0.5s;
+      }
+    }
+  
+    .etiquetas {
+      p {
+        font-size: 11px;
+        transition: 0.5s;
+      }
+    }
+  
+    .newsletter {
+      width: 270px;
+      transition: 0.5s;
+      h4 {
+        font-size: 0.885rem;
+        transition: 0.5s;
+      }
+  
+      .input-container {
+        input {
+          font-size: 14px;
+          transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+      }
+    }
+  
+    .me {
+      font-size: 10px;
+      transition: 0.5s;
+    }
+  
+  }
+}

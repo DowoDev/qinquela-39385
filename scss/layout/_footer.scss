@@ -1,128 +1,181 @@
 footer {
   bottom: 0;
   width: 100%;
-  @include grid (repeat(10, 1fr),2fr,none,none,none);
+  @include grid (repeat(3, 1fr), repeat(6, 58px), none, none, none);
   background-color: #ffffff02;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   list-style: none;
   transition: all 0.5s;
 
+  .menu-x {
+    grid-column: 1/ 4;
+    grid-row: 1 / 2;
+    @include flex(column, none, center, center, none);
+    position: absolute;
+    width: 100%;
+    top: 5px;
+    li {
+      display: flex;
+      display: block;
+      margin: 10px 0;
+      line-height: 4px;
+      transition: 0.5s;
+      a {
+        display: block;
+        font-size: 12px;
+        color: $font-color-main;
+        padding: 0 0 0 0;
+        font-weight: 600;
+        transition: all 0.2s;
+        list-style: none;
+        text-decoration: none;
+      }
+    }
+  }
+
   .wow {
     color: $pink-variant;
   }
+
   .social {
-    grid-column: 2 / 5;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    display: flex;
     align-self: center;
-    text-align-last: justify;
-    width: 303px;
-  }
-
-  .footer-ico {
-    i {
-      font-weight: 500;
-      font-size: 1.8rem;
-    }
-
-    a {
-      display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    .footer-ico {
+      display: flex;
       justify-content: center;
-      align-items: center;
-      width: 3.125rem;
-      height: 3.125rem;
-      margin-right: 3rem;
-      background-clip: border-box;
-      -webkit-background-clip: border-box;
-      // border-radius: 10px;
-      color: $font-color-main;
-      background: $background-header;
-      backdrop-filter: blur(5px);
-      animation: movingBorders 3s infinite;
-      transition: 0.5s;
-
-      &:hover {
-        transform: scale(110%);
+      gap: 20px;
+      i {
+        font-weight: 500;
+        font-size: 16px;
+      }
+  
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        background-clip: border-box;
+        -webkit-background-clip: border-box;
+        // border-radius: 10px;
+        color: $font-color-main;
+        background: $background-header;
+        backdrop-filter: blur(5px);
         animation: movingBorders 3s infinite;
+        transition: 0.5s;
+  
+        &:hover {
+          transform: scale(110%);
+          animation: movingBorders 3s infinite;
+        }
+  
+        &:nth-child(1) {
+          // background-image: linear-gradient(#2f00ff 0%, #006eff 50%, #01C5FF 100%);
+          -webkit-background-clip: border-box;
+          background-clip: border-box;
+          -webkit-text-fill-color: $font-color-main;
+          border: 1px solid #006eff;
+          border-radius: 18px 18px 18px 5px;
+          filter: drop-shadow(0px 1px 1px #006eff83);
+          // background-image: linear-gradient(to right, #2f00ff, #01C5FF);
+          // color: #00000000;
+          // -webkit-background-clip: text;
+          // background-clip: text;
+          position: relative;
+          text-decoration: none;
+          transition: 0.3s;
+        }
+  
+        &:nth-child(2) {
+          // background: linear-gradient(#b91d73 0%, #dd2a7b 50%, #f953c6 100%);
+          -webkit-background-clip: border-box;
+          background-clip: border-box;
+          -webkit-text-fill-color: $font-color-main;
+          border: 1px solid #f953c6;
+          border-radius: 18px 18px 18px 5px;
+          filter: drop-shadow(0px 1px 1px #f953c783);
+          position: relative;
+          text-decoration: none;
+          transition: 0.3s;
+        }
+  
+        &:nth-child(3) {
+          // background: linear-gradient(#0059ff 0%, #01C5FF 50%, #55acee 100%);
+          -webkit-background-clip: border-box;
+          background-clip: border-box;
+          -webkit-text-fill-color: #ededed;
+          border: 1px solid #55acee;
+          border-radius: 18px 18px 18px 5px;
+          filter: drop-shadow(0px 1px 1px #55acee83);
+          // background-image: linear-gradient(to right, #01C5FF, #0059ff);
+          // color: #00000000;
+          // -webkit-background-clip: text;
+          // background-clip: text;
+          position: relative;
+          text-decoration: none;
+          transition: 0.3s;
+          
+        }
+  
+        // &:nth-child(4) {
+        //   -webkit-background-clip: border-box;
+        //   background-clip: border-box;
+        //   -webkit-text-fill-color: $font-color-main;
+        //   border: 1px solid #dc143c;
+        //   border-radius: 18px 18px 18px 5px;
+        //   filter: drop-shadow(0px 1px 1px #dc143c83);
+        //   position: relative;
+        //   text-decoration: none;
+        //   transition: 0.3s;
+        // }
+  
+        // &:nth-child(5) {
+        //   -webkit-background-clip: border-box;
+        //   background-clip: border-box;
+        //   -webkit-text-fill-color: $font-color-main;
+        //   border: 1px solid #25d366;
+        //   border-radius: 18px 18px 18px 5px;
+        //   filter: drop-shadow(0px 1px 1px #25d36683);
+        //   position: relative;
+        //   text-decoration: none;
+        //   transition: 0.3s;
+        // }
+  
       }
-
-      &:nth-child(1) {
-        // background-image: linear-gradient(#2f00ff 0%, #006eff 50%, #01C5FF 100%);
-        -webkit-background-clip: border-box;
-        background-clip: border-box;
-        -webkit-text-fill-color: $font-color-main;
-        border: 1px solid #006eff;
-        border-radius: 18px 18px 18px 5px;
-        filter: drop-shadow(0px 1px 1px #006eff83);
-        // background-image: linear-gradient(to right, #2f00ff, #01C5FF);
-        // color: #00000000;
-        // -webkit-background-clip: text;
-        // background-clip: text;
-        position: relative;
-        text-decoration: none;
-        transition: 0.3s;
-      }
-
-      &:nth-child(2) {
-        // background: linear-gradient(#0059ff 0%, #01C5FF 50%, #55acee 100%);
-        -webkit-background-clip: border-box;
-        background-clip: border-box;
-        -webkit-text-fill-color: #ededed;
-        border: 1px solid #55acee;
-        border-radius: 18px 18px 18px 5px;
-        filter: drop-shadow(0px 1px 1px #55acee83);
-        // background-image: linear-gradient(to right, #01C5FF, #0059ff);
-        // color: #00000000;
-        // -webkit-background-clip: text;
-        // background-clip: text;
-        position: relative;
-        text-decoration: none;
-        transition: 0.3s;
-      }
-
-      &:nth-child(3) {
-        // background: linear-gradient(#b91d73 0%, #dd2a7b 50%, #f953c6 100%);
-        -webkit-background-clip: border-box;
-        background-clip: border-box;
-        -webkit-text-fill-color: $font-color-main;
-        border: 1px solid #f953c6;
-        border-radius: 18px 18px 18px 5px;
-        filter: drop-shadow(0px 1px 1px #f953c783);
-        // background-image: linear-gradient(to right, #ed0082, #ffbf02);
-        // color: #00000000;
-        // -webkit-background-clip: text;
-        // background-clip: text;
-        position: relative;
-        text-decoration: none;
-        transition: 0.3s;
-      }
-
     }
   }
 
   .location {
-    grid-column: 5 / 7;
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    display: flex;
     align-self: center;
-    text-align-last: justify;
-    width: 385px;
-
+    justify-content: center;
+    width: 100%;
+ 
     a {
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      width: 144px;
-      height: 3.125rem;
-      font-size: 1.2rem;
+      width: 91px;
+      height: 36px;
+      font-size: 12px;
       font-family: $rubik;
       text-decoration: none;
       background-clip: text;
       -webkit-background-clip: border-box;
-      border-radius: 10px;
+      border-radius: 6.4px;
       color: $font-color-main-variant;
       background: $background-header;
       -webkit-backdrop-filter: blur(5px);
       backdrop-filter: blur(5px);
       transition: 0.5s;
-
+ 
       &:hover {
         background-color: $font-color-main;
         color: #020202;
@@ -131,13 +184,16 @@ footer {
         animation: movingBorders 3s infinite;
       }
     }
-
+ 
     .iconmax i {
-      font-weight: 700;
-      font-size: 1.8rem;
+      font-weight: 500;
+      font-size: 21px;
       color: transparent;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
     }
-
+ 
     .bxs-map {
       background-image: linear-gradient(to right, crimson, rgb(248, 121, 3));
       color: #00000000;
@@ -147,7 +203,7 @@ footer {
       text-decoration: none;
       transition: 0.3s;
     }
-
+ 
     .logo2 {
       display: inline-flex;
       justify-content: center;
@@ -157,7 +213,7 @@ footer {
       filter: invert(0);
       transition: all 0.5s;
     }
-
+ 
     .bxl-whatsapp {
       background-image: linear-gradient(to right, #25d366, chartreuse);
       color: #00000000;
@@ -170,41 +226,45 @@ footer {
   }
 
   .etiquetas {
-    grid-column: 5 / 9;
-    grid-row: 2/2;
-    align-self: center;
+    grid-column: 1 / 4;
+    grid-row: 6 / 6;
     text-align-last: center;
-    width: 385px;
-
+    
     p {
-      font-size: 0.8rem;
+      color: $font-color-main;
+      font-size: 10px;
+      text-decoration: none;
     }
   }
 
   .newsletter {
-    grid-column: 8 / 10;
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
     height: 3.125rem;
+    width: 250px;
     align-self: center;
-    justify-self: flex-end;
+    justify-self: center;
 
     h4 {
+      color: $font-color-main;
       display: flex;
       position: relative;
       font-size: 0.785rem;
       font-weight: 400;
-      left: 10px;
+      justify-content: center;
+      
     }
 
     .subs {
-      grid-column: 9 / 11;
-      grid-row: 2/2;
+      grid-column: 1 / 4;
+      grid-row: 5/5;
       text-align-last: center;
     }
 
     .input-container {
       display: flex;
       position: relative;
-      height: 3.125rem;
+      height: 40px;
       width: 100%;
       min-width: 200px;
       max-width: 300px;
@@ -222,7 +282,7 @@ footer {
         background-color: transparent;
         padding: 0.625rem 70px 0.625rem 0.75rem;
         font-family: 'Poppins', sans-serif;
-        font-size: 0.875rem;
+        font-size: 12px;
         line-height: 1.25rem;
         font-weight: 400;
         color: #455a64;
@@ -274,11 +334,11 @@ footer {
 
   .me {
     grid-column: 1 / 4;
-    grid-row: 2/2;
-    font-size: 0.8rem;
+    grid-row: 6/6;
+    font-size: 8px;
     font-weight: 200;
-    padding-left: 50px;
-    align-self: center;
+    padding-left: 5px;
+    align-self: flex-end;
     justify-self: center;
 
     a {

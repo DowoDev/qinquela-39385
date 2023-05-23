@@ -1,5 +1,5 @@
-# Proyecto Sitio Web, Curso Desarrollo Web - CoderHouse. 
-## Comisión 39385 - Profesor Maximiliano Cárdenas.
+# Proyecto QINQELA CoffeShop | Curso Desarrollo Web - CoderHouse 
+## Comisión 39385 - Profesor Maximiliano Cárdenas
 #### Trabajo realizado en el **Curso de Desarrollo Web** dictado en **CoderHouse** por el Profesor [![](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico)](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico) [Maximiliano Cardenas](https://www.linkedin.com/in/cardenas-maximiliano/ "Linkedin - Maximiliano Cardenas"). 
 Tutora: [![](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico)](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-1320194801197496824_24.ico) [Camila Yacante](https://ar.linkedin.com/in/camila-yacante-a255a216b "Linkedin - Camila Yacante")
 
@@ -33,7 +33,7 @@ La idea del **Proyecto** fue realizar el sitio Web de una Cafetería llamada **Q
 - Utilicé imágenes optimizadas para la rapidez de carga del Sitio Web en su totalidad con contenido pertinente a la temática elegida, en este caso una Cafetería.
 - Tanto el diseño del **LOGO**, **ICONOS** como asi tambien de la utilizacion de edición de imagenes en **Photoshop** fueron de autoría propia. Trabajo original. Con respecto a algunos iconos se utilizó la librería de [Boxicons](http://https://boxicons.com "Boxicons"). La misma fue linkeada dentro del **Head** de cada Página del Sitio Web.
 
-3) En **CSS** se utilizaron todos los estilos aprendidos en el curso. Se prefirió el formato ** Desktop First** como primera experiencia. En un futuro se utilizará **Mobile First**.
+3) En **CSS** se utilizaron todos los estilos aprendidos en el curso. Se prefirió el formato **Desktop First** como primera experiencia. En un futuro se utilizará **Mobile First**.
 - Se hizo desde cambios de fuentes importadas tanto externamente (**Google Fonts**) como así también locales.
 - Se utilizaron diseños modernos a nivel gráfico, respetando la **Teoría del Color**.
 - Diseño de los elementos para reflejar el diseño web prototipado originalmente.
@@ -63,7 +63,10 @@ Todo aplicado por medio de **@import** sobre el archivo styles.scss el cual deri
 - **Description**: Descripción del sitio, el fin, que ofrecemos, etc..
 - **Opengraph**: Uso del mismo para generar una imágen de nuestro sitio para poder ser utilizada en redes sociales, whatsapp, etc cuando la compartimos. (trabajo en proceso)
 
-6) Github
+6) Github se realizó la creación del Repo:
+- Se trabajó en forma total con terminal **Bash** para subir commits realizados sobre el proyecto.
+- Se activó y se hizo deployment de **Github-Pages** para poder visualizar el Proyecto en Internet desde cualquier dispositivo.
+- Se realizó **README.md** para esta presentación.
 
 
 Todo proceso realizado aquí, es de uso personal, educativo. Se utilizaron:
@@ -72,9 +75,11 @@ Todo proceso realizado aquí, es de uso personal, educativo. Se utilizaron:
 - Photoshop para diseño de imágenes.
 - Illustrator para diseño de vectores.
 
-Gracias y si se quieren comunicar directamente, lo pueden hacer a devdowo@gmail.com
+Mail de Contacto: **devdowo@gmail.com**
 
 # END
+
+<img width="24px" alt="quotes" src="https://i.imgur.com/jE5r8g6.png"> ***Aprendí a no preocuparme tanto por el resultado, sino a concentrarme en el paso en el que estaba y a intentar hacerlo de la manera más perfecta posible cuando lo estaba haciendo.***<img width="24px" alt="quotes" src="https://i.imgur.com/jE5r8g6.png"> - Steve 'Woz' Wozniak.
 
 
 
