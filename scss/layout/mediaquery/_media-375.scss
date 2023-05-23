@@ -5,4 +5,19 @@
       transition: all 0.5s;
     }
   }
+  .main__productos{
+    .grupo-prod{
+      .cards-style{
+        .cards-cafe{
+          .cards-body{
+            button {
+              font-size: 21px;
+              padding: 16px 72px;
+              transition: all 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
 }
