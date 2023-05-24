@@ -6,12 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO -->
-  <meta
-    content="cafe, cafe con amigos, cafe en barcelona, coffeshop in barcelona, coffe in barcelona, cafe en españa, coffeeshop in spain, coffeehsop in spain, bares, tapas, pattisserie, amistad, comer en barcelona, "
-    name="keywords">
-  <meta
-    content="Disfruta del mejor café en Barcelona, con la mejor pattisserie y la mejor onda para empezar tu día. Recuerda, que el día Empieza con un Café."
-    name="description">
+  <meta  name="keywords" content="cafe, cafe con amigos, cafe en barcelona, coffeshop in barcelona, coffe in barcelona, cafe en españa, coffeeshop in spain, coffeehsop in spain, bares, tapas, pattisserie, amistad, comer en barcelona">
+  <meta  name="description" content="En QINQELA CoffeShop, nuestros productos son sinónimo de calidad, sabor y excelencia. Cada café que servimos es meticulosamente preparado por nuestros baristas expertos, garantizando una experiencia sensorial excepcional.">
+    <!-- Facebook -->
+  <meta property="og:url" content="https://dowodev.github.io/qinquela-39385/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="QINQELA - CoffeeShop. El día Empieza con un Café!">
+  <meta property="og:description" content="Disfruta del mejor café en Barcelona, con la mejor pattisserie y la mejor onda para empezar tu día. Recuerda, que el día Empieza con un Café.">
+  <meta property="og:image" content="https://i.imgur.com/VG9JX1N.png">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="dowodev.github.io">
+  <meta property="twitter:url" content="https://dowodev.github.io/qinquela-39385/index.html">
+  <meta name="twitter:title" content="QINQELA - CoffeeShop. El día Empieza con un Café!">
+  <meta name="twitter:description" content="Disfruta del mejor café en Barcelona, con la mejor pattisserie y la mejor onda para empezar tu día. Recuerda, que el día Empieza con un Café.">
+  <meta name="twitter:image" content="https://i.imgur.com/VG9JX1N.png">
   <title>Productos - QINQELA</title>
   <!-- Iconos/Icons Web (Boxicons) -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,11 +29,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/logos/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/logos/favicon-16x16.png">
   <link rel="manifest" href="../assets/logos/site.webmanifest">
-  <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
   <!-- CSS Styles -->
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -34,19 +38,19 @@
   </div>
   <div class="productos">
     <header class="header">
-      <div class="logo">
-        <a href="./index.html">
-          <img src="../assets/logos/cup_logo.png" alt="logo">
-        </a>
-        <p class="marca">Q I N Q E L A &nbsp<b>|&nbspCoffeeShop</b></p>
-      </div>
       <nav class="navigation">
-        <input type="checkbox" name="" id="check">
-        <label for="check" class="checkbtn">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="../assets/logos/cup_logo.png" alt="logo" class="logo_img">
+          </a>
+          <p class="marca">Q I N Q E L A &nbsp<b>|&nbspCoffeeShop</b></p>
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="hamburguer-btn">
           <i class='bx bx-menu'></i>
-          <!-- <img src="../assets/logos/menu_Q_white.png" class='' ></img> -->
         </label>
-        <ul class="menu">
+  
+        <ul class="nav-menu">
           <li class="main-menu__item"><a href="../index.html" class="main-menu__link">INICIO</a></li>
           <li class="main-menu__item"><a href="./nosotros.html" class="main-menu__link">NOSOTROS</a></li>
           <li class="main-menu__item"><a href="#" class="active main-menu__link">PRODUCTOS</a></li>
@@ -54,6 +58,7 @@
           <li class="main-menu__item"><a href="./contacto.html" class="main-menu__link">CONTACTO</a></li>
         </ul>
       </nav>
+  
     </header>
     <main class="main__productos">
       <div class="main__titulo--prod">
@@ -66,7 +71,7 @@
               <img src="../assets/img/coffee_black.png" alt="">
               <div class="cards-body">
                 <h2>BLACK <strong class="black">BLEND.</strong></h2>
-                <p> Con ciertas notas de cacao y frutos secos, con un toque de amargor que equilibra perfectamente su dulzura natural en el paladar.</p>
+                <p> Con ciertas notas de cacao y frutos secos dulces, con un toque de amargor que equilibra perfectamente su dulzura natural en nuestro paladar.</p>
                 <button class="sr-only">PRECIO&nbsp&nbsp€ 18,99</span>
               </div>
             </div>
@@ -76,7 +81,7 @@
               <img src="../assets/img/coffee_chocko.png" alt="">
               <div class="cards-body">
                 <h2>CHOCKO <strong class="chocco">BLEND.</strong></h2>
-                <p> Sabor y elección perfecta para los amantes del chocolate y el café. Delicioso café con chocolate, de un sabor único, dulce y satisfactorio.</p> 
+                <p> Sabor y elección perfecta para los amantes del buen chocolate y el café. Delicioso café con chocolate, de un sabor único, dulce y satisfactorio.</p> 
                 <button class="sr-only">PRECIO&nbsp&nbsp€ 21,99</span>
               </div>
             </div>
@@ -86,8 +91,8 @@
               <img src="../assets/img/coffee_strong.png" alt="">
               <div class="cards-body">
                 <h2>STRONG <strong class="strong">BLEND.</strong></h2>
-                <p> Sabor intenso y profundo, con notas de chocolate negro y una sensación de cuerpo completo que se
-                  siente en nuestro paladar.</p>
+                <p> Sabor único, intenso y profundo, con notas de chocolate negro y una sensación única con cuerpo completo que se
+                  aprecia en todo nuestro paladar.</p>
                 <button class="sr-only">PRECIO&nbsp&nbsp€ 23,99</span>
               </div>
             </div>
@@ -97,7 +102,7 @@
               <img src="../assets/img/coffee_tete.png" alt="">
               <div class="cards-body">
                 <h2>SWEET <strong class="tete">TETÉ.</strong></h2>
-                <p> Sabor dulce y cremoso, con toques de vainilla, miel y malvaviscos, que harán que cada taza sea una experiencia deliciosa. 
+                <p> Sabor dulce, suave y cremoso, con toques de vainilla, miel y malvaviscos, que harán que cada taza sea una experiencia única y deliciosa. Así es Teté. 
                   </p>
                 <button class="sr-only">PRECIO&nbsp&nbsp€ 25,99</span>
               </div>
@@ -108,7 +113,7 @@
               <img src="../assets/img/coffee_breeze.png" alt="">
               <div class="cards-body">
                 <h2>BREEZE <strong class="breeze">BLEND.</strong></h2>
-                <p> Sabor refrescante y delicioso. Con toques de menta y canela, que haran que tu paladar se refresque en esos días de verano. Servir Frío!</p>
+                <p> Sabor refrescante y delicioso. Con toques de menta y canela, que haran que tu paladar se refresque en esos días de verano. Servilo bien Frío!</p>
                 <button class="sr-only">PRECIO&nbsp&nbsp€ 27,99</span>
               </div>
             </div>
@@ -118,7 +123,7 @@
               <img src="../assets/img/coffee_cool.png" alt="">
               <div class="cards-body">
                 <h2>COOL <strong class="cool">BLEND.</strong></h2>
-                <p> Sabor refrescante y delicioso. Con toques de menta y canela, que haran que tu paladar se refresque en esos días de verano. Servir Frío!</p>
+                <p> Sabor refrescante y delicioso. Con toques de menta y canela, que haran que tu paladar se refresque en esos días de verano. Servirlo bien Frío!</p>
                 <button class="sr-only">PRECIO&nbsp&nbsp€ 27,99</span>
               </div>
             </div>
@@ -128,7 +133,7 @@
               <img src="../assets/img/coffee_sunny.png" alt="">
               <div class="cards-body">
                 <h2>SUNNY <strong class="sunny">BLEND.</strong></h2>
-                <p> Sabor dulce y afrutado que te hará sentir como si estuvieras en una playa paradisíaca. Frutas y experiencia de café única.</p>
+                <p> Sabor dulce y afrutado que te hará sentir como si estuvieras en una playa paradisíaca única. Frutas y experiencia de café que te transportan. Summer!</p>
                 <button class="sr-only">PRECIO&nbsp&nbsp€ 29,99</button>
               </div>
             </div>
@@ -138,8 +143,8 @@
               <img src="../assets/img/coffee_soft.png" alt="">
               <div class="cards-body">
                 <h2>SOFT <strong class="soft">BLEND.</strong></h2>
-                <p> Suavidad y ligereza, con notas de frutas y flores que lo hacen una de las experiencias mas
-                  deliciosas para los amantes del café.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                <p> Suavidad y ligereza, con notas de frutas y flores tropicales que lo hacen una de las experiencias mas
+                  deliciosas para todos los amantes del café.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
                 <button class="sr-only">PRECIO&nbsp&nbsp€ 29,99</button>
               </div>
             </div>
@@ -149,7 +154,7 @@
               <img src="../assets/img/coffee_natural.png" alt="">
               <div class="cards-body">
                 <h2> NATURAL <strong class="natural">BLEND.</strong></h2>
-                <p> Sabor natural y único sin fertizilantes ni pesticidas sintéticos, que desarrollan un sabor y aroma únicos en nuestro paladar.&nbsp&nbsp&nbsp&nbsp</p>
+                <p> Sabor natural y único sin fertizilantes ni pesticidas sintéticos, que desarrollan un sabor y aroma únicos en nuestro paladar. Free Our Earth!&nbsp&nbsp&nbsp&nbsp</p>
                 <button class="sr-only">PRECIO&nbsp&nbsp€ 29,99</span>
               </div>
             </div>
@@ -195,7 +200,7 @@
         </div>
       </form>
       <div class="me">
-        <a href="https://github.com/DowoDev" target="_blank" class="iconmin">Design by <img src="./assets/logos/dowodev.jpg" alt=""><!--<i class="bx bxl-github"></i>--> <b class="wow"> DowoDev</b> ·
+        <a href="https://github.com/DowoDev" target="_blank" class="iconmin">Design by <img src="../assets/logos/dowodev.jpg" alt=""><!--<i class="bx bxl-github"></i>--> <b class="wow"> DowoDev</b> ·
           <b>2023</b></a>
       </div>
     </footer>

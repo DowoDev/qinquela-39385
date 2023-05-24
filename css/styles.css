@@ -60,6 +60,7 @@ html {
   background-image: url("../assets/img/bg_contact.jpg"); }
 
 .arrow {
+  width: 50px;
   position: fixed;
   bottom: 30px;
   left: 10px;
@@ -100,114 +101,154 @@ header {
   -webkit-backdrop-filter: blur(20px);
   transition: all 0.5s;
   z-index: 1; }
-  header .logo {
+  header .navigation {
+    width: 100%;
+    height: 85px;
     display: flex;
-    transition: all 0.5s; }
-    header .logo a {
-      display: block;
-      width: 2.8rem;
-      padding: 0 0 0 10px;
+    justify-content: space-between;
+    align-items: center; }
+    header .navigation .hamburguer-btn {
+      font-size: 50px;
+      color: #ededed;
+      margin-right: 5px;
+      cursor: pointer;
       transition: all 0.5s; }
-      header .logo a img {
+      header .navigation .hamburguer-btn:active {
+        transform: scale(1.2);
+        background: linear-gradient(#b91d73c9 0%, #dd2a7bc9 50%, #f953c6c9 100%);
+        border-radius: 1px;
+        transition: 0.01s; }
+      header .navigation .hamburguer-btn ::after {
+        transform: scale(1.2);
+        background: linear-gradient(#b91d73c9 0%, #dd2a7bc9 50%, #f953c6c9 100%);
+        border-radius: 1px;
+        transition: 0.01s; }
+    header .navigation .logo {
+      width: 100%;
+      height: 85px;
+      display: flex;
+      align-items: center; }
+      header .navigation .logo a {
         display: block;
-        width: 1.8rem;
+        width: 2.8rem;
+        padding: 0 0 0 10px;
+        transition: all 0.5s; }
+        header .navigation .logo a img {
+          display: block;
+          width: 1.8rem;
+          filter: invert(0);
+          transition: all 0.5s; }
+    header .navigation .marca {
+      position: relative;
+      align-self: center;
+      font-weight: 700;
+      font-size: 16px;
+      filter: invert(0);
+      color: #ededed;
+      padding: 0 0 0px 10px;
+      flex-direction: column;
+      list-style: none;
+      text-decoration: none;
+      transition: all 0.5s; }
+      header .navigation .marca b {
+        font-weight: 400;
+        color: #fd007a;
         filter: invert(0);
         transition: all 0.5s; }
-  header .marca {
-    position: relative;
-    align-self: center;
-    font-weight: 700;
-    font-size: 16px;
-    filter: invert(0);
-    padding: 0 0 0px 10px;
-    flex-direction: column;
-    list-style: none;
-    text-decoration: none;
-    transition: all 0.5s; }
-    header .marca b {
-      font-weight: 400;
-      color: #fd007a;
-      filter: invert(0);
+    header .navigation .menu {
+      background-color: #fd007a;
+      border: 1px solid #333;
+      -webkit-backdrop-filter: blur(25px);
+      backdrop-filter: blur(25px);
+      list-style: none;
       transition: all 0.5s; }
-  header .navigation .menu {
-    background-color: #fd007a;
-    border: 1px solid #333;
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
-    list-style: none;
-    transition: all 0.5s; }
-  header .navigation .checkbtn {
-    display: block;
-    position: sticky;
-    flex-direction: row;
-    width: 50px;
-    float: right;
-    height: 50px;
-    cursor: pointer; }
-    header .navigation .checkbtn:active, header .navigation .checkbtn::after {
-      transform: scale(1.2);
-      background: linear-gradient(#b91d73c9 0%, #dd2a7bc9 50%, #f953c6c9 100%);
-      border-radius: 25px;
-      transition: 0.01s; }
-    header .navigation .checkbtn i {
-      font-size: 50px; }
-  header .navigation #check {
-    display: none; }
-  header .navigation ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: none;
-    justify-content: center;
-    align-items: center;
-    gap: none;
-    position: absolute;
-    width: 100%;
-    height: 250px;
-    top: 85px;
-    left: -105%;
-    text-align: center;
-    float: right;
-    margin-right: 20px;
-    z-index: 1;
-    transition: all 0.5s; }
-    header .navigation ul li {
-      display: flex;
+    header .navigation .toggle-menu {
       display: block;
-      margin: 10px 0;
-      line-height: 30px;
-      transition: 0.5s; }
-      header .navigation ul li a {
-        display: block;
-        color: #181818;
-        padding: 0 0 0 0;
-        font-size: 18px;
-        font-weight: 700;
-        transition: all 0.2s;
-        list-style: none;
-        text-decoration: none; }
-        header .navigation ul li a:hover {
-          color: #ededed; }
-    header .navigation ul .active {
-      color: #ededed; }
-    header .navigation ul .main-menu__link {
-      position: relative;
-      transition: all 0.4s; }
-    header .navigation ul ::after {
-      content: "";
-      height: 2px;
-      width: 100%;
-      background-image: linear-gradient(#b91d73 0%, #dd2a7b 50%, #f953c6 100%);
       position: absolute;
-      right: 0px;
-      bottom: -5px;
+      width: 50px;
+      height: 100%;
+      width: 50px;
+      float: right;
+      height: 50px;
+      right: 20px;
+      z-index: 3;
       opacity: 0;
-      transition: all 0.35s ease;
-      pointer-events: none; }
-    header .navigation ul .main-menu__link:hover::before,
-    header .navigation ul .main-menu__link:focus::before {
-      opacity: 1; }
-  header .navigation #check:checked ~ ul {
-    left: 0; }
+      cursor: pointer; }
+    header .navigation .checkbtn {
+      display: block;
+      position: relative;
+      flex-direction: row;
+      width: 50px;
+      float: right;
+      height: 50px;
+      left: 30px;
+      cursor: pointer; }
+      header .navigation .checkbtn:active, header .navigation .checkbtn::after {
+        transform: scale(1.2);
+        background: linear-gradient(#b91d73c9 0%, #dd2a7bc9 50%, #f953c6c9 100%);
+        border-radius: 25px;
+        transition: 0.01s; }
+      header .navigation .checkbtn i {
+        font-size: 50px; }
+    header .navigation #check {
+      display: none; }
+    header .navigation ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: none;
+      justify-content: center;
+      align-items: center;
+      gap: none;
+      position: fixed;
+      width: 100%;
+      height: 0px;
+      top: 85px;
+      text-align: center;
+      background-color: #fa009a;
+      /*$pink*/
+      -webkit-backdrop-filter: blur(25px);
+      backdrop-filter: blur(25px);
+      list-style: none;
+      transition: all 0.5s; }
+      header .navigation ul li {
+        display: none;
+        line-height: 30px;
+        margin: 5px 0;
+        transition: all 0.5s; }
+        header .navigation ul li a {
+          color: #181818;
+          padding: 0 0 0 0;
+          font-size: 18px;
+          font-weight: 700;
+          transition: all 0.5s;
+          list-style: none;
+          text-decoration: none; }
+          header .navigation ul li a:hover {
+            color: #ededed; }
+      header .navigation ul .active {
+        color: #ededed; }
+      header .navigation ul .main-menu__link {
+        position: relative;
+        transition: all 0.4s; }
+      header .navigation ul ::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-image: linear-gradient(#b91d73 0%, #dd2a7b 50%, #f953c6 100%);
+        position: absolute;
+        right: 0px;
+        bottom: -5px;
+        opacity: 0;
+        transition: all 0.35s ease;
+        pointer-events: none; }
+      header .navigation ul .main-menu__link:hover::before,
+      header .navigation ul .main-menu__link:focus::before {
+        opacity: 1; }
+    header .navigation #check:checked ~ .nav-menu li {
+      display: block; }
+    header .navigation #check:checked ~ .nav-menu {
+      height: 220px;
+      transition: all 0.7s; }
 
 .main-index {
   display: grid;
@@ -272,11 +313,11 @@ header {
         align-self: center;
         justify-self: center;
         width: 120.45px;
-        transition: 0.5s;
+        transition: all 0.5s;
         position: static; }
         .main-index .hero .cup img:hover {
           transform: scale(1.05);
-          transition: 0.5s; }
+          transition: all 0.5s; }
   .main-index .main__botones {
     grid-column: 1 / 4;
     grid-row: 5 / 5;
@@ -293,7 +334,7 @@ header {
       align-items: center;
       text-decoration: none;
       list-style: none;
-      transition: 0.5s; }
+      transition: all 0.5s; }
       .main-index .main__botones a:active {
         transform: scale(0.985);
         transition: 0.15s;
@@ -301,7 +342,7 @@ header {
   .main-index .boton1, .main-index .boton2 {
     background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB 51%, #403B4A 100%);
     text-align: center;
-    transition: 0.5s;
+    transition: all 0.5s;
     background-size: 200% auto;
     color: #ededed50;
     border-radius: 0.4rem;
@@ -754,16 +795,21 @@ footer {
       display: block;
       margin: 10px 0;
       line-height: 4px;
-      transition: 0.5s; }
+      transition: all 0.5s; }
       footer .menu-x li a {
         display: block;
         font-size: 12px;
         color: #ededed;
         padding: 0 0 0 0;
-        font-weight: 600;
+        font-weight: 300;
         transition: all 0.2s;
         list-style: none;
         text-decoration: none; }
+        footer .menu-x li a:hover {
+          color: #fd007a; }
+      footer .menu-x li .active {
+        color: #fd007a;
+        font-weight: 700; }
   footer .wow {
     color: #fd007aee; }
   footer .social {
@@ -792,7 +838,7 @@ footer {
         background: #ffffff13;
         backdrop-filter: blur(5px);
         animation: movingBorders 3s infinite;
-        transition: 0.5s; }
+        transition: all 0.5s; }
         footer .social .footer-ico a:hover {
           transform: scale(110%);
           animation: movingBorders 3s infinite; }
@@ -849,7 +895,7 @@ footer {
       background: #ffffff13;
       -webkit-backdrop-filter: blur(5px);
       backdrop-filter: blur(5px);
-      transition: 0.5s; }
+      transition: all 0.5s; }
       footer .location a:hover {
         background-color: #ededed;
         color: #020202;
@@ -978,6 +1024,9 @@ footer {
     padding-left: 5px;
     align-self: flex-end;
     justify-self: center; }
+    footer .me:hover {
+      transform: scale(1.02);
+      transition: all 0.5s; }
     footer .me a {
       text-decoration: none;
       color: #ededed; }
@@ -990,8 +1039,8 @@ footer {
     grid-row: 7 / 11;
     transition: all 0.5s; }
   .main__productos .grupo-prod .cards-style .cards-cafe .cards-body button {
-    font-size: 21px;
-    padding: 16px 72px;
+    font-size: 19px;
+    padding: 16px 70px;
     transition: all 0.5s; } }
 
 @media screen and (min-width: 425px) {
@@ -1059,7 +1108,7 @@ footer {
       transition: all 0.5s; }
     .main__productos .grupo-prod .cards-style .cards-cafe .cards-body button {
       font-size: 25px;
-      padding: 10px 80px;
+      padding: 10px 75px;
       transition: all 0.5s; }
   .main__gal .main__titulo--gal h3 {
     font-size: 27px;
@@ -1112,31 +1161,37 @@ footer {
     footer .social .footer-ico a {
       width: 32px;
       height: 32px;
-      transition: 0.5s; }
+      transition: all 0.5s; }
     footer .location a {
       width: 120px;
       font-size: 15px;
-      transition: 0.5s; }
+      transition: all 0.5s; }
     footer .location .iconmax i {
       font-size: 25px;
-      transition: 0.5s; }
+      transition: all 0.5s; }
     footer .etiquetas p {
       font-size: 11px;
-      transition: 0.5s; }
+      transition: all 0.5s; }
     footer .newsletter {
       width: 270px;
-      transition: 0.5s; }
+      transition: all 0.5s; }
       footer .newsletter h4 {
         font-size: 0.885rem;
-        transition: 0.5s; }
+        transition: all 0.5s; }
       footer .newsletter .input-container input {
         font-size: 14px;
         transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1); }
     footer .me {
       font-size: 10px;
-      transition: 0.5s; } }
+      transition: all 0.5s; } }
 
 @media screen and (min-width: 768px) {
+  .arrow {
+    width: 60px;
+    transition: all 0.5s; }
+    .arrow a {
+      font-size: 18px;
+      transition: all 0.5s; }
   header .logo a {
     width: 3.0rem;
     transition: all 0.5s; }
@@ -1179,16 +1234,16 @@ footer {
       transition: all 0.5s; }
       .main-index .hero .cup img {
         width: 230px;
-        transition: 0.5s; }
+        transition: all 0.5s; }
     .main-index .main__botones {
       grid-row: 5 / 5; }
       .main-index .main__botones a {
         width: 221px;
         height: 4.30rem;
-        transition: 0.5s; }
+        transition: all 0.5s; }
       .main-index .main__botones .gradient-text1, .main-index .main__botones .gradient-text2 {
         font-size: 30px;
-        transition: 0.5s; }
+        transition: all 0.5s; }
   .main__nos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1216,8 +1271,14 @@ footer {
           height: 248px;
           transition: 0.8s ease all; }
   .main__productos .grupo-prod .cards-style .cards-cafe .cards-body button {
-    font-size: 23px;
+    font-size: 21px;
     padding: 19px 75px;
+    transition: all 0.5s; }
+  .main__gal .main__titulo--gal h3 {
+    font-size: 38px;
+    transition: all 0.5s; }
+  .main__contacto .main__titulo--contacto h3, .main__contacto .main__titulo--contacto2 h3 {
+    font-size: 45px;
     transition: all 0.5s; }
   footer {
     display: grid;
@@ -1236,21 +1297,21 @@ footer {
     footer .social .footer-ico a {
       width: 38px;
       height: 38px;
-      transition: 0.5s; }
+      transition: all 0.5s; }
     footer .location {
       grid-column: 1 / 3;
       grid-row: 4 / 5;
       width: 380px;
       justify-self: flex-start;
-      transition: 0.5s; }
+      transition: all 0.5s; }
       footer .location a {
         width: 144px;
         height: 2.8rem;
         font-size: 20px;
-        transition: 0.5s; }
+        transition: all 0.5s; }
       footer .location .iconmax i {
         font-size: 28px;
-        transition: 0.5s; }
+        transition: all 0.5s; }
     footer .etiquetas {
       grid-column: 1 / 3;
       grid-row: 5 / 5;
@@ -1258,17 +1319,17 @@ footer {
       padding: 0 0 0 40px; }
       footer .etiquetas p {
         font-size: 13px;
-        transition: 0.5s; }
+        transition: all 0.5s; }
     footer .newsletter {
       grid-column: 2 / 4;
       grid-row: 4 / 5;
       width: 345px;
       height: 43px;
       justify-self: flex-end;
-      transition: 0.5s; }
+      transition: all 0.5s; }
       footer .newsletter h4 {
         font-size: 0.885rem;
-        transition: 0.5s; }
+        transition: all 0.5s; }
       footer .newsletter .input-container {
         border-radius: 6.4px;
         height: 42px;
@@ -1281,4 +1342,276 @@ footer {
     footer .me {
       grid-row: 5/5;
       font-size: 10px;
-      transition: 0.5s; } }
+      transition: all 0.5s; } }
+
+@media screen and (min-width: 1024px) {
+  .arrow {
+    width: 60px;
+    transition: all 0.5s; }
+    .arrow a {
+      font-size: 18px;
+      transition: all 0.5s; }
+  .index,
+  .nosotros, .productos, .galeria, .contacto {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 85px 1fr 210px;
+    justify-content: none;
+    align-items: none;
+    grid-template-areas: none; }
+  header .navigation {
+    height: 85px;
+    transition: all 0.5s; }
+    header .navigation .logo {
+      width: 465px; }
+      header .navigation .logo .marca {
+        font-size: 20px; }
+    header .navigation .hamburguer-btn {
+      display: none;
+      transition: all 0.5s; }
+    header .navigation .nav-menu {
+      position: relative;
+      height: 85px;
+      top: 0;
+      flex-direction: row;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: none;
+      text-align: right;
+      margin-right: 0; }
+      header .navigation .nav-menu li {
+        display: inline-block;
+        line-height: 85px;
+        margin: 0 5px;
+        transition: none; }
+        header .navigation .nav-menu li a {
+          font-weight: 500;
+          font-size: 20px; }
+        header .navigation .nav-menu li .main-menu__link {
+          position: relative;
+          transition: all 0.4s; }
+  .main-index {
+    grid-template-rows: repeat(5, 158px); }
+    .main-index .main__presentacion {
+      grid-row: 2 / 5;
+      align-self: center; }
+      .main-index .main__presentacion p {
+        font-size: 28px; }
+    .main-index .hero {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      align-self: center; }
+  .main__nos .main__texto p {
+    font-size: 18px; }
+    .main__nos .main__texto p .marca {
+      font-size: 20px; }
+  .main__productos .grupo-prod .cards-style .cards-cafe .cards-body button {
+    font-size: 21px;
+    padding: 19px 60px;
+    transition: all 0.5s; }
+  .main__gal .main__titulo--gal h3 {
+    font-size: 55px;
+    transition: all 0.5s; }
+  .main__gal .grupo-gal .gal {
+    grid-template-columns: repeat(3, minmax(250px, 1fr)); }
+  .main__contacto .main__titulo--contacto h3, .main__contacto .main__titulo--contacto2 h3 {
+    font-size: 55px;
+    transition: all 0.5s; }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 70px);
+    justify-content: none;
+    align-items: none;
+    grid-template-areas: none;
+    transition: all 0.5s; }
+    footer .menu-x {
+      flex-direction: row;
+      gap: 20px;
+      top: 26px; }
+      footer .menu-x li a {
+        font-size: 18px;
+        transition: all 0.5s; }
+    footer .social {
+      grid-column: 1 / 2;
+      grid-row: 1 / 4; }
+      footer .social .footer-ico {
+        gap: 35px; }
+        footer .social .footer-ico i {
+          font-size: 30px;
+          transition: all 0.5s; }
+        footer .social .footer-ico a {
+          width: 50px;
+          height: 50px;
+          transition: all 0.5s; }
+    footer .location {
+      grid-column: 3 / 5;
+      grid-row: 1 / 4;
+      align-self: center;
+      text-align-last: justify;
+      transition: all 0.5s; }
+      footer .location a {
+        width: 144px;
+        height: 2.8rem;
+        font-size: 20px;
+        transition: all 0.5s; }
+      footer .location .iconmax i {
+        font-size: 28px;
+        transition: all 0.5s; }
+    footer .etiquetas {
+      grid-column: 3 / 5;
+      grid-row: 3 / 3; }
+    footer .newsletter {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      width: 315px;
+      height: 43px;
+      justify-self: flex-end;
+      transition: all 0.5s; }
+      footer .newsletter h4 {
+        font-size: 0.885rem;
+        transition: all 0.5s; }
+      footer .newsletter .input-container {
+        border-radius: 6.4px;
+        height: 42px;
+        width: 100%;
+        min-width: 200px;
+        max-width: 310px;
+        transition: all 0.5s; }
+        footer .newsletter .input-container input {
+          font-size: 14px;
+          transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1); }
+    footer .me {
+      grid-column: 2 / 3;
+      grid-row: 3/3;
+      font-size: 12px;
+      transition: all 0.5s; } }
+
+@media screen and (min-width: 1440px) {
+  header .navigation {
+    height: 85px;
+    transition: all 0.5s; }
+    header .navigation .logo {
+      width: 750px; }
+      header .navigation .logo a {
+        width: 3.8rem;
+        transition: all 0.5s; }
+        header .navigation .logo a img {
+          width: 2.3rem;
+          transition: all 0.5s; }
+      header .navigation .logo .marca {
+        font-size: 29px; }
+    header .navigation .nav-menu li a {
+      font-weight: 500;
+      font-size: 25px;
+      transition: all 0.4s; }
+  .main-index .main__presentacion {
+    grid-column: 1 / 3;
+    grid-row: 2 / 5; }
+    .main-index .main__presentacion p {
+      font-size: 28px; }
+  .main-index .hero {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    align-self: center; }
+    .main-index .hero .cup img {
+      width: 320px; }
+  .main-index .main__botones {
+    grid-column: 1 / 3;
+    grid-row: 4 / 4;
+    align-items: flex-end; }
+  .main__nos {
+    grid-template-rows: repeat(6, 150px); }
+    .main__nos .main__titulo--nos {
+      grid-column: 1 / 3; }
+      .main__nos .main__titulo--nos h3 {
+        font-size: 45px;
+        transition: all 0.5s; }
+    .main__nos .main__texto {
+      grid-column: 1 / 3;
+      grid-row: 2 / 5; }
+      .main__nos .main__texto p {
+        font-size: 23px; }
+    .main__nos .team {
+      grid-column: 3/ 5;
+      grid-row: 1 / 8; }
+  .main__productos .grupo-prod .cards-style .cards-cafe .cards-body h2 {
+    margin: 0 0 18px 0;
+    font-size: 25px; }
+  .main__productos .grupo-prod .cards-style .cards-cafe .cards-body button {
+    height: 100%;
+    font-size: 23px;
+    padding: 19px 29px;
+    transition: all 0.5s; }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 70px);
+    justify-content: none;
+    align-items: none;
+    grid-template-areas: none;
+    transition: all 0.5s; }
+    footer .menu-x {
+      flex-direction: row;
+      gap: 20px;
+      top: 26px; }
+      footer .menu-x li a {
+        font-size: 24px;
+        transition: all 0.5s; }
+    footer .social {
+      grid-column: 1 / 2;
+      grid-row: 1 / 4; }
+      footer .social .footer-ico {
+        gap: 35px; }
+        footer .social .footer-ico i {
+          font-size: 30px;
+          transition: all 0.5s; }
+        footer .social .footer-ico a {
+          width: 50px;
+          height: 50px;
+          transition: all 0.5s; }
+    footer .location {
+      grid-column: 3 / 5;
+      grid-row: 1 / 4;
+      align-self: center;
+      text-align-last: justify;
+      transition: all 0.5s; }
+      footer .location a {
+        width: 144px;
+        height: 2.8rem;
+        font-size: 20px;
+        transition: all 0.5s; }
+      footer .location .iconmax i {
+        font-size: 28px;
+        transition: all 0.5s; }
+    footer .etiquetas {
+      grid-column: 3 / 5;
+      grid-row: 3 / 3; }
+    footer .newsletter {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      width: 410px;
+      height: 43px;
+      justify-self: flex-end;
+      justify-content: flex-start;
+      transition: all 0.5s; }
+      footer .newsletter .subs {
+        margin-left: 6px;
+        font-size: 1.2rem;
+        justify-content: flex-start;
+        transition: all 0.5s; }
+      footer .newsletter .input-container {
+        border-radius: 6.4px;
+        height: 42px;
+        width: 100%;
+        min-width: 200px;
+        max-width: 310px;
+        transition: all 0.5s; }
+        footer .newsletter .input-container input {
+          font-size: 14px;
+          transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1); }
+    footer .me {
+      grid-column: 2 / 3;
+      grid-row: 3/3;
+      font-size: 12px;
+      transition: all 0.5s; } }

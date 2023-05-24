@@ -1,0 +1,211 @@
+@media screen and (min-width: 1024px) {
+  .arrow{
+    width: 60px;
+    transition: all 0.5s;
+       
+    a{
+      font-size: 18px;
+      transition: all 0.5s;
+    }
+  }
+  .index,
+  .nosotros, .productos, .galeria, .contacto {
+  @include grid (none,85px 1fr 210px,none,none,none);
+  }
+  header {
+    .navigation {
+      height: 85px;
+      transition: all 0.5s;
+      .logo{
+        width: 465px;
+        .marca{
+          font-size: 20px;
+        }
+      }
+      .hamburguer-btn{
+        display: none;
+        transition: all 0.5s;
+      }
+      .nav-menu {
+        position: relative;
+        height: 85px;
+        top: 0;
+        flex-direction: row;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        transition: none;
+        text-align: right;
+        margin-right: 0;
+        li {
+          display: inline-block;
+          line-height: 85px;
+          margin: 0 5px;
+          transition: none;
+          a {
+            font-weight: 500;
+            font-size: 20px;
+          }
+          .main-menu__link {
+            position: relative;
+            transition: all 0.4s;
+            
+          }
+        }
+      }
+    } 
+  }
+  .main-index{
+    grid-template-rows: repeat(5, 158px);
+    .main__presentacion{
+      grid-row: 2 / 5;
+      align-self: center;
+      p {
+        font-size: 28px;
+      }
+    }
+    .hero {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      align-self: center;
+    }
+  }
+  .main__nos{
+    .main__texto {
+      p {
+        font-size: 18px;
+        .marca {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .main__productos{
+    .grupo-prod{
+      .cards-style{
+        .cards-cafe{
+          .cards-body{
+            button {
+              font-size: 21px;
+              padding: 19px 60px;
+              transition: all 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main__gal{
+    .main__titulo--gal {
+      h3 {
+      font-size: 55px;
+      transition: all 0.5s;
+      }
+    }
+    .grupo-gal{
+      .gal{
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+      }
+    }
+  }
+  .main__contacto {
+    .main__titulo--contacto,.main__titulo--contacto2 {
+      h3 {
+      font-size: 55px;
+      transition: all 0.5s;
+      }
+    }
+  }
+  footer {
+    @include grid (repeat(3, 1fr), repeat(3, 70px), none, none, none);
+    transition: all 0.5s;
+    .menu-x {
+      flex-direction: row;
+      gap: 20px;
+      top: 26px;
+      li {
+        a {
+          font-size: 18px;
+          transition: all 0.5s;
+        }
+      }
+    }
+
+  
+    .social {
+      grid-column: 1 / 2;
+      grid-row: 1 / 4;
+      .footer-ico {
+        gap: 35px;
+        i {
+          font-size: 30px;
+          transition: all 0.5s;
+        }
+    
+        a {
+          width: 50px;
+          height: 50px;
+          transition: all 0.5s;
+        }
+      }
+    }
+  
+    .location {
+      grid-column: 3 / 5;
+      grid-row: 1 / 4;
+      align-self: center;
+      text-align-last: justify;
+      transition: all 0.5s;
+      a {
+        width: 144px;
+        height: 2.8rem;
+        font-size: 20px;
+        transition: all 0.5s;
+      }
+   
+      .iconmax i {
+        font-size: 28px;
+        transition: all 0.5s;
+      }
+    }
+  
+    .etiquetas {
+      grid-column: 3 / 5;
+      grid-row: 3 / 3;
+    }
+  
+    .newsletter {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      width: 315px;
+      height: 43px;
+      justify-self: flex-end;
+      transition: all 0.5s;
+      h4 {
+        font-size: 0.885rem;
+        transition: all 0.5s;
+      }
+  
+      .input-container {
+        border-radius: 6.4px;
+        height: 42px;
+        width: 100%;
+        min-width: 200px;
+        max-width: 310px;
+        transition: all 0.5s;
+        input {
+          font-size: 14px;
+          transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+      }
+    }
+  
+    .me {
+      grid-column: 2 / 3;
+      grid-row: 3/3;
+      font-size: 12px;
+      transition: all 0.5s;
+
+    }
+  
+  }
+}

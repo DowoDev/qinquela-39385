@@ -70,6 +70,15 @@
   //     }
   //   }
   // }
+  .arrow{
+    width: 60px;
+    transition: all 0.5s;
+       
+    a{
+      font-size: 18px;
+      transition: all 0.5s;
+    }
+  }
   header{
     .logo {
       a {
@@ -128,7 +137,7 @@
       .cup {
         img {
           width: 230px;
-          transition: 0.5s;
+          transition: all 0.5s;
         }
       }
     }
@@ -138,11 +147,11 @@
       a {
         width: 221px;
         height: 4.30rem;
-        transition: 0.5s;
+        transition: all 0.5s;
       }
       .gradient-text1, .gradient-text2{
         font-size:30px;
-        transition: 0.5s;
+        transition: all 0.5s;
       }
     }  
   }
@@ -186,12 +195,28 @@
         .cards-cafe{
           .cards-body{
             button {
-              font-size: 23px;
+              font-size: 21px;
               padding: 19px 75px;
               transition: all 0.5s;
             }
           }
         }
+      }
+    }
+  }
+  .main__gal {
+    .main__titulo--gal {
+      h3 {
+      font-size: 38px;
+      transition: all 0.5s;
+      }
+    }
+  }
+  .main__contacto {
+    .main__titulo--contacto,.main__titulo--contacto2 {
+      h3 {
+      font-size: 45px;
+      transition: all 0.5s;
       }
     }
   }
@@ -218,7 +243,7 @@
         a {
           width: 38px;
           height: 38px;
-          transition: 0.5s;
+          transition: all 0.5s;
         }
       }
     }
@@ -228,17 +253,17 @@
       grid-row: 4 / 5;
       width: 380px;
       justify-self: flex-start;
-      transition: 0.5s;
+      transition: all 0.5s;
       a {
         width: 144px;
         height: 2.8rem;
         font-size: 20px;
-        transition: 0.5s;
+        transition: all 0.5s;
       }
    
       .iconmax i {
         font-size: 28px;
-        transition: 0.5s;
+        transition: all 0.5s;
       }
     }
   
@@ -250,7 +275,7 @@
       padding: 0 0 0 40px;
       p {
         font-size: 13px;
-        transition: 0.5s;
+        transition: all 0.5s;
       }
     }
   
@@ -260,10 +285,10 @@
       width: 345px;
       height: 43px;
       justify-self: flex-end;
-      transition: 0.5s;
+      transition: all 0.5s;
       h4 {
         font-size: 0.885rem;
-        transition: 0.5s;
+        transition: all 0.5s;
       }
   
       .input-container {
@@ -282,7 +307,7 @@
     .me {
       grid-row: 5/5;
       font-size: 10px;
-      transition: 0.5s;
+      transition: all 0.5s;
     }
   
   }

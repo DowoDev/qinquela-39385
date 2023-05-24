@@ -79,12 +79,12 @@
         align-self: center;
         justify-self: center;
         width: 120.45px;
-        transition: 0.5s;
+        transition: all 0.5s;
         position: static;
 
         &:hover {
           transform: scale(1.05);
-          transition: 0.5s;
+          transition: all 0.5s;
         }
       }
     }
@@ -108,7 +108,7 @@
       align-items: center;
       text-decoration: none;
       list-style: none;
-      transition: 0.5s;
+      transition: all 0.5s;
 
       &:active {
         transform: scale(0.985);
@@ -121,7 +121,7 @@
   .boton1, .boton2 {
     background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB 51%, #403B4A 100%);
     text-align: center;
-    transition: 0.5s;
+    transition: all 0.5s;
     background-size: 200% auto;
     color: $font-color-main-variant;
     // border: 1px solid #ededed31;
