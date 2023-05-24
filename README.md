@@ -7,7 +7,8 @@ Tutora: [![](https://icons-for-free.com/download-icon-linked+linkedin+icon+icon-
 La idea del **Proyecto** fue realizar el sitio Web de una Cafetería llamada **QINQELA CoffeeShop** como forma de entrenamiento para futuros trabajos. La misma es ficticia y se la ubica en la Ciudad de Barcelona.
 
 **PAGINA PRINCIPAL**
-[![Index QINQELA CoffeeShop](https://i.imgur.com/PmIvyIr.png "Index QINQELA CoffeeShop")](https://imgur.com/a/Ky0H4fW "Index QINQELA CoffeeShop")
+[![Index QINQELA CoffeeShop](https://i.imgur.com/V3ViXqL.png "Index QINQELA CoffeeShop")](https://imgur.com/a/09d7S3x "Index QINQELA CoffeeShop")
+
 ### HERRAMIENTAS UTILIZADAS
 - **FIGMA**
 - **HTML**
