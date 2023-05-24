@@ -8,6 +8,8 @@ La idea del **Proyecto** fue realizar el sitio Web de una Cafetería llamada **Q
 
 **PAGINA PRINCIPAL**
 [![Index QINQELA CoffeeShop](https://i.imgur.com/V3ViXqL.png "Index QINQELA CoffeeShop")](https://imgur.com/a/09d7S3x "Index QINQELA CoffeeShop")
+[![Index QINQELA CoffeeShop](https://i.imgur.com/t9PTwEz.png "Index QINQELA CoffeeShop")](https://imgur.com/a/EtFhd86 "Index QINQELA CoffeeShop")
+
 
 ### HERRAMIENTAS UTILIZADAS
 - **FIGMA**
