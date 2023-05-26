@@ -1,10 +1,10 @@
 footer {
   bottom: 0;
   width: 100%;
-  @include grid (repeat(3, 1fr), repeat(6, 58px), none, none, none);
+  @include grid (repeat(3, 1fr), repeat(6, 3.625rem), none, none, none);
   background-color: #ffffff02;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(1.25rem);
+  backdrop-filter: blur(1.25rem);
   list-style: none;
   transition: all 0.5s;
 
@@ -14,18 +14,18 @@ footer {
     @include flex(column, none, center, center, none);
     position: absolute;
     width: 100%;
-    top: 5px;
+    top: .3125rem;
     li {
       display: flex;
       display: block;
-      margin: 10px 0;
-      line-height: 4px;
+      margin: .625rem 0;
+      line-height: .25rem;
       transition: all 0.5s;
       a {
         display: block;
-        font-size: 12px;
+        font-size: .75rem;
         color: $font-color-main;
-        padding: 0 0 0 0;
+        padding: 0rem 0rem 0rem 0rem;
         font-weight: 300;
         transition: all 0.2s;
         list-style: none;
@@ -56,24 +56,24 @@ footer {
     .footer-ico {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 1.25rem;
       i {
         font-weight: 500;
-        font-size: 16px;
+        font-size: 1rem;
       }
   
       a {
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        width: 25px;
-        height: 25px;
+        width: 1.5625rem;
+        height: 1.5625rem;
         background-clip: border-box;
         -webkit-background-clip: border-box;
         // border-radius: 10px;
         color: $font-color-main;
         background: $background-header;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(.3125rem);
         animation: movingBorders 3s infinite;
         transition: all 0.5s;
   
@@ -87,9 +87,9 @@ footer {
           -webkit-background-clip: border-box;
           background-clip: border-box;
           -webkit-text-fill-color: $font-color-main;
-          border: 1px solid #006eff;
-          border-radius: 18px 18px 18px 5px;
-          filter: drop-shadow(0px 1px 1px #006eff83);
+          border: .0625rem solid #006eff;
+          border-radius: 1.125rem 1.125rem 1.125rem .3125rem;
+          filter: drop-shadow(0rem .0625rem .0625rem #006eff83);
           // background-image: linear-gradient(to right, #2f00ff, #01C5FF);
           // color: #00000000;
           // -webkit-background-clip: text;
@@ -104,9 +104,9 @@ footer {
           -webkit-background-clip: border-box;
           background-clip: border-box;
           -webkit-text-fill-color: $font-color-main;
-          border: 1px solid #f953c6;
-          border-radius: 18px 18px 18px 5px;
-          filter: drop-shadow(0px 1px 1px #f953c783);
+          border: .0625rem solid #f953c6;
+          border-radius: 1.125rem 1.125rem 1.125rem .3125rem;
+          filter: drop-shadow(0rem .0625rem .0625rem #f953c783);
           position: relative;
           text-decoration: none;
           transition: 0.3s;
@@ -117,9 +117,9 @@ footer {
           -webkit-background-clip: border-box;
           background-clip: border-box;
           -webkit-text-fill-color: #ededed;
-          border: 1px solid #55acee;
-          border-radius: 18px 18px 18px 5px;
-          filter: drop-shadow(0px 1px 1px #55acee83);
+          border: .0625rem solid #55acee;
+          border-radius: 1.125rem 1.125rem 1.125rem .3125rem;
+          filter: drop-shadow(0rem .0625rem .0625rem #55acee83);
           // background-image: linear-gradient(to right, #01C5FF, #0059ff);
           // color: #00000000;
           // -webkit-background-clip: text;
@@ -129,31 +129,6 @@ footer {
           transition: 0.3s;
           
         }
-  
-        // &:nth-child(4) {
-        //   -webkit-background-clip: border-box;
-        //   background-clip: border-box;
-        //   -webkit-text-fill-color: $font-color-main;
-        //   border: 1px solid #dc143c;
-        //   border-radius: 18px 18px 18px 5px;
-        //   filter: drop-shadow(0px 1px 1px #dc143c83);
-        //   position: relative;
-        //   text-decoration: none;
-        //   transition: 0.3s;
-        // }
-  
-        // &:nth-child(5) {
-        //   -webkit-background-clip: border-box;
-        //   background-clip: border-box;
-        //   -webkit-text-fill-color: $font-color-main;
-        //   border: 1px solid #25d366;
-        //   border-radius: 18px 18px 18px 5px;
-        //   filter: drop-shadow(0px 1px 1px #25d36683);
-        //   position: relative;
-        //   text-decoration: none;
-        //   transition: 0.3s;
-        // }
-  
       }
     }
   }
@@ -170,18 +145,18 @@ footer {
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      width: 91px;
-      height: 36px;
-      font-size: 12px;
+      width: 5.6875rem;
+      height: 2.25rem;
+      font-size: .75rem;
       font-family: $rubik;
       text-decoration: none;
       background-clip: text;
       -webkit-background-clip: border-box;
-      border-radius: 6.4px;
+      border-radius: .4rem;
       color: $font-color-main-variant;
       background: $background-header;
-      -webkit-backdrop-filter: blur(5px);
-      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(.3125rem);
+      backdrop-filter: blur(.3125rem);
       transition: all 0.5s;
  
       &:hover {
@@ -195,15 +170,15 @@ footer {
  
     .iconmax i {
       font-weight: 500;
-      font-size: 21px;
+      font-size: 1.3125rem;
       color: transparent;
       display: flex;
       justify-content: center;
-      gap: 50px;
+      gap: 3.125rem;
     }
  
     .bxs-map {
-      background-image: linear-gradient(to right, crimson, rgb(248, 121, 3));
+      background-image: linear-gradient(to right, crimson, #f87903);
       color: #00000000;
       -webkit-background-clip: text;
       background-clip: text;
@@ -216,7 +191,7 @@ footer {
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      height: 32px;
+      height: 2rem;
       color: $font-color-main-variant;
       filter: invert(0);
       transition: all 0.5s;
@@ -240,7 +215,7 @@ footer {
     
     p {
       color: $font-color-main;
-      font-size: 10px;
+      font-size: .625rem;
       text-decoration: none;
     }
   }
@@ -249,9 +224,10 @@ footer {
     grid-column: 1 / 4;
     grid-row: 4 / 5;
     height: 3.125rem;
-    width: 250px;
+
     align-self: center;
     justify-self: center;
+
 
     h4 {
       color: $font-color-main;
@@ -267,30 +243,29 @@ footer {
       grid-column: 1 / 4;
       grid-row: 5/5;
       text-align-last: center;
+
     }
 
     .input-container {
       display: flex;
       position: relative;
-      height: 40px;
+      height: 2.5rem;
       width: 100%;
-      min-width: 200px;
-      max-width: 300px;
       background-color: $background-header;
-      border-radius: 8px;
-      box-shadow: 20px 20px 30px #0000000d;
+      border-radius: .5rem;
+      box-shadow: 1.25rem 1.25rem 1.875rem #0000000d;
       background: $background-header;
-      backdrop-filter: blur(5px);
+      backdrop-filter: blur(.3125rem);
 
       input {
         height: 100%;
         width: 100%;
-        border-radius: 8px;
-        border: 1px solid #b0bec5;
+        border-radius: .5rem;
+        border: .0625rem solid #b0bec5;
         background-color: transparent;
-        padding: 0.625rem 70px 0.625rem 0.75rem;
+        padding: 0.625rem 4.375rem 0.625rem 0.75rem;
         font-family: 'Poppins', sans-serif;
-        font-size: 12px;
+        font-size: .75rem;
         line-height: 1.25rem;
         font-weight: 400;
         color: #455a64;
@@ -298,7 +273,7 @@ footer {
         transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 
         &:focus {
-          border: 1px solid $pink;
+          border: .0625rem solid $pink;
           color: $font-color-main;
         }
 
@@ -312,20 +287,20 @@ footer {
       button {
         cursor: pointer;
         position: absolute;
-        width: 75px;
-        right: 4px;
-        top: 4px;
-        bottom: 4px;
+        width: 4.6875rem;
+        right: .25rem;
+        top: .25rem;
+        bottom: .25rem;
         text-align: center;
         vertical-align: middle;
         font-family: 'Poppins', sans-serif;
-        font-size: 12px;
+        font-size: .75rem;
         font-weight: 700;
         text-transform: uppercase;
-        border-radius: 4px;
+        border-radius: .25rem;
         background-color: $pink-variant;
         color: #000000c0;
-        padding: 0.25rem .5rem .25rem .5rem;
+        padding: .25rem .5rem .25rem .5rem;
         border: none;
         z-index: 10;
         transition: .6s ease;
@@ -333,7 +308,7 @@ footer {
         &:active {
           transform: scale(0.985);
           transition: 0.05s;
-          box-shadow: inset 2px 2px 5px 1px #31303099;
+          box-shadow: inset .125rem .125rem .3125rem .0625rem #31303099;
         }
       }
 
@@ -343,9 +318,9 @@ footer {
   .me {
     grid-column: 1 / 4;
     grid-row: 6/6;
-    font-size: 8px;
+    font-size: .5rem;
     font-weight: 200;
-    padding-left: 5px;
+    padding-left: .3125rem;
     align-self: flex-end;
     justify-self: center;
     &:hover{
@@ -358,8 +333,8 @@ footer {
       color: $font-color-main;
 
       img {
-        height: 10px;
-        border-radius: 5px;
+        height: .625rem;
+        border-radius: .3125rem;
       }
     }
   }

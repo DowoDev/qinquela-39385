@@ -1,4 +1,12 @@
 @media screen and (min-width: 375px) {
+  header{
+    .navigation{
+      .marca{
+        font-size: 1rem;
+        transition: all 0.5s;
+      }
+    }
+  }
   .main__nos{
     .team {
       grid-row: 7 / 11;
@@ -11,8 +19,8 @@
         .cards-cafe{
           .cards-body{
             button {
-              font-size: 19px;
-              padding: 16px 70px;
+              font-size: 1.1875rem;
+              padding: 1rem 4.375rem;
               transition: all 0.5s;
             }
           }

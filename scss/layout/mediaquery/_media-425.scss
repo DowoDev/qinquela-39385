@@ -1,31 +1,34 @@
 @media screen and (min-width: 425px) {
   header{
-    .marca {
-      font-size: 20px;
-      transition: all 0.5s;
+    .navigation{
+      .marca {
+        font-size: 1.25rem;
+        transition: all 0.5s;
+      }
     }
+    
   }
   .main-index{
-    grid-template-rows: repeat(6, 100px);
+    grid-template-rows: repeat(6, 6.25rem);
     .main__titulo {
  
       h1 {
-        font-size: 18px;
+        font-size: 1.125rem;
         transition: all 0.5s;
       }
   
       h3 {
-        font-size: 25px;
+        font-size: 1.5625rem;
         transition: all 0.5s;
       }
     }
     .main__presentacion {
       p {
-        font-size: 16px;
+        font-size: 1rem;
         transition: all 0.5s;
         .marca {
 
-          font-size: 16px;
+          font-size: 1rem;
           transition: all 0.5s;
         }
 
@@ -35,21 +38,21 @@
       grid-row: 6 / 6;
       transition: all 0.5s;
       a {
-        width: 150px;
+        width: 9.375rem;
         height: 2.50rem;
         transition: all 0.5s;
       }
       .gradient-text1, .gradient-text2{
-        font-size:18px;
+        font-size:1.125rem;
         transition: all 0.5s;
       }
     }
   }
   .main__nos{
-    @include grid (repeat(3, 1fr),repeat(10, 150px),none,none,none);
+    @include grid (repeat(3, 1fr),repeat(10, 9.375rem),none,none,none);
     .main__titulo--nos {
       h3 {
-        font-size: 32px;
+        font-size: 2rem;
         transition: all 0.5s;
       }
     }
@@ -57,11 +60,11 @@
       grid-row: 2 / 8;
       transition: all 0.5s;
       p {
-        font-size: 16px;
+        font-size: 1rem;
         transition: all 0.5s;
   
         .marca {
-          font-size: 16px;
+          font-size: 1rem;
           transition: all 0.5s;
         }
       }
@@ -69,9 +72,9 @@
     .team{
       .card-box{
         .card{
-          height: 160px;
+          height: 10rem;
           img {
-            height: 150px;
+            height: 9.375rem;
             transition: 0.8s ease all;
           }
         }
@@ -79,11 +82,11 @@
     }
   }
   .main__productos{
-    @include grid (repeat(3, 1fr),repeat(5, 170px),none,none,none);
+    @include grid (repeat(3, 1fr),repeat(5, 10.625rem),none,none,none);
     .main__titulo--prod {
       h3 {
-        font-size: 27px;
-        padding: 20px;
+        font-size: 1.6875rem;
+        padding: 1.25rem;
         transition: all 0.5s;
       }
     }
@@ -92,8 +95,8 @@
         .cards-cafe{
           .cards-body{
             button {
-              font-size: 25px;
-              padding: 10px 75px;
+              font-size: 1.5625rem;
+              padding: .625rem 4.6875rem;
               transition: all 0.5s;
             }
           }
@@ -104,7 +107,7 @@
   .main__gal {
     .main__titulo--gal {
       h3 {
-        font-size: 27px;
+        font-size: 1.63rem;
         transition: all 0.5s;
       }
     }
@@ -115,48 +118,48 @@
     .main__titulo--contacto {
   
       h3 {
-        font-size: 32px;
+        font-size: 2rem;
         transition: all 0.5s;
       }
     }
     .main__titulo--contacto2{
       h3 {
-        font-size: 32px;
+        font-size: 2rem;
         transition: all 0.5s;
       }
     }
     .container__form{
       .form_contacto {
-        width: 380px;
+        width: 23.75rem;
         transition: all 0.5s;
         strong {
-          font-size: 16px;
+          font-size: 1rem;
           transition: all 0.5s;
         }
   
         .form_input {
-          width: 360px;
+          width: 22.5rem;
           transition: all 0.5s;
           .mensajero {
-            font-size: 16px;
+            font-size: 1rem;
             transition: all 0.5s;
           }
         }
        .register {
-          margin: 25px 0 25px;
+          margin: 1.5625rem 0 1.5625rem;
           transition: all 0.5s;
           p {
-            font-size: 20px;
+            font-size: 1.25rem;
             transition: all 0.5s;
             .yellow {
-              font-size: 20px;
+              font-size: 1.25rem;
               transition: all 0.5s;
             }
           }
         }
   
         textarea {
-          width: 360px;
+          width: 22.5rem;
           transition: all 0.5s;
         }
       }
@@ -164,12 +167,12 @@
    
   }
   footer {
-    @include grid (repeat(3, 1fr), repeat(6, 58px), none, none, none);
+    @include grid (repeat(3, 1fr), repeat(6, 3.625rem), none, none, none);
     transition: all 0.5s;
     .menu-x {
       li {
         a {
-          font-size: 14px;
+          font-size: .875rem;
           transition: all 0.5s;
         }
       }
@@ -179,14 +182,13 @@
     .social {
       .footer-ico {
         i {
-          font-weight: 500;
-          font-size: 20px;
+          font-size: 1.25rem;
           transition: all 0.5s;
         }
     
         a {
-          width: 32px;
-          height: 32px;
+          width: 2rem;
+          height: 2rem;
           transition: all 0.5s;
         }
       }
@@ -194,27 +196,25 @@
   
     .location {
       a {
-        width: 120px;
-        font-size: 15px;
+        width: 7.5rem;
+        font-size: .9375rem;
         transition: all 0.5s;
       }
    
       .iconmax i {
-        font-size: 25px;
+        font-size: 1.5625rem;
         transition: all 0.5s;
       }
     }
   
     .etiquetas {
       p {
-        font-size: 11px;
+        font-size: .6875rem;
         transition: all 0.5s;
       }
     }
   
     .newsletter {
-      width: 270px;
-      transition: all 0.5s;
       h4 {
         font-size: 0.885rem;
         transition: all 0.5s;
@@ -222,14 +222,14 @@
   
       .input-container {
         input {
-          font-size: 14px;
+          font-size: .875rem;
           transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
         }
       }
     }
   
     .me {
-      font-size: 10px;
+      font-size: .625rem;
       transition: all 0.5s;
     }
   
