@@ -82,7 +82,7 @@ header {
     }
     .menu{
       background-color: $pink;
-      border: 1px solid #333;
+      border: .0625rem solid #333;
       -webkit-backdrop-filter: blur(1.5625rem);
       backdrop-filter: blur(1.5625rem);
       list-style: none;
@@ -134,8 +134,6 @@ header {
       top: 5.3125rem;
       text-align: center;
       background-color: #fa009a; /*$pink*/
-      // -webkit-backdrop-filter: blur(25px);
-      // backdrop-filter: blur(25px);
       list-style: none;
       transition: all 0.5s;
 

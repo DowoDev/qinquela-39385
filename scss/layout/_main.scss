@@ -171,7 +171,7 @@
     h3 {
       font-weight: 700;
       font-size: 1.0469rem;
-      -webkit-text-stroke: 1px #00000032;
+      -webkit-text-stroke: .0625rem #00000032;
       transition: all 0.5s;
 
       strong {
@@ -275,7 +275,7 @@
     h3 {
       font-weight: 700;
       font-size: 1.0469rem;
-      -webkit-text-stroke: 1px #00000032;
+      -webkit-text-stroke: .0625rem #00000032;
       transition: all 0.5s;
 
       strong {
@@ -322,7 +322,7 @@
           padding: 0;
           overflow: hidden;
           max-width: 100%;
-          border-bottom: 1px solid #232323ae;
+          border-bottom: .0625rem solid #232323ae;
           border-radius: .3125rem .3125rem .625rem .625rem;
           box-shadow: .125rem .125rem 3.125rem .0625rem #000000;
         }
@@ -561,7 +561,7 @@
           border-radius: .5rem;
           border: .0625rem solid #b0bec5;
           background-color: transparent;
-          padding: 0.625rem 70px 0.625rem 0.75rem;
+          padding: 0.625rem 4.375rem 0.625rem 0.75rem;
           font-family: 'Poppins', sans-serif;
           font-size: 0.875rem;
           font-weight: 400;

@@ -63,7 +63,7 @@ html {
   width: 3.125rem;
   position: fixed;
   bottom: 1.875rem;
-  left: 10px;
+  left: .625rem;
   z-index: 9; }
   .arrow a {
     display: block;
@@ -79,7 +79,7 @@ html {
     font-weight: 700;
     -webkit-text-fill-color: #ededed;
     color: #ededed;
-    border: 1px solid #FFC500;
+    border: 0.0625rem solid #FFC500;
     border-radius: 1.125rem 1.125rem 1.125rem .3125rem;
     filter: drop-shadow(0rem 0.0625rem 0.0625rem #FFC500 "83");
     transition: 0.3s; }
@@ -157,7 +157,7 @@ header {
         transition: all 0.5s; }
     header .navigation .menu {
       background-color: #fd007a;
-      border: 1px solid #333;
+      border: .0625rem solid #333;
       -webkit-backdrop-filter: blur(1.5625rem);
       backdrop-filter: blur(1.5625rem);
       list-style: none;
@@ -382,7 +382,7 @@ header {
     .main__nos .main__titulo--nos h3 {
       font-weight: 700;
       font-size: 1.0469rem;
-      -webkit-text-stroke: 1px #00000032;
+      -webkit-text-stroke: .0625rem #00000032;
       transition: all 0.5s; }
       .main__nos .main__titulo--nos h3 strong {
         color: #FFC500;
@@ -461,7 +461,7 @@ header {
     .main__productos .main__titulo--prod h3 {
       font-weight: 700;
       font-size: 1.0469rem;
-      -webkit-text-stroke: 1px #00000032;
+      -webkit-text-stroke: .0625rem #00000032;
       transition: all 0.5s; }
       .main__productos .main__titulo--prod h3 strong {
         color: #FFC500;
@@ -504,7 +504,7 @@ header {
           padding: 0;
           overflow: hidden;
           max-width: 100%;
-          border-bottom: 1px solid #232323ae;
+          border-bottom: .0625rem solid #232323ae;
           border-radius: .3125rem .3125rem .625rem .625rem;
           box-shadow: .125rem .125rem 3.125rem .0625rem #000000; }
         .main__productos .grupo-prod .cards-style .cards-cafe .cards-body {
@@ -694,7 +694,7 @@ header {
           border-radius: .5rem;
           border: .0625rem solid #b0bec5;
           background-color: transparent;
-          padding: 0.625rem 70px 0.625rem 0.75rem;
+          padding: 0.625rem 4.375rem 0.625rem 0.75rem;
           font-family: 'Poppins', sans-serif;
           font-size: 0.875rem;
           font-weight: 400;
@@ -1378,7 +1378,7 @@ footer {
       header .navigation ul li {
         display: inline-block;
         line-height: 5.3125rem;
-        margin: 0 5px;
+        margin: 0 .3125rem;
         transition: none; }
         header .navigation ul li a {
           font-weight: 500;
@@ -1542,7 +1542,7 @@ footer {
     grid-column: 3 / 5;
     grid-row: 3 / 3; }
   footer .newsletter {
-    height: 43px;
+    height: 2.6875rem;
     justify-self: flex-end;
     justify-content: flex-start;
     transition: all 0.5s; }
