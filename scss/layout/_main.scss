@@ -101,15 +101,11 @@
     align-items: center;
     justify-content: center;
     a {
-      width: 6.25rem;
       display: inline-flex;
-      height: 2.30rem;
       justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      list-style: none;
+      height: 2.30rem;
+      width: 6.25rem;
       transition: all 0.5s;
-
       &:active {
         transform: scale(0.985);
         transition: 0.15s;
@@ -117,27 +113,31 @@
       }
     }
   }
-
-  .boton1, .boton2 {
-    background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB 51%, #403B4A 100%);
+  .botones{
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
     text-align: center;
-    transition: all 0.5s;
     background-size: 200% auto;
     color: $font-color-main-variant;
-    // border: 1px solid #ededed31;
     border-radius: 0.4rem;
-    display: block;
     backdrop-filter: blur(.3125rem);
-
+    transition: all 0.5s;
     &:hover {
       background-position: right center;
       color: #ededed2d;
       text-decoration: none;
     }
   }
+  .boton1 {
+    background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB 51%, #403B4A 100%);
+    @extend .botones;
+  }
 
   .boton2 {
     background-image: linear-gradient(to right, #403b4a3f 0%, #E7E9BB3f 51%, #403B4A3f 100%);
+    @extend .botones;
   }
 
   .gradient-text1, .gradient-text2{

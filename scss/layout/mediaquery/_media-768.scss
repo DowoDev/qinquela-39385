@@ -266,7 +266,12 @@
       grid-row: 5/5;
       font-size: .9375rem;
       transition: all 0.5s;
+      a img {
+        height: .9375rem;
+        transition: all 0.5s;
+      }
     }
+    
 
   }
 }

@@ -229,6 +229,10 @@
       grid-column: 2 / 3;
       grid-row: 3/3;
       transition: all 0.5s;
+      a img {
+        height: 1.2rem;
+        transition: all 0.5s;
+      }
     }
   }
 }

@@ -301,31 +301,32 @@ header {
     align-items: center;
     justify-content: center; }
     .main-index .main__botones a {
-      width: 6.25rem;
       display: inline-flex;
-      height: 2.30rem;
       justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      list-style: none;
+      height: 2.30rem;
+      width: 6.25rem;
       transition: all 0.5s; }
       .main-index .main__botones a:active {
         transform: scale(0.985);
         transition: 0.15s;
         box-shadow: inset .125rem .125rem .3125rem .0625rem #31303099; }
-  .main-index .boton1, .main-index .boton2 {
-    background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB 51%, #403B4A 100%);
+  .main-index .botones, .main-index .boton1, .main-index .boton2 {
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
     text-align: center;
-    transition: all 0.5s;
     background-size: 200% auto;
     color: #ededed50;
     border-radius: 0.4rem;
-    display: block;
-    backdrop-filter: blur(0.3125rem); }
-    .main-index .boton1:hover, .main-index .boton2:hover {
+    backdrop-filter: blur(0.3125rem);
+    transition: all 0.5s; }
+    .main-index .botones:hover, .main-index .boton1:hover, .main-index .boton2:hover {
       background-position: right center;
       color: #ededed2d;
       text-decoration: none; }
+  .main-index .boton1 {
+    background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB 51%, #403B4A 100%); }
   .main-index .boton2 {
     background-image: linear-gradient(to right, #403b4a3f 0%, #E7E9BB3f 51%, #403B4A3f 100%); }
   .main-index .gradient-text1, .main-index .gradient-text2 {
@@ -804,11 +805,14 @@ footer {
         display: inline-flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        text-decoration: none;
         width: 1.5625rem;
         height: 1.5625rem;
         background-clip: border-box;
         -webkit-background-clip: border-box;
         color: #ededed;
+        -webkit-text-fill-color: #ededed;
         background: #ffffff13;
         backdrop-filter: blur(0.3125rem);
         animation: movingBorders 3s infinite;
@@ -817,34 +821,19 @@ footer {
           transform: scale(110%);
           animation: movingBorders 3s infinite; }
         footer .social .footer-ico a:nth-child(1) {
-          -webkit-background-clip: border-box;
-          background-clip: border-box;
-          -webkit-text-fill-color: #ededed;
           border: .0625rem solid #006eff;
           border-radius: 1.125rem 1.125rem 1.125rem .3125rem;
           filter: drop-shadow(0rem 0.0625rem 0.0625rem #006eff83);
-          position: relative;
-          text-decoration: none;
           transition: 0.3s; }
         footer .social .footer-ico a:nth-child(2) {
-          -webkit-background-clip: border-box;
-          background-clip: border-box;
-          -webkit-text-fill-color: #ededed;
           border: .0625rem solid #f953c6;
           border-radius: 1.125rem 1.125rem 1.125rem .3125rem;
           filter: drop-shadow(0rem 0.0625rem 0.0625rem #f953c783);
-          position: relative;
-          text-decoration: none;
           transition: 0.3s; }
         footer .social .footer-ico a:nth-child(3) {
-          -webkit-background-clip: border-box;
-          background-clip: border-box;
-          -webkit-text-fill-color: #ededed;
           border: .0625rem solid #55acee;
           border-radius: 1.125rem 1.125rem 1.125rem .3125rem;
           filter: drop-shadow(0rem 0.0625rem 0.0625rem #55acee83);
-          position: relative;
-          text-decoration: none;
           transition: 0.3s; }
   footer .location {
     grid-column: 1 / 4;
@@ -882,15 +871,17 @@ footer {
       color: transparent;
       display: flex;
       justify-content: center;
-      gap: 3.125rem; }
-    footer .location .bxs-map {
-      background-image: linear-gradient(to right, #dc143c, #f87903);
+      gap: 3.125rem;
       color: #00000000;
       -webkit-background-clip: text;
       background-clip: text;
       position: relative;
       text-decoration: none;
       transition: 0.3s; }
+    footer .location .bxs-map {
+      background-image: linear-gradient(to right, #dc143c, #f87903); }
+    footer .location .bxl-whatsapp {
+      background-image: linear-gradient(to right, #25d366, chartreuse); }
     footer .location .logo2 {
       display: inline-flex;
       justify-content: center;
@@ -899,14 +890,6 @@ footer {
       color: #ededed50;
       filter: invert(0);
       transition: all 0.5s; }
-    footer .location .bxl-whatsapp {
-      background-image: linear-gradient(to right, #25d366, chartreuse);
-      color: #00000000;
-      -webkit-background-clip: text;
-      background-clip: text;
-      position: relative;
-      text-decoration: none;
-      transition: 0.3s; }
   footer .etiquetas {
     grid-column: 1 / 4;
     grid-row: 6 / 6;
@@ -1211,8 +1194,7 @@ footer {
         width: 13.8125rem;
         height: 4.30rem;
         transition: all 0.5s; }
-      .main-index .main__botones .gradient-text1,
-      .main-index .main__botones .gradient-text2 {
+      .main-index .main__botones .gradient-text1, .main-index .main__botones .gradient-text2 {
         font-size: 1.875rem;
         transition: all 0.5s; }
   .main__nos {
@@ -1311,7 +1293,10 @@ footer {
     footer .me {
       grid-row: 5/5;
       font-size: .9375rem;
-      transition: all 0.5s; } }
+      transition: all 0.5s; }
+      footer .me a img {
+        height: .9375rem;
+        transition: all 0.5s; } }
 
 @media screen and (min-width: 1024px) {
   .arrow {
@@ -1450,7 +1435,10 @@ footer {
     footer .me {
       grid-column: 2 / 3;
       grid-row: 3/3;
-      transition: all 0.5s; } }
+      transition: all 0.5s; }
+      footer .me a img {
+        height: 1.2rem;
+        transition: all 0.5s; } }
 
 @media screen and (min-width: 1440px) {
   header .navigation {
@@ -1539,4 +1527,7 @@ footer {
   footer .me {
     grid-column: 2 / 3;
     grid-row: 3/3;
-    transition: all 0.5s; } }
+    transition: all 0.5s; }
+    footer .me a img {
+      height: 1.5rem;
+      transition: all 0.5s; } }
