@@ -14,6 +14,17 @@ body {
   font-family: "Poppins", sans-serif;
   position: relative; }
 
+body::-webkit-scrollbar {
+  width: 1rem; }
+
+body::-webkit-scrollbar-track {
+  background-color: #3a3a3a8f;
+  border-radius: 6.25rem; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f577b4;
+  border-radius: .3125rem; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -72,7 +83,7 @@ html {
     text-decoration: none;
     -webkit-background-clip: border-box;
     background-clip: border-box;
-    background: #ffffff13;
+    background: #00000083;
     backdrop-filter: blur(0.0625rem);
     font-family: "Poppins", sans-serif;
     font-size: .9375rem;
@@ -155,41 +166,6 @@ header {
         color: #fd007a;
         filter: invert(0);
         transition: all 0.5s; }
-    header .navigation .menu {
-      background-color: #fd007a;
-      border: .0625rem solid #333;
-      -webkit-backdrop-filter: blur(1.5625rem);
-      backdrop-filter: blur(1.5625rem);
-      list-style: none;
-      transition: all 0.5s; }
-    header .navigation .toggle-menu {
-      display: block;
-      position: absolute;
-      width: 3.125rem;
-      height: 100%;
-      width: 3.125rem;
-      float: right;
-      height: 3.125rem;
-      right: 1.25rem;
-      z-index: 3;
-      opacity: 0;
-      cursor: pointer; }
-    header .navigation .checkbtn {
-      display: block;
-      position: relative;
-      flex-direction: row;
-      width: 3.125rem;
-      float: right;
-      height: 3.125rem;
-      left: 1.875rem;
-      cursor: pointer; }
-      header .navigation .checkbtn:active, header .navigation .checkbtn::after {
-        transform: scale(1.2);
-        background: linear-gradient(#b91d73c9 0%, #dd2a7bc9 50%, #f953c6c9 100%);
-        border-radius: 1.5625rem;
-        transition: 0.01s; }
-      header .navigation .checkbtn i {
-        font-size: 3.125rem; }
     header .navigation #check {
       display: none; }
     header .navigation ul {
@@ -908,7 +884,7 @@ footer {
       justify-content: center;
       gap: 3.125rem; }
     footer .location .bxs-map {
-      background-image: linear-gradient(to right, crimson, #f87903);
+      background-image: linear-gradient(to right, #dc143c, #f87903);
       color: #00000000;
       -webkit-background-clip: text;
       background-clip: text;
@@ -1321,7 +1297,8 @@ footer {
       grid-row: 4 / 5;
       height: 2.6875rem;
       justify-self: flex-end;
-      transition: all 0.5s; }
+      transition: all 0.5s;
+      margin-right: 1.875rem; }
       footer .newsletter h4 {
         font-size: 0.885rem;
         transition: all 0.5s; }
@@ -1358,9 +1335,9 @@ footer {
     height: 5.3125rem;
     transition: all 0.5s; }
     header .navigation .logo {
-      width: 29.0625rem; }
+      width: 28.0625rem; }
       header .navigation .logo .marca {
-        font-size: 1.31rem; }
+        font-size: 1.23rem; }
     header .navigation .hamburguer-btn {
       display: none;
       transition: all 0.5s; }

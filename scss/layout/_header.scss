@@ -80,48 +80,7 @@ header {
         transition: all 0.5s;
       }
     }
-    .menu{
-      background-color: $pink;
-      border: .0625rem solid #333;
-      -webkit-backdrop-filter: blur(1.5625rem);
-      backdrop-filter: blur(1.5625rem);
-      list-style: none;
-      transition: all 0.5s;
-    }
-    .toggle-menu{
-      display: block;
-      position: absolute;
-      width: 3.125rem;
-      height: 100%;
-      width: 3.125rem;
-      float: right;
-      height: 3.125rem;
-      right: 1.25rem;
-      z-index: 3;
-      opacity: 0;
-      cursor: pointer;
-
-    }
-    .checkbtn {
-      display: block;
-      position: relative;
-      flex-direction: row;
-      width: 3.125rem;
-      float: right;
-      height: 3.125rem;
-      left: 1.875rem;
-      cursor: pointer;
-      &:active,&::after {
-        transform: scale(1.20);
-        background: linear-gradient(#b91d73c9 0%, #dd2a7bc9 50%, #f953c6c9 100%);
-        border-radius: 1.5625rem;
-        transition: 0.01s;
-      }
-      i {
-        font-size: 3.125rem;
-      }
-    }
-
+    
     #check {
       display: none;
     }
@@ -195,3 +154,48 @@ header {
     }
   }
 }
+
+
+//MENU VIEJO-------------------------------------------------------------
+// .menu{
+    //   background-color: $pink;
+    //   border: .0625rem solid #333;
+    //   -webkit-backdrop-filter: blur(1.5625rem);
+    //   backdrop-filter: blur(1.5625rem);
+    //   list-style: none;
+    //   transition: all 0.5s;
+    // }
+    // .toggle-menu{
+    //   display: block;
+    //   position: absolute;
+    //   width: 3.125rem;
+    //   height: 100%;
+    //   width: 3.125rem;
+    //   float: right;
+    //   height: 3.125rem;
+    //   right: 1.25rem;
+    //   z-index: 3;
+    //   opacity: 0;
+    //   cursor: pointer;
+
+    // }
+    // .checkbtn {
+    //   display: block;
+    //   position: relative;
+    //   flex-direction: row;
+    //   width: 3.125rem;
+    //   float: right;
+    //   height: 3.125rem;
+    //   left: 1.875rem;
+    //   cursor: pointer;
+    //   &:active,&::after {
+    //     transform: scale(1.20);
+    //     background: linear-gradient(#b91d73c9 0%, #dd2a7bc9 50%, #f953c6c9 100%);
+    //     border-radius: 1.5625rem;
+    //     transition: 0.01s;
+    //   }
+    //   i {
+    //     font-size: 3.125rem;
+    //   }
+      
+    // }
